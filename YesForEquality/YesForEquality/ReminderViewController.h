@@ -10,4 +10,10 @@
 
 @interface ReminderViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *dayReminderSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *dayBeforeReminderSwitch;
+
+- (IBAction)dayReminder:(id)sender;
+- (IBAction)dayBeforeReminder:(id)sender;
+
 @end
