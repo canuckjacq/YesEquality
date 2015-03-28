@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tko-v3-k2U">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reminder View Controller-->
+        <scene sceneID="4he-zm-pI0">
+            <objects>
+                <viewController storyboardIdentifier="reminderSB" id="tko-v3-k2U" customClass="ReminderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EiQ-aY-4Q6"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZg-sI-fbp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qdq-bn-8xz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me on the day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTW-e3-Uun">
+                                <rect key="frame" x="16" y="88" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="J4w-XE-u7B"/>
+                                    <constraint firstAttribute="width" constant="174" id="fLA-Na-bN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me the day before" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-Zc-mKt">
+                                <rect key="frame" x="16" y="180" width="203" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="D8B-0W-yT5"/>
+                                    <constraint firstAttribute="width" constant="203" id="ccX-wj-aiW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NGb-eE-GPv">
+                                <rect key="frame" x="535" y="83" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="DUG-kP-Cqf"/>
+                                    <constraint firstAttribute="width" constant="49" id="f4x-Fo-QNg"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.47843137254901963" green="0.75686274509803919" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dayReminder:" destination="tko-v3-k2U" eventType="valueChanged" id="HL4-qr-qez"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MXC-pX-UCs">
+                                <rect key="frame" x="535" y="175" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="8Bt-X2-mhu"/>
+                                    <constraint firstAttribute="height" constant="31" id="kPB-2E-j4K"/>
+                                </constraints>
+                                <color key="onTintColor" red="0.47843137254901963" green="0.75686274509803919" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dayBeforeReminder:" destination="tko-v3-k2U" eventType="valueChanged" id="Iap-Fp-LcI"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don´t forget to vote YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-M2-lbD">
+                                <rect key="frame" x="16" y="105" width="186" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="186" id="H88-3m-eHu"/>
+                                    <constraint firstAttribute="height" constant="23" id="pPI-Kx-VbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell your friends, tell everybody to vote YES tomorrow!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-yh-jqp">
+                                <rect key="frame" x="16" y="196" width="203" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="ELc-23-E73"/>
+                                    <constraint firstAttribute="width" constant="203" id="SuE-my-cC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiq-CZ-lNk">
+                                <rect key="frame" x="181" y="514" width="239" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="kLZ-BY-NSl"/>
+                                    <constraint firstAttribute="width" constant="239" id="sTB-61-zAB"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismiss" destination="tko-v3-k2U" eventType="touchUpInside" id="Qps-0Y-dj9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MXC-pX-UCs" secondAttribute="trailing" constant="16" id="2tn-vQ-YUX"/>
+                            <constraint firstItem="rTW-e3-Uun" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="6dL-Uo-Asv"/>
+                            <constraint firstItem="b4H-M2-lbD" firstAttribute="top" secondItem="EiQ-aY-4Q6" secondAttribute="bottom" constant="85" id="DFi-b0-f5a"/>
+                            <constraint firstAttribute="centerX" secondItem="qiq-CZ-lNk" secondAttribute="centerX" id="MMA-kl-JLx"/>
+                            <constraint firstItem="b4H-M2-lbD" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="TKp-27-v2F"/>
+                            <constraint firstItem="MXC-pX-UCs" firstAttribute="top" secondItem="NGb-eE-GPv" secondAttribute="bottom" constant="61" id="cAW-5t-skN"/>
+                            <constraint firstItem="rAo-yh-jqp" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="dod-Sl-caR"/>
+                            <constraint firstItem="rTW-e3-Uun" firstAttribute="top" secondItem="EiQ-aY-4Q6" secondAttribute="bottom" constant="68" id="e3p-cB-yDe"/>
+                            <constraint firstItem="rAo-yh-jqp" firstAttribute="top" secondItem="b4H-M2-lbD" secondAttribute="bottom" constant="68" id="kgL-wJ-i1r"/>
+                            <constraint firstItem="NGb-eE-GPv" firstAttribute="trailing" secondItem="Qdq-bn-8xz" secondAttribute="trailingMargin" id="mXS-Fo-D0I"/>
+                            <constraint firstItem="zZg-sI-fbp" firstAttribute="top" secondItem="qiq-CZ-lNk" secondAttribute="bottom" constant="20" id="rXB-16-Omo"/>
+                            <constraint firstItem="Ym3-Zc-mKt" firstAttribute="top" secondItem="b4H-M2-lbD" secondAttribute="bottom" constant="52" id="uI5-oQ-yGZ"/>
+                            <constraint firstItem="Ym3-Zc-mKt" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="vkm-4c-E9L"/>
+                            <constraint firstItem="NGb-eE-GPv" firstAttribute="top" secondItem="EiQ-aY-4Q6" secondAttribute="bottom" constant="63" id="y6h-7H-cKe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dayBeforeReminderSwitch" destination="MXC-pX-UCs" id="XPM-MN-sd0"/>
+                        <outlet property="dayReminderSwitch" destination="NGb-eE-GPv" id="GGR-wx-vL3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T6-yj-RGr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128" y="363"/>
+        </scene>
+    </scenes>
+</document>
