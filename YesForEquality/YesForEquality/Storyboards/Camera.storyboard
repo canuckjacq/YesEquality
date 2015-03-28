@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="height" multiplier="350:241" id="1bg-J0-YKn"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
                                 <rect key="frame" x="275" y="530" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -71,7 +71,7 @@
                                     <action selector="didTapInfoButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="een-cT-Ksv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
                                 <rect key="frame" x="365" y="530" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -88,7 +88,7 @@
                                     <action selector="didTapShareButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="u80-nF-b93"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
                                 <rect key="frame" x="185" y="530" width="50" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -143,9 +143,34 @@
                             <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="ZK0-nl-sbj" secondAttribute="height" priority="100" id="rZH-p3-dwG"/>
                             <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="rzJ-pp-GWM"/>
                             <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="tul-gj-vot"/>
+                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="yex-Ei-Bsh"/>
                             <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="z8e-mK-2cm"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="znP-iz-ZEb"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UX5-zn-4YB"/>
+                                <exclude reference="XFj-by-kX2"/>
+                                <exclude reference="EwI-wg-a7T"/>
+                                <exclude reference="HsJ-oT-dcv"/>
+                                <exclude reference="Kr1-nH-wSd"/>
+                                <exclude reference="QI5-O0-Y6V"/>
+                                <exclude reference="g6J-uw-vWB"/>
+                                <exclude reference="lay-Z7-PTI"/>
+                                <exclude reference="pLB-VX-TfM"/>
+                                <exclude reference="rzJ-pp-GWM"/>
+                                <exclude reference="tul-gj-vot"/>
+                                <exclude reference="2sa-59-htb"/>
+                                <exclude reference="4C9-RA-1ef"/>
+                                <exclude reference="bqa-n1-5Fa"/>
+                                <exclude reference="A0H-I5-puP"/>
+                                <exclude reference="d3W-xg-Kdq"/>
+                                <exclude reference="kUp-fx-TnK"/>
+                                <exclude reference="pXq-Tg-U0E"/>
+                                <exclude reference="q7a-Al-Tr4"/>
+                                <exclude reference="z8e-mK-2cm"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="lLz-Yf-c0p" id="aNb-cC-kIU"/>
