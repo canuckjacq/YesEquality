@@ -50,6 +50,17 @@
                    direction:UIPageViewControllerNavigationDirectionForward
                     animated:NO
                   completion:nil];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"Back" forState:UIControlStateNormal];
+    button.frame = CGRectMake(0.0, 20.0, 60.0, 40.0);
+    button.tintColor = [UIColor blueColor];
+    
+    [button addTarget:self.parentViewController
+               action:@selector(didTouchUpInsideBackButton)
+     forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
 }
 
 - (NSArray *)questionPageInfo {
@@ -73,6 +84,14 @@
         @[@"Away for work?", @"You can vote by post too!", [UIColor greenColor]],
         @[@"Changed address?", @"There’s a form for that.", [UIColor blueColor]]
     ];
+}
+
+- (void)didTouchUpInsideBackButton {
+    if (self.navigationController) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 -(void)viewDidLayoutSubviews {

@@ -16,7 +16,7 @@
 
 - (instancetype)init {
     if (self = [super initWithNibName:@"InfoPageCoverViewController" bundle:nil]) {
-        
+
     }
     
     return self;
