@@ -19,6 +19,8 @@
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
 		522BCEA31AC6C9CB006BEEBE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522BCEA21AC6C9CB006BEEBE /* Info.storyboard */; };
 		522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */; };
+		8BDC8FAA1AC7094E00AE23EB /* InfoPageChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */; };
+		8BDC8FAB1AC7094E00AE23EB /* InfoPageChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */; };
 		DB8DBA11A4F3145D663D578B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D0878A0F59A1AC342BBA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,9 @@
 		522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageViewController.h; sourceTree = "<group>"; };
 		522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageViewController.m; sourceTree = "<group>"; };
 		55B66748ED8058388927F716 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8BDC8FA71AC7094E00AE23EB /* InfoPageChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageChildViewController.h; sourceTree = "<group>"; };
+		8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageChildViewController.m; sourceTree = "<group>"; };
+		8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageChildViewController.xib; sourceTree = "<group>"; };
 		C8F1D0878A0F59A1AC342BBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +172,9 @@
 				522BCEA21AC6C9CB006BEEBE /* Info.storyboard */,
 				522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */,
 				522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */,
+				8BDC8FA71AC7094E00AE23EB /* InfoPageChildViewController.h */,
+				8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */,
+				8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */,
 			);
 			name = InfoViewController;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BDC8FAB1AC7094E00AE23EB /* InfoPageChildViewController.xib in Resources */,
 				0A965B381AC6C25B00254BE2 /* Home.storyboard in Resources */,
 				0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */,
 				0A965B3D1AC6C25B00254BE2 /* LaunchScreen.xib in Resources */,
@@ -328,6 +337,7 @@
 				522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */,
 				0A29CFA91AC6D0F300FA01CF /* CameraController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
+				8BDC8FAA1AC7094E00AE23EB /* InfoPageChildViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,

@@ -10,8 +10,6 @@
 
 #import "MSPageViewController.h"
 
-@interface InfoPageViewController : MSPageViewController
-
-
+@interface InfoPageViewController : UIPageViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource>
 
 @end

@@ -7,389 +7,355 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		074EF501CC657893837F18A8 /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 127D57C8FDF7F8B7C89B6E47 /* MSPageViewController.h */; };
-		0FA728B0A5E92C28B5A876F4 /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1392C5BD9A046D64FB89F8ED /* MSPageViewController.m */; };
-		1A693564D6133D730CD40204 /* Pods-YesForEquality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 609A9D96645C02E1C4EB9759 /* Pods-YesForEquality-dummy.m */; };
-		235D96CCA8C45D9326BAE0DB /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 127D57C8FDF7F8B7C89B6E47 /* MSPageViewController.h */; };
-		2B2F2FF7F05D77833A9C5D81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13C14F06B4B9E6AFED0ED42 /* QuartzCore.framework */; };
-		2CC9918174F453106AE2185A /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1392C5BD9A046D64FB89F8ED /* MSPageViewController.m */; };
-		2F555B1B5418BB687D70EC96 /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8E7D8EF9C061438914C222 /* MSPageViewControllerPage.h */; };
-		30FDB5317DCB9AEF1A8D24F7 /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8E7D8EF9C061438914C222 /* MSPageViewControllerPage.h */; };
-		316223251B48CBE01BF9EA80 /* Pods-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CEF4330A32AD93EAED0B7B /* Pods-MSPageViewController-dummy.m */; };
-		328EF425FBB3846AB6DCCD22 /* Pods-YesForEquality-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F61FFBBFC32FB74B5D767EBB /* Pods-YesForEquality-MSPageViewController-dummy.m */; };
-		4429F909125A3A296CD42600 /* Pods-YesForEqualityTests-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 344D52C1AB9B16E0600816AA /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */; };
-		4A2199AF8854CE1F9E9CFDA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6303BA3D33A1D93C0D23C12C /* UIKit.framework */; };
-		51BBA475E5F07E83CB27D869 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		5B0A279EEDF32E851B17D640 /* Pods-YesForEqualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1892BD8AE865E111153941FB /* Pods-YesForEqualityTests-dummy.m */; };
-		64ACCAA6CA2511103ADB5585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		71F3454729EC339028578C35 /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 127D57C8FDF7F8B7C89B6E47 /* MSPageViewController.h */; };
-		7353873BEE82F834CC4C1C26 /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1392C5BD9A046D64FB89F8ED /* MSPageViewController.m */; };
-		852DE9F60EDECF4A900ED928 /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC1A60AEA2A5415A786C4F0 /* MSPageViewController+Protected.h */; };
-		8642A52FB4B6C334AC515D61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6303BA3D33A1D93C0D23C12C /* UIKit.framework */; };
-		9290FF0D05C0F422EED16131 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		BA3183B066AE8A10A9861F93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		BD1A4C261632BA13A83BEB24 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13C14F06B4B9E6AFED0ED42 /* QuartzCore.framework */; };
-		C5872BFAE17964CF0B1CB81F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F13C14F06B4B9E6AFED0ED42 /* QuartzCore.framework */; };
-		CC4DC1B1F4005DFAEB320C75 /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A652D3C7BA24C5593088FA34 /* MSPageViewControllerPage.m */; };
-		CDA7583E87A175DB9D97BC4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		D2121C4992762C0F49B43C25 /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC1A60AEA2A5415A786C4F0 /* MSPageViewController+Protected.h */; };
-		D88E65774256C4867CD04E48 /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A652D3C7BA24C5593088FA34 /* MSPageViewControllerPage.m */; };
-		DF8C7800E5083B2AB7E1304C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6303BA3D33A1D93C0D23C12C /* UIKit.framework */; };
-		E7656C958BCDEB6E3CECEB6E /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A652D3C7BA24C5593088FA34 /* MSPageViewControllerPage.m */; };
-		F36AC21A7309DD5E3DE00E82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4671D7A3EE8F24614534D7 /* Foundation.framework */; };
-		FB12F3187B6B70739112BD27 /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC1A60AEA2A5415A786C4F0 /* MSPageViewController+Protected.h */; };
-		FB72C083B722AF192ABE2A26 /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8E7D8EF9C061438914C222 /* MSPageViewControllerPage.h */; };
-		FF44BCA6080DEBE874391F08 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 971EC762DA9D9E1E029D0B3A /* Pods-dummy.m */; };
+		078C5C69D2B04C8A533DB157 /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AFA1A65C3A97002BE7D97D /* MSPageViewControllerPage.m */; };
+		0E5E42BA061243E0041B75D8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE59F6A68C365826D225E94D /* QuartzCore.framework */; };
+		130C6E236B5BA0A22AA4A4F3 /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F5AD69AAF418649DB91D91 /* MSPageViewController.h */; };
+		15F31B9113B757DD329412A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE59F6A68C365826D225E94D /* QuartzCore.framework */; };
+		164042F3BF834B8DE2C2A469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		1F20E57E99FF76DD25E36CF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996E59951C6A3972646E89A /* UIKit.framework */; };
+		228C9753B694498F38D3760E /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = A372C55BDE63EECA1289E8B1 /* MSPageViewControllerPage.h */; };
+		2CC4DE57AFD7B45161ECCF83 /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5E6F438FC516216322454 /* MSPageViewController.m */; };
+		2DB929782708AB6EB984CC59 /* Pods-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5068B3C15692B1F6BE63154E /* Pods-MSPageViewController-dummy.m */; };
+		2ED5326132DE193D0B90A19E /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C520AEEA5D2A3C347BF085 /* MSPageViewController+Protected.h */; };
+		33CC2DF02DC671E9AFBC422A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		3C01CD6AF2FFBF258F090FE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		4FCDDFB18F1EC136BD5CD797 /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F5AD69AAF418649DB91D91 /* MSPageViewController.h */; };
+		53E57488DF1C04E2F8E592C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		6E18561BFF31E27DCB15DD64 /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5E6F438FC516216322454 /* MSPageViewController.m */; };
+		8273BB2E7F01DB659988C5B2 /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AFA1A65C3A97002BE7D97D /* MSPageViewControllerPage.m */; };
+		887E9A2221DA7649F036C8DF /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = A372C55BDE63EECA1289E8B1 /* MSPageViewControllerPage.h */; };
+		88E6DF7B91C2CEA63ECC2F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		8CEFB3ABAC917A152FD4BE05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996E59951C6A3972646E89A /* UIKit.framework */; };
+		9B70FD474BD67E55099B3EC6 /* MSPageViewControllerPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AFA1A65C3A97002BE7D97D /* MSPageViewControllerPage.m */; };
+		A2E95848FBA082FFFD348CB0 /* MSPageViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F5AD69AAF418649DB91D91 /* MSPageViewController.h */; };
+		A49C61F629E6C404C5F0DC72 /* Pods-YesForEqualityTests-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA40CB6F55F3C9F3C701378A /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */; };
+		AE328C5C52DA5E130E143F8D /* MSPageViewControllerPage.h in Headers */ = {isa = PBXBuildFile; fileRef = A372C55BDE63EECA1289E8B1 /* MSPageViewControllerPage.h */; };
+		AF79122803F5A0B7457B8BE4 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C265E83D74E7C85979F92AB /* Pods-dummy.m */; };
+		B1D407A1701201987380ED2E /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C520AEEA5D2A3C347BF085 /* MSPageViewController+Protected.h */; };
+		B7CC7B3F202F7A08F0B9BA6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE59F6A68C365826D225E94D /* QuartzCore.framework */; };
+		C31D05C693681A8E51145FF9 /* Pods-YesForEqualityTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AD46AE6CA47F22BA699900 /* Pods-YesForEqualityTests-dummy.m */; };
+		C65BBE2175B416F0D2110DDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F996E59951C6A3972646E89A /* UIKit.framework */; };
+		CCCD3A6A9BB898C35FA7CA05 /* MSPageViewController+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C520AEEA5D2A3C347BF085 /* MSPageViewController+Protected.h */; };
+		DE06674583703C4DEF95CCF1 /* MSPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5E6F438FC516216322454 /* MSPageViewController.m */; };
+		DF0D853B2D7DF25ED3238678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05018A559AB322108B49E792 /* Foundation.framework */; };
+		EE31A69B9563C82EFE4794B5 /* Pods-YesForEquality-MSPageViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9B3EFF43019B7004EB719 /* Pods-YesForEquality-MSPageViewController-dummy.m */; };
+		F8B7F8C92E6FA9AD6C5BD9B0 /* Pods-YesForEquality-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38354AB771696F8AAA9F8C57 /* Pods-YesForEquality-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79767043B9DD9BF51537A311 /* PBXContainerItemProxy */ = {
+		0837EDF113CABF397766F67D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A1D6340E4567ED7785920044 /* Project object */;
+			containerPortal = 5535F87EA982110B572B3F1B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6147DD517231EE8966170762;
+			remoteGlobalIDString = 15F95E4ECE65A4EFD4FA20E4;
 			remoteInfo = "Pods-YesForEqualityTests-MSPageViewController";
 		};
-		D23EEBF8CCBC159A0C1C5ED9 /* PBXContainerItemProxy */ = {
+		662BDD7147E79C49B1AA111E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A1D6340E4567ED7785920044 /* Project object */;
+			containerPortal = 5535F87EA982110B572B3F1B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A07269BCF0A24E6558E7FE9B;
-			remoteInfo = "Pods-YesForEquality-MSPageViewController";
-		};
-		E4A21B99B6253C1711A49A49 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1D6340E4567ED7785920044 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F6A7D119C79C6EA1AB2FA011;
+			remoteGlobalIDString = F49100431CBC4C933F0A7D39;
 			remoteInfo = "Pods-MSPageViewController";
+		};
+		DBF012F31B84AFBD2BE0E6B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5535F87EA982110B572B3F1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55704E8F778CB6EC1CA56DA2;
+			remoteInfo = "Pods-YesForEquality-MSPageViewController";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D4B94676D71C92521D59E2 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		05BF8E1C2DB77F17B75EA9A4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		09DED30B806FD8A880506FC3 /* Pods-YesForEquality-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality-MSPageViewController.xcconfig"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
-		0DB4B78DE919B0524DCE28C6 /* Pods-YesForEquality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YesForEquality-resources.sh"; sourceTree = "<group>"; };
-		127D57C8FDF7F8B7C89B6E47 /* MSPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPageViewController.h; path = MSPageViewController/Source/MSPageViewController.h; sourceTree = "<group>"; };
-		1392C5BD9A046D64FB89F8ED /* MSPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPageViewController.m; path = MSPageViewController/Source/MSPageViewController.m; sourceTree = "<group>"; };
-		14550B1ECF8838506FE55E73 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1892BD8AE865E111153941FB /* Pods-YesForEqualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YesForEqualityTests-dummy.m"; sourceTree = "<group>"; };
-		1FA2BCC61C7A4EDB6496A20B /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality-MSPageViewController-Private.xcconfig"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		2828665C3DA87CBE03687D99 /* Pods-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		2DC1A60AEA2A5415A786C4F0 /* MSPageViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSPageViewController+Protected.h"; path = "MSPageViewController/Source/MSPageViewController+Protected.h"; sourceTree = "<group>"; };
-		344D52C1AB9B16E0600816AA /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-YesForEqualityTests-MSPageViewController-dummy.m"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
-		485DDA496D9272DA2F478514 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		49CEF4330A32AD93EAED0B7B /* Pods-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
-		4A465ABBE6BBE2D4DF10C38B /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
-		609A9D96645C02E1C4EB9759 /* Pods-YesForEquality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YesForEquality-dummy.m"; sourceTree = "<group>"; };
-		6303BA3D33A1D93C0D23C12C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		6E22E1D4B079FD1955B23A07 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		70293C147E53873ED4EB7AD0 /* Pods-YesForEqualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YesForEqualityTests-resources.sh"; sourceTree = "<group>"; };
-		8168F83C1C44E791B2525FEB /* libPods-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FB9E8630C9764BD8C62716F /* Pods-YesForEqualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YesForEqualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		91D8E022C1B41D778C6224E9 /* libPods-YesForEqualityTests-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEqualityTests-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9489159EEAFEF81714980E17 /* Pods-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
-		948AF981A8AFBA775AF3B549 /* Pods-YesForEquality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YesForEquality-acknowledgements.plist"; sourceTree = "<group>"; };
-		971EC762DA9D9E1E029D0B3A /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		9F5E3C39091C2E1255474929 /* Pods-YesForEquality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEquality.release.xcconfig"; sourceTree = "<group>"; };
-		A5F16030018D6AF5292B6847 /* Pods-YesForEquality-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YesForEquality-environment.h"; sourceTree = "<group>"; };
-		A652D3C7BA24C5593088FA34 /* MSPageViewControllerPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPageViewControllerPage.m; path = MSPageViewController/Source/MSPageViewControllerPage.m; sourceTree = "<group>"; };
-		A84061AB814891DE5DEF6AC9 /* Pods-YesForEqualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEqualityTests.release.xcconfig"; sourceTree = "<group>"; };
-		BFB69CDEBC6B0A3FEBAFC772 /* Pods-YesForEquality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEquality.debug.xcconfig"; sourceTree = "<group>"; };
-		BFE8B462C06F1C7C97837DCB /* Pods-YesForEqualityTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YesForEqualityTests-environment.h"; sourceTree = "<group>"; };
-		C092BEF5C18BBC052FCD811E /* Pods-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
-		C14F61C18B27FDC6B943ABC6 /* Pods-YesForEquality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YesForEquality-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C76FBED87218E827E9BD6A1D /* Pods-YesForEqualityTests-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEqualityTests-MSPageViewController.xcconfig"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
-		C97993DA3B1A5FAEE18DEFD8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		DD16B887CB9D19617353BE8E /* Pods-YesForEqualityTests-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-YesForEqualityTests-MSPageViewController-prefix.pch"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
-		E6CD19811666B76551C4A6D3 /* Pods-YesForEqualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEqualityTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E72993A3F6F3A4C7DB6D6F1A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ECABE1E45282B4242C055393 /* libPods-YesForEqualityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEqualityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF2C382416F872903950C824 /* libPods-YesForEquality-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEquality-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F13C14F06B4B9E6AFED0ED42 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		F181337D8DFAAEA94DE16812 /* Pods-YesForEquality-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-YesForEquality-MSPageViewController-prefix.pch"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
-		F61FFBBFC32FB74B5D767EBB /* Pods-YesForEquality-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-YesForEquality-MSPageViewController-dummy.m"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
-		F88787A7052C5A367B27A2EA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F911DDFAA9A3DD150FE50F01 /* Pods-YesForEqualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YesForEqualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FC6B06865BA5E9B17E5F0544 /* libPods-YesForEquality.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEquality.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE4671D7A3EE8F24614534D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FF8E7D8EF9C061438914C222 /* MSPageViewControllerPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPageViewControllerPage.h; path = MSPageViewController/Source/MSPageViewControllerPage.h; sourceTree = "<group>"; };
+		013F8901BB00B23BC645DC3E /* Pods-YesForEqualityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEqualityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		04F9B3EFF43019B7004EB719 /* Pods-YesForEquality-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-YesForEquality-MSPageViewController-dummy.m"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
+		05018A559AB322108B49E792 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		097E70030339FA405710475F /* Pods-YesForEqualityTests-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEqualityTests-MSPageViewController.xcconfig"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
+		0B90754540A7BA5A03DE798A /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		123881011F4628ADEC809226 /* Pods-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
+		19F5AD69AAF418649DB91D91 /* MSPageViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPageViewController.h; path = MSPageViewController/Source/MSPageViewController.h; sourceTree = "<group>"; };
+		2365F8930FE002DB5ADC868C /* libPods-YesForEquality.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEquality.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C4D2B7641D42FEB66D19B4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		2767476D5002FD03D6DCA9DC /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3382871AE5CD2EB6089E994D /* Pods-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
+		36411370AEB4AC82366087F1 /* Pods-YesForEqualityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEqualityTests.release.xcconfig"; sourceTree = "<group>"; };
+		37A92F11023B8D2B327E2AC9 /* libPods-YesForEqualityTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEqualityTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		38354AB771696F8AAA9F8C57 /* Pods-YesForEquality-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YesForEquality-dummy.m"; sourceTree = "<group>"; };
+		3A41D76322E051F825AF1FC3 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		46AD46AE6CA47F22BA699900 /* Pods-YesForEqualityTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YesForEqualityTests-dummy.m"; sourceTree = "<group>"; };
+		5068B3C15692B1F6BE63154E /* Pods-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
+		54CCC66929D4E840AEFA007B /* Pods-YesForEquality-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YesForEquality-resources.sh"; sourceTree = "<group>"; };
+		69A275C4482CE8DC3E71F647 /* libPods-YesForEqualityTests-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEqualityTests-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EBF75F5CF1EF7B8A776EE59 /* Pods-YesForEquality-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YesForEquality-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D1250DDC7D0E107FDF50763 /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality-MSPageViewController-Private.xcconfig"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		7D299783F8816507CB2247F3 /* Pods-YesForEquality-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YesForEquality-acknowledgements.plist"; sourceTree = "<group>"; };
+		8337618BBD9624988725BD0F /* Pods-YesForEquality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEquality.release.xcconfig"; sourceTree = "<group>"; };
+		88AFA1A65C3A97002BE7D97D /* MSPageViewControllerPage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPageViewControllerPage.m; path = MSPageViewController/Source/MSPageViewControllerPage.m; sourceTree = "<group>"; };
+		89C520AEEA5D2A3C347BF085 /* MSPageViewController+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MSPageViewController+Protected.h"; path = "MSPageViewController/Source/MSPageViewController+Protected.h"; sourceTree = "<group>"; };
+		940C5D9BF13E56C2D2F32340 /* libPods-YesForEquality-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEquality-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C265E83D74E7C85979F92AB /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		9CD5E6F438FC516216322454 /* MSPageViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSPageViewController.m; path = MSPageViewController/Source/MSPageViewController.m; sourceTree = "<group>"; };
+		9EEA26F1907518DE5BE37771 /* Pods-YesForEqualityTests-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-YesForEqualityTests-MSPageViewController-prefix.pch"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
+		9FA18EAABAE3F69BD70E12D1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		A372C55BDE63EECA1289E8B1 /* MSPageViewControllerPage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSPageViewControllerPage.h; path = MSPageViewController/Source/MSPageViewControllerPage.h; sourceTree = "<group>"; };
+		B16F8C5867000C6A5D3DB842 /* Pods-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		B2B2CE7E514D05D9238B95F7 /* Pods-YesForEquality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YesForEquality.debug.xcconfig"; sourceTree = "<group>"; };
+		BA40CB6F55F3C9F3C701378A /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-YesForEqualityTests-MSPageViewController-dummy.m"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-dummy.m"; sourceTree = "<group>"; };
+		BDFFB2ACE1876D2D0FB2C823 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C50ED20B0B9968D4FD1C37C7 /* Pods-YesForEqualityTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YesForEqualityTests-environment.h"; sourceTree = "<group>"; };
+		CB8A16309F4BBECC781B588D /* Pods-YesForEqualityTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YesForEqualityTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCC71C7BFED46651F0929E2D /* Pods-YesForEquality-MSPageViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality-MSPageViewController.xcconfig"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController.xcconfig"; sourceTree = "<group>"; };
+		CE0291ADACEC715213B1AB1F /* Pods-YesForEqualityTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YesForEqualityTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D19C2A262583AA9D8A3B448F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3128E092782F4ED81440EB2 /* Pods-YesForEquality-MSPageViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-YesForEquality-MSPageViewController-prefix.pch"; path = "../Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch"; sourceTree = "<group>"; };
+		E1361ED437D4649C4792DA1F /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		E61F6A46B39459D8A9B273E8 /* libPods-MSPageViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MSPageViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE29B20C99A47C0A9F19A087 /* Pods-YesForEquality-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YesForEquality-environment.h"; sourceTree = "<group>"; };
+		EE59F6A68C365826D225E94D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F4D49912DE5FEB1BBDB55D72 /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig"; path = "../Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		F996E59951C6A3972646E89A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F9AE557BA3A43F2C88B31477 /* Pods-YesForEqualityTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YesForEqualityTests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		01F8FAE162001876E8C979D7 /* Frameworks */ = {
+		25C4F0F7417FACDC88E552BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64ACCAA6CA2511103ADB5585 /* Foundation.framework in Frameworks */,
-				2B2F2FF7F05D77833A9C5D81 /* QuartzCore.framework in Frameworks */,
-				DF8C7800E5083B2AB7E1304C /* UIKit.framework in Frameworks */,
+				88E6DF7B91C2CEA63ECC2F16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		220910FECE45F2EB108EFB2C /* Frameworks */ = {
+		445AEFAF189172C46CE3D39D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA3183B066AE8A10A9861F93 /* Foundation.framework in Frameworks */,
-				C5872BFAE17964CF0B1CB81F /* QuartzCore.framework in Frameworks */,
-				4A2199AF8854CE1F9E9CFDA9 /* UIKit.framework in Frameworks */,
+				33CC2DF02DC671E9AFBC422A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3319C05DB84C9CEC2BA80998 /* Frameworks */ = {
+		637A105F3927700BE3278244 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA7583E87A175DB9D97BC4A /* Foundation.framework in Frameworks */,
+				DF0D853B2D7DF25ED3238678 /* Foundation.framework in Frameworks */,
+				15F31B9113B757DD329412A7 /* QuartzCore.framework in Frameworks */,
+				C65BBE2175B416F0D2110DDD /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		530CF276439E5C970CE3685D /* Frameworks */ = {
+		89EA8BC87BCCC4A9CAD1D5B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F36AC21A7309DD5E3DE00E82 /* Foundation.framework in Frameworks */,
+				53E57488DF1C04E2F8E592C5 /* Foundation.framework in Frameworks */,
+				B7CC7B3F202F7A08F0B9BA6C /* QuartzCore.framework in Frameworks */,
+				8CEFB3ABAC917A152FD4BE05 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		983B4DC09C9DC89F5DBF9CE1 /* Frameworks */ = {
+		B25FEBDCA0946D6592CF8B13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9290FF0D05C0F422EED16131 /* Foundation.framework in Frameworks */,
-				BD1A4C261632BA13A83BEB24 /* QuartzCore.framework in Frameworks */,
-				8642A52FB4B6C334AC515D61 /* UIKit.framework in Frameworks */,
+				3C01CD6AF2FFBF258F090FE7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7F1BC9D412E4E7891E86474 /* Frameworks */ = {
+		D5206EF5AC6DD6A0DA9C185A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51BBA475E5F07E83CB27D869 /* Foundation.framework in Frameworks */,
+				164042F3BF834B8DE2C2A469 /* Foundation.framework in Frameworks */,
+				0E5E42BA061243E0041B75D8 /* QuartzCore.framework in Frameworks */,
+				1F20E57E99FF76DD25E36CF3 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04E1B40DD01281D725F92E9D /* iOS */ = {
+		09364C27F5CE9FDBB92E805B /* Pods-YesForEqualityTests */ = {
 			isa = PBXGroup;
 			children = (
-				FE4671D7A3EE8F24614534D7 /* Foundation.framework */,
-				F13C14F06B4B9E6AFED0ED42 /* QuartzCore.framework */,
-				6303BA3D33A1D93C0D23C12C /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		1318FE4C912F529EB2CB98E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				04E1B40DD01281D725F92E9D /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4B75786BBE63F05CF3858866 /* Pods-YesForEqualityTests */ = {
-			isa = PBXGroup;
-			children = (
-				F911DDFAA9A3DD150FE50F01 /* Pods-YesForEqualityTests-acknowledgements.markdown */,
-				8FB9E8630C9764BD8C62716F /* Pods-YesForEqualityTests-acknowledgements.plist */,
-				1892BD8AE865E111153941FB /* Pods-YesForEqualityTests-dummy.m */,
-				BFE8B462C06F1C7C97837DCB /* Pods-YesForEqualityTests-environment.h */,
-				70293C147E53873ED4EB7AD0 /* Pods-YesForEqualityTests-resources.sh */,
-				E6CD19811666B76551C4A6D3 /* Pods-YesForEqualityTests.debug.xcconfig */,
-				A84061AB814891DE5DEF6AC9 /* Pods-YesForEqualityTests.release.xcconfig */,
+				CE0291ADACEC715213B1AB1F /* Pods-YesForEqualityTests-acknowledgements.markdown */,
+				CB8A16309F4BBECC781B588D /* Pods-YesForEqualityTests-acknowledgements.plist */,
+				46AD46AE6CA47F22BA699900 /* Pods-YesForEqualityTests-dummy.m */,
+				C50ED20B0B9968D4FD1C37C7 /* Pods-YesForEqualityTests-environment.h */,
+				F9AE557BA3A43F2C88B31477 /* Pods-YesForEqualityTests-resources.sh */,
+				013F8901BB00B23BC645DC3E /* Pods-YesForEqualityTests.debug.xcconfig */,
+				36411370AEB4AC82366087F1 /* Pods-YesForEqualityTests.release.xcconfig */,
 			);
 			name = "Pods-YesForEqualityTests";
 			path = "Target Support Files/Pods-YesForEqualityTests";
 			sourceTree = "<group>";
 		};
-		4F18CCFBBE48D524E7AF6C6F /* Pods */ = {
+		30FE5A2CA0CE3E14FB0C2725 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				90717F96C9864D3DFD4B9DAA /* MSPageViewController */,
+				4EBBAD82999E2E7E764E05E0 /* MSPageViewController */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		5664F88B8E48699FEBC08EC6 /* Pods */ = {
+		315FBE82CC25B422A7823A4D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				14550B1ECF8838506FE55E73 /* Pods-acknowledgements.markdown */,
-				6E22E1D4B079FD1955B23A07 /* Pods-acknowledgements.plist */,
-				971EC762DA9D9E1E029D0B3A /* Pods-dummy.m */,
-				00D4B94676D71C92521D59E2 /* Pods-environment.h */,
-				485DDA496D9272DA2F478514 /* Pods-resources.sh */,
-				05BF8E1C2DB77F17B75EA9A4 /* Pods.debug.xcconfig */,
-				C97993DA3B1A5FAEE18DEFD8 /* Pods.release.xcconfig */,
+				92358AF6C5D70581A9A39FA4 /* Pods */,
+				F674C509766509C7D75C225B /* Pods-YesForEquality */,
+				09364C27F5CE9FDBB92E805B /* Pods-YesForEqualityTests */,
 			);
-			name = Pods;
-			path = "Target Support Files/Pods";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7C7D9C43CCF18CE8F132E19B /* Support Files */ = {
+		4EBBAD82999E2E7E764E05E0 /* MSPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				C092BEF5C18BBC052FCD811E /* Pods-MSPageViewController.xcconfig */,
-				2828665C3DA87CBE03687D99 /* Pods-MSPageViewController-Private.xcconfig */,
-				49CEF4330A32AD93EAED0B7B /* Pods-MSPageViewController-dummy.m */,
-				9489159EEAFEF81714980E17 /* Pods-MSPageViewController-prefix.pch */,
-				09DED30B806FD8A880506FC3 /* Pods-YesForEquality-MSPageViewController.xcconfig */,
-				1FA2BCC61C7A4EDB6496A20B /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */,
-				F61FFBBFC32FB74B5D767EBB /* Pods-YesForEquality-MSPageViewController-dummy.m */,
-				F181337D8DFAAEA94DE16812 /* Pods-YesForEquality-MSPageViewController-prefix.pch */,
-				C76FBED87218E827E9BD6A1D /* Pods-YesForEqualityTests-MSPageViewController.xcconfig */,
-				4A465ABBE6BBE2D4DF10C38B /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */,
-				344D52C1AB9B16E0600816AA /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */,
-				DD16B887CB9D19617353BE8E /* Pods-YesForEqualityTests-MSPageViewController-prefix.pch */,
+				19F5AD69AAF418649DB91D91 /* MSPageViewController.h */,
+				9CD5E6F438FC516216322454 /* MSPageViewController.m */,
+				89C520AEEA5D2A3C347BF085 /* MSPageViewController+Protected.h */,
+				A372C55BDE63EECA1289E8B1 /* MSPageViewControllerPage.h */,
+				88AFA1A65C3A97002BE7D97D /* MSPageViewControllerPage.m */,
+				5FC941AE587B90F52E3B4F8E /* Support Files */,
+			);
+			path = MSPageViewController;
+			sourceTree = "<group>";
+		};
+		5FC941AE587B90F52E3B4F8E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3382871AE5CD2EB6089E994D /* Pods-MSPageViewController.xcconfig */,
+				B16F8C5867000C6A5D3DB842 /* Pods-MSPageViewController-Private.xcconfig */,
+				5068B3C15692B1F6BE63154E /* Pods-MSPageViewController-dummy.m */,
+				123881011F4628ADEC809226 /* Pods-MSPageViewController-prefix.pch */,
+				CCC71C7BFED46651F0929E2D /* Pods-YesForEquality-MSPageViewController.xcconfig */,
+				7D1250DDC7D0E107FDF50763 /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */,
+				04F9B3EFF43019B7004EB719 /* Pods-YesForEquality-MSPageViewController-dummy.m */,
+				D3128E092782F4ED81440EB2 /* Pods-YesForEquality-MSPageViewController-prefix.pch */,
+				097E70030339FA405710475F /* Pods-YesForEqualityTests-MSPageViewController.xcconfig */,
+				F4D49912DE5FEB1BBDB55D72 /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */,
+				BA40CB6F55F3C9F3C701378A /* Pods-YesForEqualityTests-MSPageViewController-dummy.m */,
+				9EEA26F1907518DE5BE37771 /* Pods-YesForEqualityTests-MSPageViewController-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-MSPageViewController";
 			sourceTree = "<group>";
 		};
-		90717F96C9864D3DFD4B9DAA /* MSPageViewController */ = {
+		92358AF6C5D70581A9A39FA4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				127D57C8FDF7F8B7C89B6E47 /* MSPageViewController.h */,
-				1392C5BD9A046D64FB89F8ED /* MSPageViewController.m */,
-				2DC1A60AEA2A5415A786C4F0 /* MSPageViewController+Protected.h */,
-				FF8E7D8EF9C061438914C222 /* MSPageViewControllerPage.h */,
-				A652D3C7BA24C5593088FA34 /* MSPageViewControllerPage.m */,
-				7C7D9C43CCF18CE8F132E19B /* Support Files */,
+				2767476D5002FD03D6DCA9DC /* Pods-acknowledgements.markdown */,
+				3A41D76322E051F825AF1FC3 /* Pods-acknowledgements.plist */,
+				9C265E83D74E7C85979F92AB /* Pods-dummy.m */,
+				E1361ED437D4649C4792DA1F /* Pods-environment.h */,
+				0B90754540A7BA5A03DE798A /* Pods-resources.sh */,
+				9FA18EAABAE3F69BD70E12D1 /* Pods.debug.xcconfig */,
+				24C4D2B7641D42FEB66D19B4 /* Pods.release.xcconfig */,
 			);
-			path = MSPageViewController;
+			name = Pods;
+			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		9547A0AF97A0C31E6C04FE52 /* Targets Support Files */ = {
+		9A80096268302FC0D7EF104B = {
 			isa = PBXGroup;
 			children = (
-				5664F88B8E48699FEBC08EC6 /* Pods */,
-				CA6F7D105449E1BA3FB56490 /* Pods-YesForEquality */,
-				4B75786BBE63F05CF3858866 /* Pods-YesForEqualityTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		97CBE061B45B8B28169B45BE = {
-			isa = PBXGroup;
-			children = (
-				E72993A3F6F3A4C7DB6D6F1A /* Podfile */,
-				1318FE4C912F529EB2CB98E1 /* Frameworks */,
-				4F18CCFBBE48D524E7AF6C6F /* Pods */,
-				F937486C133FD340F70D7DF7 /* Products */,
-				9547A0AF97A0C31E6C04FE52 /* Targets Support Files */,
+				BDFFB2ACE1876D2D0FB2C823 /* Podfile */,
+				F8B1C82CCE77BB511FC8D67B /* Frameworks */,
+				30FE5A2CA0CE3E14FB0C2725 /* Pods */,
+				C51625FB7F342781AC2B9C26 /* Products */,
+				315FBE82CC25B422A7823A4D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CA6F7D105449E1BA3FB56490 /* Pods-YesForEquality */ = {
+		C51625FB7F342781AC2B9C26 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C14F61C18B27FDC6B943ABC6 /* Pods-YesForEquality-acknowledgements.markdown */,
-				948AF981A8AFBA775AF3B549 /* Pods-YesForEquality-acknowledgements.plist */,
-				609A9D96645C02E1C4EB9759 /* Pods-YesForEquality-dummy.m */,
-				A5F16030018D6AF5292B6847 /* Pods-YesForEquality-environment.h */,
-				0DB4B78DE919B0524DCE28C6 /* Pods-YesForEquality-resources.sh */,
-				BFB69CDEBC6B0A3FEBAFC772 /* Pods-YesForEquality.debug.xcconfig */,
-				9F5E3C39091C2E1255474929 /* Pods-YesForEquality.release.xcconfig */,
+				D19C2A262583AA9D8A3B448F /* libPods.a */,
+				E61F6A46B39459D8A9B273E8 /* libPods-MSPageViewController.a */,
+				2365F8930FE002DB5ADC868C /* libPods-YesForEquality.a */,
+				940C5D9BF13E56C2D2F32340 /* libPods-YesForEquality-MSPageViewController.a */,
+				37A92F11023B8D2B327E2AC9 /* libPods-YesForEqualityTests.a */,
+				69A275C4482CE8DC3E71F647 /* libPods-YesForEqualityTests-MSPageViewController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98623372F31FFBE8E6A57F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05018A559AB322108B49E792 /* Foundation.framework */,
+				EE59F6A68C365826D225E94D /* QuartzCore.framework */,
+				F996E59951C6A3972646E89A /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F674C509766509C7D75C225B /* Pods-YesForEquality */ = {
+			isa = PBXGroup;
+			children = (
+				6EBF75F5CF1EF7B8A776EE59 /* Pods-YesForEquality-acknowledgements.markdown */,
+				7D299783F8816507CB2247F3 /* Pods-YesForEquality-acknowledgements.plist */,
+				38354AB771696F8AAA9F8C57 /* Pods-YesForEquality-dummy.m */,
+				EE29B20C99A47C0A9F19A087 /* Pods-YesForEquality-environment.h */,
+				54CCC66929D4E840AEFA007B /* Pods-YesForEquality-resources.sh */,
+				B2B2CE7E514D05D9238B95F7 /* Pods-YesForEquality.debug.xcconfig */,
+				8337618BBD9624988725BD0F /* Pods-YesForEquality.release.xcconfig */,
 			);
 			name = "Pods-YesForEquality";
 			path = "Target Support Files/Pods-YesForEquality";
 			sourceTree = "<group>";
 		};
-		F937486C133FD340F70D7DF7 /* Products */ = {
+		F8B1C82CCE77BB511FC8D67B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F88787A7052C5A367B27A2EA /* libPods.a */,
-				8168F83C1C44E791B2525FEB /* libPods-MSPageViewController.a */,
-				FC6B06865BA5E9B17E5F0544 /* libPods-YesForEquality.a */,
-				EF2C382416F872903950C824 /* libPods-YesForEquality-MSPageViewController.a */,
-				ECABE1E45282B4242C055393 /* libPods-YesForEqualityTests.a */,
-				91D8E022C1B41D778C6224E9 /* libPods-YesForEqualityTests-MSPageViewController.a */,
+				D98623372F31FFBE8E6A57F1 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		63389227089EF80219CE0908 /* Headers */ = {
+		10EE3131A218736E62F13C6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852DE9F60EDECF4A900ED928 /* MSPageViewController+Protected.h in Headers */,
-				074EF501CC657893837F18A8 /* MSPageViewController.h in Headers */,
-				2F555B1B5418BB687D70EC96 /* MSPageViewControllerPage.h in Headers */,
+				CCCD3A6A9BB898C35FA7CA05 /* MSPageViewController+Protected.h in Headers */,
+				4FCDDFB18F1EC136BD5CD797 /* MSPageViewController.h in Headers */,
+				228C9753B694498F38D3760E /* MSPageViewControllerPage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		870D9422EAD1430CEC24766B /* Headers */ = {
+		4D6A59241E0963C746834CC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2121C4992762C0F49B43C25 /* MSPageViewController+Protected.h in Headers */,
-				235D96CCA8C45D9326BAE0DB /* MSPageViewController.h in Headers */,
-				30FDB5317DCB9AEF1A8D24F7 /* MSPageViewControllerPage.h in Headers */,
+				B1D407A1701201987380ED2E /* MSPageViewController+Protected.h in Headers */,
+				130C6E236B5BA0A22AA4A4F3 /* MSPageViewController.h in Headers */,
+				AE328C5C52DA5E130E143F8D /* MSPageViewControllerPage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12C87180F2C7417110B4F23 /* Headers */ = {
+		685CB46F2F7E715165677B5F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB12F3187B6B70739112BD27 /* MSPageViewController+Protected.h in Headers */,
-				71F3454729EC339028578C35 /* MSPageViewController.h in Headers */,
-				FB72C083B722AF192ABE2A26 /* MSPageViewControllerPage.h in Headers */,
+				2ED5326132DE193D0B90A19E /* MSPageViewController+Protected.h in Headers */,
+				A2E95848FBA082FFFD348CB0 /* MSPageViewController.h in Headers */,
+				887E9A2221DA7649F036C8DF /* MSPageViewControllerPage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0C5F73F31084D8AA5CECE706 /* Pods-YesForEquality */ = {
+		15F95E4ECE65A4EFD4FA20E4 /* Pods-YesForEqualityTests-MSPageViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13A0AB74CE54F598449B7610 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality" */;
+			buildConfigurationList = 5255D26266C34266A705D136 /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests-MSPageViewController" */;
 			buildPhases = (
-				33550E66B9E5F9D03360FD96 /* Sources */,
-				530CF276439E5C970CE3685D /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1451944303521809345F0BFF /* PBXTargetDependency */,
-			);
-			name = "Pods-YesForEquality";
-			productName = "Pods-YesForEquality";
-			productReference = FC6B06865BA5E9B17E5F0544 /* libPods-YesForEquality.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		19DA24C069D8423053DA1310 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE65284242ADED8AD6F4BB62 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				FC8DB46526679ADB2E5A53F6 /* Sources */,
-				D7F1BC9D412E4E7891E86474 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6B862D63AC10F4E224D2490F /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = F88787A7052C5A367B27A2EA /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6147DD517231EE8966170762 /* Pods-YesForEqualityTests-MSPageViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DE313A5B0C58AB92F3280729 /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests-MSPageViewController" */;
-			buildPhases = (
-				9A7E54F9C25B3322DE9AFF82 /* Sources */,
-				01F8FAE162001876E8C979D7 /* Frameworks */,
-				870D9422EAD1430CEC24766B /* Headers */,
+				FCFC9FD388A569398CA10C3E /* Sources */,
+				637A105F3927700BE3278244 /* Frameworks */,
+				10EE3131A218736E62F13C6B /* Headers */,
 			);
 			buildRules = (
 			);
@@ -397,33 +363,33 @@
 			);
 			name = "Pods-YesForEqualityTests-MSPageViewController";
 			productName = "Pods-YesForEqualityTests-MSPageViewController";
-			productReference = 91D8E022C1B41D778C6224E9 /* libPods-YesForEqualityTests-MSPageViewController.a */;
+			productReference = 69A275C4482CE8DC3E71F647 /* libPods-YesForEqualityTests-MSPageViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		662ADEF5D8F931638E77856B /* Pods-YesForEqualityTests */ = {
+		51AF22C192457F625140EC2B /* Pods-YesForEqualityTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0466FA1AC4FA59B7730C874D /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests" */;
+			buildConfigurationList = AAAD662CE1A6DEA2637971DB /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests" */;
 			buildPhases = (
-				E210D8B3F108D9221A492A88 /* Sources */,
-				3319C05DB84C9CEC2BA80998 /* Frameworks */,
+				212CE4093E82E06DF4585F3F /* Sources */,
+				445AEFAF189172C46CE3D39D /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7BF23DEF32B4F1E17CC8B21C /* PBXTargetDependency */,
+				53650C6F094FE86209841688 /* PBXTargetDependency */,
 			);
 			name = "Pods-YesForEqualityTests";
 			productName = "Pods-YesForEqualityTests";
-			productReference = ECABE1E45282B4242C055393 /* libPods-YesForEqualityTests.a */;
+			productReference = 37A92F11023B8D2B327E2AC9 /* libPods-YesForEqualityTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A07269BCF0A24E6558E7FE9B /* Pods-YesForEquality-MSPageViewController */ = {
+		55704E8F778CB6EC1CA56DA2 /* Pods-YesForEquality-MSPageViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1A59F07E7932154CCB3F5D4 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality-MSPageViewController" */;
+			buildConfigurationList = 7DF978C138BD98BCBCBED399 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality-MSPageViewController" */;
 			buildPhases = (
-				5E8DD5F8F9DB2D2D23CFE5A0 /* Sources */,
-				983B4DC09C9DC89F5DBF9CE1 /* Frameworks */,
-				E12C87180F2C7417110B4F23 /* Headers */,
+				F2F10997FBC6C4AB21AB3D37 /* Sources */,
+				D5206EF5AC6DD6A0DA9C185A /* Frameworks */,
+				685CB46F2F7E715165677B5F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -431,16 +397,50 @@
 			);
 			name = "Pods-YesForEquality-MSPageViewController";
 			productName = "Pods-YesForEquality-MSPageViewController";
-			productReference = EF2C382416F872903950C824 /* libPods-YesForEquality-MSPageViewController.a */;
+			productReference = 940C5D9BF13E56C2D2F32340 /* libPods-YesForEquality-MSPageViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F6A7D119C79C6EA1AB2FA011 /* Pods-MSPageViewController */ = {
+		7CF1A95FC9F9A2BE45C10F32 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 26AEE8AC37CA1D9953513DA3 /* Build configuration list for PBXNativeTarget "Pods-MSPageViewController" */;
+			buildConfigurationList = 741B566DF1AE98968BD0DCFB /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				AA86DA3A9637411A8F43BE32 /* Sources */,
-				220910FECE45F2EB108EFB2C /* Frameworks */,
-				63389227089EF80219CE0908 /* Headers */,
+				1AFD222167F02378C4B1014B /* Sources */,
+				B25FEBDCA0946D6592CF8B13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				151140CF925199036CE550DB /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = D19C2A262583AA9D8A3B448F /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B5F3C62F50A863D34F133AEC /* Pods-YesForEquality */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 903D0FFAF4C86CBFD852B3CB /* Build configuration list for PBXNativeTarget "Pods-YesForEquality" */;
+			buildPhases = (
+				5F26FE1627826EF85B69FE85 /* Sources */,
+				25C4F0F7417FACDC88E552BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FBA2ABF51442273D1D10B5E /* PBXTargetDependency */,
+			);
+			name = "Pods-YesForEquality";
+			productName = "Pods-YesForEquality";
+			productReference = 2365F8930FE002DB5ADC868C /* libPods-YesForEquality.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F49100431CBC4C933F0A7D39 /* Pods-MSPageViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9477F366F0778666C70912D /* Build configuration list for PBXNativeTarget "Pods-MSPageViewController" */;
+			buildPhases = (
+				D180DDE8C6F6E1226C34E65D /* Sources */,
+				89EA8BC87BCCC4A9CAD1D5B3 /* Frameworks */,
+				4D6A59241E0963C746834CC9 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -448,121 +448,121 @@
 			);
 			name = "Pods-MSPageViewController";
 			productName = "Pods-MSPageViewController";
-			productReference = 8168F83C1C44E791B2525FEB /* libPods-MSPageViewController.a */;
+			productReference = E61F6A46B39459D8A9B273E8 /* libPods-MSPageViewController.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A1D6340E4567ED7785920044 /* Project object */ = {
+		5535F87EA982110B572B3F1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 79DDE060AA6B6A43A34B329F /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = DD243745CB08445B3F0CB7FF /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 97CBE061B45B8B28169B45BE;
-			productRefGroup = F937486C133FD340F70D7DF7 /* Products */;
+			mainGroup = 9A80096268302FC0D7EF104B;
+			productRefGroup = C51625FB7F342781AC2B9C26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19DA24C069D8423053DA1310 /* Pods */,
-				F6A7D119C79C6EA1AB2FA011 /* Pods-MSPageViewController */,
-				0C5F73F31084D8AA5CECE706 /* Pods-YesForEquality */,
-				A07269BCF0A24E6558E7FE9B /* Pods-YesForEquality-MSPageViewController */,
-				662ADEF5D8F931638E77856B /* Pods-YesForEqualityTests */,
-				6147DD517231EE8966170762 /* Pods-YesForEqualityTests-MSPageViewController */,
+				7CF1A95FC9F9A2BE45C10F32 /* Pods */,
+				F49100431CBC4C933F0A7D39 /* Pods-MSPageViewController */,
+				B5F3C62F50A863D34F133AEC /* Pods-YesForEquality */,
+				55704E8F778CB6EC1CA56DA2 /* Pods-YesForEquality-MSPageViewController */,
+				51AF22C192457F625140EC2B /* Pods-YesForEqualityTests */,
+				15F95E4ECE65A4EFD4FA20E4 /* Pods-YesForEqualityTests-MSPageViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33550E66B9E5F9D03360FD96 /* Sources */ = {
+		1AFD222167F02378C4B1014B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A693564D6133D730CD40204 /* Pods-YesForEquality-dummy.m in Sources */,
+				AF79122803F5A0B7457B8BE4 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E8DD5F8F9DB2D2D23CFE5A0 /* Sources */ = {
+		212CE4093E82E06DF4585F3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7353873BEE82F834CC4C1C26 /* MSPageViewController.m in Sources */,
-				CC4DC1B1F4005DFAEB320C75 /* MSPageViewControllerPage.m in Sources */,
-				328EF425FBB3846AB6DCCD22 /* Pods-YesForEquality-MSPageViewController-dummy.m in Sources */,
+				C31D05C693681A8E51145FF9 /* Pods-YesForEqualityTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A7E54F9C25B3322DE9AFF82 /* Sources */ = {
+		5F26FE1627826EF85B69FE85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FA728B0A5E92C28B5A876F4 /* MSPageViewController.m in Sources */,
-				D88E65774256C4867CD04E48 /* MSPageViewControllerPage.m in Sources */,
-				4429F909125A3A296CD42600 /* Pods-YesForEqualityTests-MSPageViewController-dummy.m in Sources */,
+				F8B7F8C92E6FA9AD6C5BD9B0 /* Pods-YesForEquality-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AA86DA3A9637411A8F43BE32 /* Sources */ = {
+		D180DDE8C6F6E1226C34E65D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC9918174F453106AE2185A /* MSPageViewController.m in Sources */,
-				E7656C958BCDEB6E3CECEB6E /* MSPageViewControllerPage.m in Sources */,
-				316223251B48CBE01BF9EA80 /* Pods-MSPageViewController-dummy.m in Sources */,
+				2CC4DE57AFD7B45161ECCF83 /* MSPageViewController.m in Sources */,
+				9B70FD474BD67E55099B3EC6 /* MSPageViewControllerPage.m in Sources */,
+				2DB929782708AB6EB984CC59 /* Pods-MSPageViewController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E210D8B3F108D9221A492A88 /* Sources */ = {
+		F2F10997FBC6C4AB21AB3D37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B0A279EEDF32E851B17D640 /* Pods-YesForEqualityTests-dummy.m in Sources */,
+				DE06674583703C4DEF95CCF1 /* MSPageViewController.m in Sources */,
+				8273BB2E7F01DB659988C5B2 /* MSPageViewControllerPage.m in Sources */,
+				EE31A69B9563C82EFE4794B5 /* Pods-YesForEquality-MSPageViewController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FC8DB46526679ADB2E5A53F6 /* Sources */ = {
+		FCFC9FD388A569398CA10C3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44BCA6080DEBE874391F08 /* Pods-dummy.m in Sources */,
+				6E18561BFF31E27DCB15DD64 /* MSPageViewController.m in Sources */,
+				078C5C69D2B04C8A533DB157 /* MSPageViewControllerPage.m in Sources */,
+				A49C61F629E6C404C5F0DC72 /* Pods-YesForEqualityTests-MSPageViewController-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1451944303521809345F0BFF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-YesForEquality-MSPageViewController";
-			target = A07269BCF0A24E6558E7FE9B /* Pods-YesForEquality-MSPageViewController */;
-			targetProxy = D23EEBF8CCBC159A0C1C5ED9 /* PBXContainerItemProxy */;
-		};
-		6B862D63AC10F4E224D2490F /* PBXTargetDependency */ = {
+		151140CF925199036CE550DB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MSPageViewController";
-			target = F6A7D119C79C6EA1AB2FA011 /* Pods-MSPageViewController */;
-			targetProxy = E4A21B99B6253C1711A49A49 /* PBXContainerItemProxy */;
+			target = F49100431CBC4C933F0A7D39 /* Pods-MSPageViewController */;
+			targetProxy = 662BDD7147E79C49B1AA111E /* PBXContainerItemProxy */;
 		};
-		7BF23DEF32B4F1E17CC8B21C /* PBXTargetDependency */ = {
+		53650C6F094FE86209841688 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-YesForEqualityTests-MSPageViewController";
-			target = 6147DD517231EE8966170762 /* Pods-YesForEqualityTests-MSPageViewController */;
-			targetProxy = 79767043B9DD9BF51537A311 /* PBXContainerItemProxy */;
+			target = 15F95E4ECE65A4EFD4FA20E4 /* Pods-YesForEqualityTests-MSPageViewController */;
+			targetProxy = 0837EDF113CABF397766F67D /* PBXContainerItemProxy */;
+		};
+		6FBA2ABF51442273D1D10B5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YesForEquality-MSPageViewController";
+			target = 55704E8F778CB6EC1CA56DA2 /* Pods-YesForEquality-MSPageViewController */;
+			targetProxy = DBF012F31B84AFBD2BE0E6B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		47BE687F09C874BF15424703 /* Release */ = {
+		037F98BE16B513D456295A9F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C97993DA3B1A5FAEE18DEFD8 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 8337618BBD9624988725BD0F /* Pods-YesForEquality.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -576,135 +576,7 @@
 			};
 			name = Release;
 		};
-		49E7B179299BEDA9B3F4DE65 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA2BCC61C7A4EDB6496A20B /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		641C67C615EDB0A2A971B200 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6CD19811666B76551C4A6D3 /* Pods-YesForEqualityTests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		67F79F955D9ACBC64BB937DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA2BCC61C7A4EDB6496A20B /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		6A06FD02E69D0C76F53ED805 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A84061AB814891DE5DEF6AC9 /* Pods-YesForEqualityTests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		7271B828E3A242768429CE55 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05BF8E1C2DB77F17B75EA9A4 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A3747BC3194B2D7B655EAD1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFB69CDEBC6B0A3FEBAFC772 /* Pods-YesForEquality.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C795DF5DF2DA93EA0DCA3A36 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A465ABBE6BBE2D4DF10C38B /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CF90021C3DA5DA5E89AF57EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A465ABBE6BBE2D4DF10C38B /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D0A6CF003B3CB8BB29351A07 /* Debug */ = {
+		10EC77B1734641C36C5811E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -743,9 +615,9 @@
 			};
 			name = Debug;
 		};
-		D7FDA21DF87EC5882D93726F /* Release */ = {
+		11010394162A0320EC8DC7A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F5E3C39091C2E1255474929 /* Pods-YesForEquality.release.xcconfig */;
+			baseConfigurationReference = 36411370AEB4AC82366087F1 /* Pods-YesForEqualityTests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -759,9 +631,105 @@
 			};
 			name = Release;
 		};
-		E713B4982C1F7F847F53C2E9 /* Release */ = {
+		11783DCAA8B9DD2BFE6D0CA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2828665C3DA87CBE03687D99 /* Pods-MSPageViewController-Private.xcconfig */;
+			baseConfigurationReference = 7D1250DDC7D0E107FDF50763 /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		14D4EA6748E0775B91AA53E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C4D2B7641D42FEB66D19B4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3954C45CDAA88B6008F7E36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4D49912DE5FEB1BBDB55D72 /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5BD453A9771F1AAFDC9C9C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 013F8901BB00B23BC645DC3E /* Pods-YesForEqualityTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		617D7BF3DC63E9D846AF32F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B2CE7E514D05D9238B95F7 /* Pods-YesForEquality.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		922D80DC8C51E37F673CE487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D1250DDC7D0E107FDF50763 /* Pods-YesForEquality-MSPageViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEquality-MSPageViewController/Pods-YesForEquality-MSPageViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C810711D680D9E31EF7A18AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16F8C5867000C6A5D3DB842 /* Pods-MSPageViewController-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-MSPageViewController/Pods-MSPageViewController-prefix.pch";
@@ -775,12 +743,12 @@
 			};
 			name = Release;
 		};
-		E8E409F397F8E858D77177C0 /* Debug */ = {
+		D001EF3351CC982916C3D1F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2828665C3DA87CBE03687D99 /* Pods-MSPageViewController-Private.xcconfig */;
+			baseConfigurationReference = F4D49912DE5FEB1BBDB55D72 /* Pods-YesForEqualityTests-MSPageViewController-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MSPageViewController/Pods-MSPageViewController-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-YesForEqualityTests-MSPageViewController/Pods-YesForEqualityTests-MSPageViewController-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -791,7 +759,7 @@
 			};
 			name = Debug;
 		};
-		F019654ED0C675F8E8736F47 /* Release */ = {
+		DD9FC0A3BB99BA521188EA47 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -825,73 +793,105 @@
 			};
 			name = Release;
 		};
+		F19CFDD695A3DFE00EC16AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA18EAABAE3F69BD70E12D1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAD3FD7EE4C329D357426127 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B16F8C5867000C6A5D3DB842 /* Pods-MSPageViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MSPageViewController/Pods-MSPageViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0466FA1AC4FA59B7730C874D /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests" */ = {
+		5255D26266C34266A705D136 /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests-MSPageViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				641C67C615EDB0A2A971B200 /* Debug */,
-				6A06FD02E69D0C76F53ED805 /* Release */,
+				D001EF3351CC982916C3D1F2 /* Debug */,
+				3954C45CDAA88B6008F7E36E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13A0AB74CE54F598449B7610 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality" */ = {
+		741B566DF1AE98968BD0DCFB /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3747BC3194B2D7B655EAD1C /* Debug */,
-				D7FDA21DF87EC5882D93726F /* Release */,
+				F19CFDD695A3DFE00EC16AB7 /* Debug */,
+				14D4EA6748E0775B91AA53E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		26AEE8AC37CA1D9953513DA3 /* Build configuration list for PBXNativeTarget "Pods-MSPageViewController" */ = {
+		7DF978C138BD98BCBCBED399 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality-MSPageViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E8E409F397F8E858D77177C0 /* Debug */,
-				E713B4982C1F7F847F53C2E9 /* Release */,
+				11783DCAA8B9DD2BFE6D0CA7 /* Debug */,
+				922D80DC8C51E37F673CE487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79DDE060AA6B6A43A34B329F /* Build configuration list for PBXProject "Pods" */ = {
+		903D0FFAF4C86CBFD852B3CB /* Build configuration list for PBXNativeTarget "Pods-YesForEquality" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0A6CF003B3CB8BB29351A07 /* Debug */,
-				F019654ED0C675F8E8736F47 /* Release */,
+				617D7BF3DC63E9D846AF32F1 /* Debug */,
+				037F98BE16B513D456295A9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE313A5B0C58AB92F3280729 /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests-MSPageViewController" */ = {
+		AAAD662CE1A6DEA2637971DB /* Build configuration list for PBXNativeTarget "Pods-YesForEqualityTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C795DF5DF2DA93EA0DCA3A36 /* Debug */,
-				CF90021C3DA5DA5E89AF57EE /* Release */,
+				5BD453A9771F1AAFDC9C9C74 /* Debug */,
+				11010394162A0320EC8DC7A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE65284242ADED8AD6F4BB62 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		DD243745CB08445B3F0CB7FF /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7271B828E3A242768429CE55 /* Debug */,
-				47BE687F09C874BF15424703 /* Release */,
+				10EC77B1734641C36C5811E4 /* Debug */,
+				DD9FC0A3BB99BA521188EA47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1A59F07E7932154CCB3F5D4 /* Build configuration list for PBXNativeTarget "Pods-YesForEquality-MSPageViewController" */ = {
+		F9477F366F0778666C70912D /* Build configuration list for PBXNativeTarget "Pods-MSPageViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67F79F955D9ACBC64BB937DA /* Debug */,
-				49E7B179299BEDA9B3F4DE65 /* Release */,
+				FAD3FD7EE4C329D357426127 /* Debug */,
+				C810711D680D9E31EF7A18AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A1D6340E4567ED7785920044 /* Project object */;
+	rootObject = 5535F87EA982110B572B3F1B /* Project object */;
 }
