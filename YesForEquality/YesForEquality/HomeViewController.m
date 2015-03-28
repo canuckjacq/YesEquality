@@ -8,6 +8,10 @@
 
 #import "HomeViewController.h"
 #import "CameraViewController.h"
+#import "YESInformationViewController.h"
+
+static NSString * const kYESInfoStoryboardName = @"Info";
+static NSString * const kYESMenuVCStoryboardId = @"YESInformationViewController";
 
 @interface HomeViewController ()
 
@@ -35,6 +39,13 @@
     CameraViewController *controller = (CameraViewController*)[storyboard instantiateViewControllerWithIdentifier:@"CameraViewController"];
     [self presentViewController:controller animated:YES completion:^{}];
 
+}
+
+-(IBAction)menuButtonPressed:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

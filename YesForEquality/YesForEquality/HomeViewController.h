@@ -10,6 +10,8 @@
 
 @interface HomeViewController : UIViewController
 
+-(IBAction)menuButtonPressed:(id)sender;
+
 
 @end
 
