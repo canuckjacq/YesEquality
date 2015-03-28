@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *flipCameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
+@property (weak, nonatomic) IBOutlet UIButton *xButton;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoPreviewViewWidthConstraint;
 @property (assign, nonatomic) BOOL isDisplayingStillImage;
@@ -103,7 +104,7 @@
     [self.cameraController stopRunning];
     [self.cameraController toggleCamera];
     [self.cameraController startRunning];
-    [self removePreviewImageview];
+    [self removePreviewImageview:nil];
 
 }
 - (IBAction)didTapCameraButton:(id)sender {
@@ -174,18 +175,18 @@
         }];
         
     } else {
-        [self removePreviewImageview];
+        [self removePreviewImageview:nil];
     }
 
 }
 
 - (void)didTapStillImage:(UITapGestureRecognizer*)gesture{
     if (self.isDisplayingStillImage){
-        [self removePreviewImageview];
+        [self removePreviewImageview:nil];
     }
 }
 
-- (void)removePreviewImageview{
+- (IBAction)removePreviewImageview:(id)sender{
     self.isDisplayingStillImage = NO;
     self.cameraController.previewLayer.hidden = NO;
     [self.stillImageView removeFromSuperview];
@@ -195,7 +196,7 @@
 
 - (void)saveImageToSavedPhotosAlbum:(UIImage*)image{
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
-    [self removePreviewImageview];
+    [self removePreviewImageview:nil];
 }
 - (void)shareImageOnTwitter:(UIImage*)image{
     SLComposeViewController* tweet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
@@ -211,7 +212,7 @@
     [tweet addImage:image]; //Add an image
     [tweet addURL:[NSURL URLWithString:@"http://facebook.com"]]; //A url which takes you into safari if tapped on
     [self presentViewController:tweet animated:YES completion: ^{
-        [self removePreviewImageview];
+        [self removePreviewImageview:nil];
     }];
 }
 - (void)shareImageOnFacebook:(UIImage*)image{
@@ -228,7 +229,7 @@
     [facebookPost addImage:image]; //Add an image
     [facebookPost addURL:[NSURL URLWithString:@"http://facebook.com"]]; //A url which takes you into safari if tapped on
     [self presentViewController:facebookPost animated:YES  completion:^{
-        [self removePreviewImageview];
+        [self removePreviewImageview:nil];
     }];
 }
 

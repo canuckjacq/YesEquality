@@ -20,18 +20,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
-                                <rect key="frame" x="140" y="140" width="320" height="320"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" image="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
+                                <rect key="frame" x="150" y="290" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="aJ6-at-sTn"/>
-                                    <constraint firstAttribute="width" priority="999" constant="320" id="bgd-7t-Jjt"/>
-                                </constraints>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
-                                <rect key="frame" x="150" y="321" width="187" height="129"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="height" multiplier="350:241" id="1bg-J0-YKn"/>
+                                    <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="height" multiplier="1:1" id="1bg-J0-YKn"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz" customClass="PaddedButton">
@@ -81,13 +73,45 @@
                                             <action selector="didTapShareButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="u80-nF-b93"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYr-nU-Hfu">
+                                        <rect key="frame" x="352" y="22.5" width="36" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="F5D-h7-zcm"/>
+                                            <constraint firstAttribute="width" secondItem="UYr-nU-Hfu" secondAttribute="height" multiplier="1:1" id="sTI-2d-4LR"/>
+                                            <constraint firstAttribute="width" secondItem="UYr-nU-Hfu" secondAttribute="height" multiplier="1:1" id="z0o-iG-Vep"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="✕">
+                                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                <integer key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="F5D-h7-zcm"/>
+                                                <exclude reference="sTI-2d-4LR"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="removePreviewImageview:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="nCW-7d-UXE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="SAg-If-z8U"/>
                                     <constraint firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="TA6-Yc-hAK"/>
+                                    <constraint firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="Ws6-3s-DwX"/>
+                                    <constraint firstItem="UYr-nU-Hfu" firstAttribute="leading" secondItem="SW6-Yo-aFP" secondAttribute="trailing" constant="10" id="ZLP-1L-vyS"/>
                                     <constraint firstAttribute="centerX" secondItem="SW6-Yo-aFP" secondAttribute="centerX" id="aa1-a3-tEW"/>
                                     <constraint firstAttribute="height" constant="80" id="fM2-Ht-BOF"/>
+                                    <constraint firstAttribute="centerY" secondItem="UYr-nU-Hfu" secondAttribute="centerY" id="wjN-xo-ni4"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xue-Yh-vE9" userLabel="PrePhotoView">
@@ -150,6 +174,14 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="aJ6-at-sTn"/>
+                                    <constraint firstAttribute="width" priority="999" constant="320" id="bgd-7t-Jjt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,7 +194,7 @@
                             <constraint firstAttribute="centerX" secondItem="ZK0-nl-sbj" secondAttribute="centerX" id="FFW-2F-JiG"/>
                             <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
                             <constraint firstItem="U2c-U9-u0V" firstAttribute="bottom" secondItem="ZK0-nl-sbj" secondAttribute="bottom" constant="-10" id="SN0-cG-ysr"/>
-                            <constraint firstItem="U2c-U9-u0V" firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="width" multiplier="0.583333" id="Tb1-NI-tgl"/>
+                            <constraint firstItem="U2c-U9-u0V" firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="width" multiplier="0.5" id="Tb1-NI-tgl"/>
                             <constraint firstAttribute="trailing" secondItem="28p-ZB-7p4" secondAttribute="trailing" id="Zh5-W3-oG2"/>
                             <constraint firstAttribute="trailing" secondItem="Xue-Yh-vE9" secondAttribute="trailing" id="aCU-eh-cGP"/>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="Xue-Yh-vE9" secondAttribute="bottom" id="aX9-DK-Uno"/>
@@ -184,6 +216,7 @@
                         <outlet property="prePhotoViewBottomConstraint" destination="aX9-DK-Uno" id="Sqq-8T-2eg"/>
                         <outlet property="shareButton" destination="SW6-Yo-aFP" id="c3N-qC-sHD"/>
                         <outlet property="videoPreviewViewWidthConstraint" destination="bgd-7t-Jjt" id="qbZ-E5-rPE"/>
+                        <outlet property="xButton" destination="UYr-nU-Hfu" id="vEf-Ol-93A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lEb-oS-yyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,6 +225,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo" width="400" height="400"/>
+        <image name="YES" width="512" height="512"/>
     </resources>
 </document>
