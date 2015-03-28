@@ -8,6 +8,7 @@
 
 #import "CameraViewController.h"
 #import "CameraController.h"
+#import "InfoPageViewController.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -144,5 +145,12 @@
     }];
 }
 
+#pragma mark - Info page
+
+- (IBAction)transitionToInfoView:(id)sender {
+            UIStoryboard *infoStoryboard = [UIStoryboard storyboardWithName:@"Info" bundle:nil];
+            InfoPageViewController * infoViewController = [infoStoryboard instantiateViewControllerWithIdentifier:@"InfoPageViewController"];
+    [self presentViewController:infoViewController animated:YES completion: nil];
+}
 
 @end

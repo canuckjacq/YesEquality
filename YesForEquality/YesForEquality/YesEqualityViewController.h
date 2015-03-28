@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YesEqualityViewController : UIViewController <UIPageViewControllerDataSource>
-
-@property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) NSArray *pageTitles;
-@property (strong, nonatomic) NSArray *pageImages;
+@interface YesEqualityViewController : UIViewController
 
 @end

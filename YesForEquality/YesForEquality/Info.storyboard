@@ -8,7 +8,7 @@
         <!--Info Page View Controller-->
         <scene sceneID="cyh-aF-VGQ">
             <objects>
-                <pageViewController storyboardIdentifier="InfoPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IO4-Gp-0tA" customClass="InfoPageViewController" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="InfoPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IO4-Gp-0tA" customClass="InfoPageViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Hh-B1-ci7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-454" y="-534"/>
@@ -16,7 +16,7 @@
         <!--Yes Equality View Controller-->
         <scene sceneID="vts-UL-0JT">
             <objects>
-                <viewController storyboardIdentifier="YesEqualityViewController" id="TCM-2R-8Cd" customClass="YesEqualityViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YesEqualityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCM-2R-8Cd" customClass="YesEqualityViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eHM-2E-Aol"/>
                         <viewControllerLayoutGuide type="bottom" id="mJd-q6-lIZ"/>
@@ -47,7 +47,7 @@
         <!--Why Vote Part2 View Controller-->
         <scene sceneID="Ocs-B8-hb7">
             <objects>
-                <viewController storyboardIdentifier="WhyVotePart2ViewController" id="f5i-ck-D5o" customClass="WhyVotePart2ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyVotePart2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5i-ck-D5o" customClass="WhyVotePart2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbd-Lt-OTi"/>
                         <viewControllerLayoutGuide type="bottom" id="gcw-wu-ZgE"/>

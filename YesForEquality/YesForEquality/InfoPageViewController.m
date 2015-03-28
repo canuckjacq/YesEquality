@@ -24,7 +24,7 @@
 }
 
 - (NSArray *)pageIdentifiers {
-    return @[@"YesEqualityViewController", @"page2", @"page3", @"page4"];
+    return @[@"YesEqualityViewController", @"WhyVotePart1ViewController", @"WhyVotePart2ViewController"];
 }
 
 
