@@ -15,6 +15,7 @@
 @property (strong,nonatomic) NSArray *pageTitles;
 @property (strong,nonatomic) IBOutlet UIImageView *imageView;
 @property (strong,nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong,nonatomic) IBOutlet UIButton *backButton;
 
 @property NSInteger currentIndex;
 @end
@@ -41,6 +42,7 @@
     [self.view bringSubviewToFront:self.pageViewController.view];
     [self.view bringSubviewToFront:self.imageView];
     [self.view bringSubviewToFront:self.pageControl];
+    [self.view bringSubviewToFront:self.backButton];
     
 }
 
@@ -89,9 +91,6 @@
     contentViewController.descriptionText = self.pageTitles[index];
     contentViewController.pageIndex = index;
     
-    //Show button for last page only
-    //contentViewController.showButton = (index == self.pageDetails.count-1);
-    
     self.currentIndex = index;
     
     return contentViewController;
@@ -101,6 +100,10 @@
     NSArray *array = pendingViewControllers;
     YESContentViewController *vc = (YESContentViewController *)array[0];
     self.pageControl.currentPage = vc.pageIndex;
+}
+
+-(IBAction)backButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
