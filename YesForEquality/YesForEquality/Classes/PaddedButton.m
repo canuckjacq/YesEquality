@@ -36,7 +36,7 @@
 - (void)setup{
     self.contentEdgeInsets = UIEdgeInsetsMake(4, 4, 4, 4);
     self.titleEdgeInsets = UIEdgeInsetsMake(4, 20, 4, 20);
-    self.layer.cornerRadius = 4.0;
+    //self.layer.cornerRadius = 4.0;
 }
 - (CGSize) intrinsicContentSize {
     CGSize s = [super intrinsicContentSize];
