@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Zb-jf-eIt">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -41,7 +42,7 @@
                                     <constraint firstAttribute="width" constant="50" id="Upf-RV-VLP"/>
                                 </constraints>
                                 <state key="normal">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
@@ -52,19 +53,10 @@
                                     <action selector="didTapCameraButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="77b-em-9zt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz">
-                                <rect key="frame" x="16" y="20" width="42" height="32"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Menu">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapMenuButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="0Ya-DY-Ope"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
-                                <rect key="frame" x="562" y="20" width="22" height="22"/>
-                                <state key="normal">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
+                                <rect key="frame" x="20" y="28" width="24" height="24"/>
+                                <color key="tintColor" red="0.15686274509803921" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="infobutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -81,7 +73,7 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Share">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -97,11 +89,21 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Flip">
-                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapFlipButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="MVY-3V-ZJg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz">
+                                <rect key="frame" x="538" y="20" width="42" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapMenuButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="0Ya-DY-Ope"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,8 +120,8 @@
                             <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="ZK0-nl-sbj" secondAttribute="width" priority="100" id="DdB-lf-bAt"/>
                             <constraint firstItem="lLz-Yf-c0p" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="EwI-wg-a7T"/>
                             <constraint firstAttribute="centerX" secondItem="ZK0-nl-sbj" secondAttribute="centerX" id="FFW-2F-JiG"/>
-                            <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" id="FdJ-Q3-NO3"/>
-                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
+                            <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" symbolic="YES" id="FdJ-Q3-NO3"/>
+                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="20" symbolic="YES" id="Gdl-qu-y7w"/>
                             <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="HsJ-oT-dcv"/>
                             <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="Kr1-nH-wSd"/>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="20" id="L90-UQ-xBi"/>
@@ -129,11 +131,13 @@
                             <constraint firstItem="U2c-U9-u0V" firstAttribute="bottom" secondItem="ZK0-nl-sbj" secondAttribute="bottom" constant="-10" id="SN0-cG-ysr"/>
                             <constraint firstItem="U2c-U9-u0V" firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="width" multiplier="0.583333" id="Tb1-NI-tgl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="UX5-zn-4YB"/>
+                            <constraint firstItem="5xa-d9-dTb" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="20" symbolic="YES" id="Ujl-kD-RNW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="XFj-by-kX2"/>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="20" id="bqa-n1-5Fa"/>
                             <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="d3W-xg-Kdq"/>
                             <constraint firstAttribute="centerY" secondItem="ZK0-nl-sbj" secondAttribute="centerY" id="dQX-th-lau"/>
                             <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" constant="10" id="eD2-To-dfW"/>
+                            <constraint firstAttribute="trailing" secondItem="Wbf-Ap-RHz" secondAttribute="trailing" constant="20" symbolic="YES" id="f8t-k2-skz"/>
                             <constraint firstItem="lLz-Yf-c0p" firstAttribute="leading" secondItem="iKA-ir-wqY" secondAttribute="trailing" constant="40" id="g6J-uw-vWB"/>
                             <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="kUp-fx-TnK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lLz-Yf-c0p" secondAttribute="trailing" id="lay-Z7-PTI"/>
@@ -149,6 +153,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="znP-iz-ZEb"/>
+                                <exclude reference="Gdl-qu-y7w"/>
                                 <exclude reference="UX5-zn-4YB"/>
                                 <exclude reference="XFj-by-kX2"/>
                                 <exclude reference="EwI-wg-a7T"/>
@@ -189,5 +195,6 @@
     </scenes>
     <resources>
         <image name="Logo" width="400" height="400"/>
+        <image name="infobutton" width="24" height="24"/>
     </resources>
 </document>
