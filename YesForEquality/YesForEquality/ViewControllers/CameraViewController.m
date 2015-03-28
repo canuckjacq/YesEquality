@@ -11,6 +11,7 @@
 #import "CameraViewController.h"
 #import "YESInformationViewController.h"
 #import "constants.h"
+#import "ReminderViewController.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -108,6 +109,10 @@
 }
 
 - (IBAction)didTapMenuButton:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Reminder" bundle:nil];
+    ReminderViewController *controller = (ReminderViewController*)[storyboard instantiateViewControllerWithIdentifier:@"reminderSB"];
+    [self presentViewController:controller animated:YES completion:^{}];
+
 }
 
 - (IBAction)didTapFlipButton:(id)sender {

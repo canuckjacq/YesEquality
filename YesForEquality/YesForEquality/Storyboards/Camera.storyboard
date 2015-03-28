@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
                                 <rect key="frame" x="-4" y="-44" width="608" height="608"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" misplaced="YES" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
                                         <rect key="frame" x="10" y="427" width="304" height="171"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
