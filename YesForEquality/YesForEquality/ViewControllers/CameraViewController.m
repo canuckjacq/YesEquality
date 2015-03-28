@@ -77,6 +77,7 @@
     frame.origin.x = 10.0;
     frame.origin.y = self.cameraView.frame.size.height - self.logoView.frame.size.height - 10.0;
     self.logoView.frame = frame;
+    [self.view layoutSubviews];
 }
 
 - (void)viewWillAppear:(BOOL)animated{

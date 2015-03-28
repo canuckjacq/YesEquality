@@ -56,11 +56,9 @@
 }
 - (void)configureSession{
     [self performConfiguration:^{
-        [self logSession];
         [self configureDeviceInput];
         [self configureStillImageCameraOutput];
         [self configureVideoOutput];
-        [self logSession];
     }];
 }
 - (void)showAccessDeniedMessage{
@@ -139,6 +137,7 @@
 - (void)startRunning{
     [self performConfiguration:^{
         [self.session startRunning];
+        [self logSession];
     }];
 }
 - (void)stopRunning{
