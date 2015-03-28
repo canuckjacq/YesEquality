@@ -19,9 +19,6 @@
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
 		522BCEA31AC6C9CB006BEEBE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522BCEA21AC6C9CB006BEEBE /* Info.storyboard */; };
 		522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */; };
-		522BCEAF1AC6DB0D006BEEBE /* YesEqualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */; };
-		522BCEB21AC6DBCD006BEEBE /* WhyVotePart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */; };
-		522BCEB51AC6DBDD006BEEBE /* WhyVotePart2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */; };
 		DB8DBA11A4F3145D663D578B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D0878A0F59A1AC342BBA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +54,6 @@
 		522BCEA21AC6C9CB006BEEBE /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageViewController.h; sourceTree = "<group>"; };
 		522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageViewController.m; sourceTree = "<group>"; };
-		522BCEAD1AC6DB0D006BEEBE /* YesEqualityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YesEqualityViewController.h; sourceTree = "<group>"; };
-		522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YesEqualityViewController.m; sourceTree = "<group>"; };
-		522BCEB01AC6DBCD006BEEBE /* WhyVotePart1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhyVotePart1ViewController.h; sourceTree = "<group>"; };
-		522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhyVotePart1ViewController.m; sourceTree = "<group>"; };
-		522BCEB31AC6DBDD006BEEBE /* WhyVotePart2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhyVotePart2ViewController.h; sourceTree = "<group>"; };
-		522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhyVotePart2ViewController.m; sourceTree = "<group>"; };
 		55B66748ED8058388927F716 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C8F1D0878A0F59A1AC342BBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,12 +167,6 @@
 				522BCEA21AC6C9CB006BEEBE /* Info.storyboard */,
 				522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */,
 				522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */,
-				522BCEAD1AC6DB0D006BEEBE /* YesEqualityViewController.h */,
-				522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */,
-				522BCEB01AC6DBCD006BEEBE /* WhyVotePart1ViewController.h */,
-				522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */,
-				522BCEB31AC6DBDD006BEEBE /* WhyVotePart2ViewController.h */,
-				522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */,
 			);
 			name = InfoViewController;
 			sourceTree = "<group>";
@@ -340,13 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522BCEAF1AC6DB0D006BEEBE /* YesEqualityViewController.m in Sources */,
-				522BCEB21AC6DBCD006BEEBE /* WhyVotePart1ViewController.m in Sources */,
 				522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */,
 				0A29CFA91AC6D0F300FA01CF /* CameraController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
-				522BCEB51AC6DBDD006BEEBE /* WhyVotePart2ViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
 			);

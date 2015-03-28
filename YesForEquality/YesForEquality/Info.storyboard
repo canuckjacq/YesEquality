@@ -13,10 +13,10 @@
             </objects>
             <point key="canvasLocation" x="-454" y="-534"/>
         </scene>
-        <!--Yes Equality View Controller-->
+        <!--Page View Controller Page-->
         <scene sceneID="vts-UL-0JT">
             <objects>
-                <viewController storyboardIdentifier="YesEqualityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCM-2R-8Cd" customClass="YesEqualityViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YesEqualityViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TCM-2R-8Cd" customClass="MSPageViewControllerPage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eHM-2E-Aol"/>
                         <viewControllerLayoutGuide type="bottom" id="mJd-q6-lIZ"/>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="204" y="-534"/>
         </scene>
-        <!--Why Vote Part2 View Controller-->
+        <!--Page View Controller Page-->
         <scene sceneID="Ocs-B8-hb7">
             <objects>
-                <viewController storyboardIdentifier="WhyVotePart2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5i-ck-D5o" customClass="WhyVotePart2ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyVotePart2ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5i-ck-D5o" customClass="MSPageViewControllerPage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbd-Lt-OTi"/>
                         <viewControllerLayoutGuide type="bottom" id="gcw-wu-ZgE"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="204" y="158"/>
         </scene>
-        <!--Why Vote Part1 View Controller-->
+        <!--Page View Controller Page-->
         <scene sceneID="sKt-La-bbK">
             <objects>
-                <viewController storyboardIdentifier="WhyVotePart1ViewController" id="PUC-9t-GsF" customClass="WhyVotePart1ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyVotePart1ViewController" id="PUC-9t-GsF" customClass="MSPageViewControllerPage" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gZT-zl-6Mr"/>
                         <viewControllerLayoutGuide type="bottom" id="PjO-eW-FeI"/>
