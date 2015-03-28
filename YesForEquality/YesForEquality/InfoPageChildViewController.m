@@ -47,14 +47,4 @@
     }
 }
 
-
-- (void)viewWillAppear:(BOOL)animated {
-    self.parentViewController.view.backgroundColor = self.backgroundColour;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end
