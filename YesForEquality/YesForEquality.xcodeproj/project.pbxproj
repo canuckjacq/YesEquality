@@ -16,6 +16,8 @@
 		0A965B491AC6C25B00254BE2 /* YesForEqualityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B481AC6C25B00254BE2 /* YesForEqualityTests.m */; };
 		0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B531AC6C3FC00254BE2 /* CameraViewController.m */; };
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
+		D490094B1AC6C7CA0013FCC1 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */; };
+		D49009501AC6C8040013FCC1 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D490094F1AC6C8040013FCC1 /* Reminder.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		0A965B521AC6C3FC00254BE2 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ViewControllers/CameraViewController.h; sourceTree = "<group>"; };
 		0A965B531AC6C3FC00254BE2 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ViewControllers/CameraViewController.m; sourceTree = "<group>"; };
 		0A965B551AC6C40C00254BE2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Camera.storyboard; path = Storyboards/Camera.storyboard; sourceTree = "<group>"; };
+		D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		D490094F1AC6C8040013FCC1 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,7 @@
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
 				0A965B581AC6C53C00254BE2 /* Home */,
 				0A965B571AC6C52900254BE2 /* CameraViewController */,
+				D490094C1AC6C7CF0013FCC1 /* Reminder */,
 				0A965B391AC6C25B00254BE2 /* Images.xcassets */,
 				0A965B3B1AC6C25B00254BE2 /* LaunchScreen.xib */,
 				0A965B2C1AC6C25B00254BE2 /* Supporting Files */,
@@ -141,6 +147,16 @@
 				0A965B361AC6C25B00254BE2 /* Home.storyboard */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		D490094C1AC6C7CF0013FCC1 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */,
+				D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */,
+				D490094F1AC6C8040013FCC1 /* Reminder.storyboard */,
+			);
+			name = Reminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49009501AC6C8040013FCC1 /* Reminder.storyboard in Resources */,
 				0A965B381AC6C25B00254BE2 /* Home.storyboard in Resources */,
 				0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */,
 				0A965B3D1AC6C25B00254BE2 /* LaunchScreen.xib in Resources */,
@@ -248,6 +265,7 @@
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
+				D490094B1AC6C7CA0013FCC1 /* ReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +456,7 @@
 				0A965B4E1AC6C25B00254BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A965B4F1AC6C25B00254BE2 /* Build configuration list for PBXNativeTarget "YesForEqualityTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +465,7 @@
 				0A965B511AC6C25B00254BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
