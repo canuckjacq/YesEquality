@@ -7,6 +7,9 @@
 //
 
 #import "InfoPageViewController.h"
+
+#include "InfoPageCoverViewController.h"
+#include "InfoPageQuestionViewController.h"
 #include "InfoPageChildViewController.h"
 
 @interface InfoPageViewController ()
@@ -25,11 +28,17 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSArray *pageTexts = [self pageTexts];
     
     self.infoViewControllers = [NSMutableArray array];
+
+    [self.infoViewControllers addObject:[[InfoPageCoverViewController alloc] init]];
     
-    for (NSArray *info in pageTexts) {
+    for (NSString *text in [self questionPageInfo]) {
+        InfoPageQuestionViewController *child = [[InfoPageQuestionViewController alloc] initWithBodyText:text];
+        [self.infoViewControllers addObject:child];
+    }
+
+    for (NSArray *info in [self childPageInfo]) {
         InfoPageChildViewController *child = [[InfoPageChildViewController alloc] initWithTopText:info[0]
                                                                                              image:nil
                                                                                         bottomText:info[1]
@@ -43,7 +52,14 @@
                   completion:nil];
 }
 
-- (NSArray *)pageTexts {
+- (NSArray *)questionPageInfo {
+    return @[
+        @"Irish People are fair-minded, welcoming and confident. This referendum is about making our laws reflect those values.",
+        @"Voting yes in the Marriage Equality Referendum will be saying yes to marriage, yes to equality and yes to strengthening Irish society."
+    ];
+}
+
+- (NSArray *)childPageInfo {
     return @[
         @[@"To vote on May 22nd you must be:", @"Aged over 18", [UIColor whiteColor]],
         @[@"To vote on May 22nd you must be:", @"Irish Citizen", [UIColor whiteColor]],
@@ -60,7 +76,7 @@
 }
 
 -(void)viewDidLayoutSubviews {
-    if (self.view.subviews.count == 2 ) {
+    if (self.view.subviews.count == 2) {
         UIScrollView *scrollView = nil;
         UIPageControl *pageControl = nil;
         

@@ -41,6 +41,10 @@
     self.bottomLabel.text = self.bottomText;
     
     self.view.backgroundColor = self.backgroundColour;
+    if (self.backgroundColour != [UIColor whiteColor]) {
+        self.topLabel.textColor = [UIColor whiteColor];
+        self.bottomLabel.textColor = [UIColor whiteColor];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,20 +21,20 @@
                     <rect key="frame" x="0.0" y="75" width="600" height="450"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M1J-Pe-pOM">
-                            <rect key="frame" x="10" y="20" width="580" height="36"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <rect key="frame" x="10" y="20" width="580" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="30"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DHT-fk-g5e">
-                            <rect key="frame" x="5" y="75.5" width="580" height="250"/>
+                            <rect key="frame" x="10" y="80.5" width="580" height="250"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="250" id="fNM-ED-guZ"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LX-x7-Yog">
-                            <rect key="frame" x="10" y="345.5" width="580" height="36"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <rect key="frame" x="10" y="350.5" width="580" height="41"/>
+                            <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="30"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -46,7 +46,7 @@
                         <constraint firstItem="DHT-fk-g5e" firstAttribute="width" secondItem="E7y-AG-2U6" secondAttribute="width" constant="-20" id="OgK-J0-7KH"/>
                         <constraint firstAttribute="centerX" secondItem="3LX-x7-Yog" secondAttribute="centerX" id="RRQ-cJ-BxV"/>
                         <constraint firstItem="M1J-Pe-pOM" firstAttribute="top" secondItem="E7y-AG-2U6" secondAttribute="top" constant="20" id="RtP-fG-Nzi"/>
-                        <constraint firstAttribute="centerX" secondItem="DHT-fk-g5e" secondAttribute="centerX" constant="5" id="ae1-SH-DJR"/>
+                        <constraint firstAttribute="centerX" secondItem="DHT-fk-g5e" secondAttribute="centerX" id="ae1-SH-DJR"/>
                         <constraint firstItem="M1J-Pe-pOM" firstAttribute="width" secondItem="E7y-AG-2U6" secondAttribute="width" constant="-20" id="h3x-MW-ZEl"/>
                         <constraint firstItem="3LX-x7-Yog" firstAttribute="width" secondItem="E7y-AG-2U6" secondAttribute="width" constant="-20" id="vVA-XF-Cg6"/>
                         <constraint firstItem="DHT-fk-g5e" firstAttribute="top" secondItem="M1J-Pe-pOM" secondAttribute="bottom" constant="20" id="ylG-z3-ukH"/>

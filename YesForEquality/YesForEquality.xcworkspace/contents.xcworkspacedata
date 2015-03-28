@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:InfoPageChildViewController.h">
-   </FileRef>
-   <FileRef
-      location = "group:InfoPageChildViewController.m">
-   </FileRef>
-   <FileRef
-      location = "group:InfoPageChildViewController.xib">
-   </FileRef>
-   <FileRef
       location = "group:YesForEquality.xcodeproj">
    </FileRef>
    <FileRef

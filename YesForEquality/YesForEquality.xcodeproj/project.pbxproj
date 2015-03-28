@@ -21,6 +21,10 @@
 		522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */; };
 		8BDC8FAA1AC7094E00AE23EB /* InfoPageChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */; };
 		8BDC8FAB1AC7094E00AE23EB /* InfoPageChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */; };
+		8BDC8FB11AC71AD200AE23EB /* InfoPageCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC8FAF1AC71AD200AE23EB /* InfoPageCoverViewController.m */; };
+		8BDC8FB21AC71AD200AE23EB /* InfoPageCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC8FB01AC71AD200AE23EB /* InfoPageCoverViewController.xib */; };
+		8BDC8FBB1AC7208200AE23EB /* InfoPageQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC8FB91AC7208200AE23EB /* InfoPageQuestionViewController.m */; };
+		8BDC8FBC1AC7208200AE23EB /* InfoPageQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BDC8FBA1AC7208200AE23EB /* InfoPageQuestionViewController.xib */; };
 		DB8DBA11A4F3145D663D578B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D0878A0F59A1AC342BBA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,12 @@
 		8BDC8FA71AC7094E00AE23EB /* InfoPageChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageChildViewController.h; sourceTree = "<group>"; };
 		8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageChildViewController.m; sourceTree = "<group>"; };
 		8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageChildViewController.xib; sourceTree = "<group>"; };
+		8BDC8FAE1AC71AD200AE23EB /* InfoPageCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageCoverViewController.h; sourceTree = "<group>"; };
+		8BDC8FAF1AC71AD200AE23EB /* InfoPageCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageCoverViewController.m; sourceTree = "<group>"; };
+		8BDC8FB01AC71AD200AE23EB /* InfoPageCoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageCoverViewController.xib; sourceTree = "<group>"; };
+		8BDC8FB81AC7208200AE23EB /* InfoPageQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageQuestionViewController.h; sourceTree = "<group>"; };
+		8BDC8FB91AC7208200AE23EB /* InfoPageQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageQuestionViewController.m; sourceTree = "<group>"; };
+		8BDC8FBA1AC7208200AE23EB /* InfoPageQuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageQuestionViewController.xib; sourceTree = "<group>"; };
 		C8F1D0878A0F59A1AC342BBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,11 +182,41 @@
 				522BCEA21AC6C9CB006BEEBE /* Info.storyboard */,
 				522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */,
 				522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */,
+				8BDC8FB31AC71AD900AE23EB /* Cover */,
+				8BDC8FBD1AC725B400AE23EB /* Questions */,
+				8BDC8FB41AC71ADF00AE23EB /* Children */,
+			);
+			name = InfoViewController;
+			sourceTree = "<group>";
+		};
+		8BDC8FB31AC71AD900AE23EB /* Cover */ = {
+			isa = PBXGroup;
+			children = (
+				8BDC8FAE1AC71AD200AE23EB /* InfoPageCoverViewController.h */,
+				8BDC8FAF1AC71AD200AE23EB /* InfoPageCoverViewController.m */,
+				8BDC8FB01AC71AD200AE23EB /* InfoPageCoverViewController.xib */,
+			);
+			name = Cover;
+			sourceTree = "<group>";
+		};
+		8BDC8FB41AC71ADF00AE23EB /* Children */ = {
+			isa = PBXGroup;
+			children = (
 				8BDC8FA71AC7094E00AE23EB /* InfoPageChildViewController.h */,
 				8BDC8FA81AC7094E00AE23EB /* InfoPageChildViewController.m */,
 				8BDC8FA91AC7094E00AE23EB /* InfoPageChildViewController.xib */,
 			);
-			name = InfoViewController;
+			name = Children;
+			sourceTree = "<group>";
+		};
+		8BDC8FBD1AC725B400AE23EB /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				8BDC8FB81AC7208200AE23EB /* InfoPageQuestionViewController.h */,
+				8BDC8FB91AC7208200AE23EB /* InfoPageQuestionViewController.m */,
+				8BDC8FBA1AC7208200AE23EB /* InfoPageQuestionViewController.xib */,
+			);
+			name = Questions;
 			sourceTree = "<group>";
 		};
 		965294A2C875C108AE3AAECE /* Pods */ = {
@@ -284,6 +324,8 @@
 				0A965B3D1AC6C25B00254BE2 /* LaunchScreen.xib in Resources */,
 				522BCEA31AC6C9CB006BEEBE /* Info.storyboard in Resources */,
 				0A965B3A1AC6C25B00254BE2 /* Images.xcassets in Resources */,
+				8BDC8FB21AC71AD200AE23EB /* InfoPageCoverViewController.xib in Resources */,
+				8BDC8FBC1AC7208200AE23EB /* InfoPageQuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,11 +378,13 @@
 			files = (
 				522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */,
 				0A29CFA91AC6D0F300FA01CF /* CameraController.m in Sources */,
+				8BDC8FBB1AC7208200AE23EB /* InfoPageQuestionViewController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				8BDC8FAA1AC7094E00AE23EB /* InfoPageChildViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
+				8BDC8FB11AC71AD200AE23EB /* InfoPageCoverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
