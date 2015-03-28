@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 YesForEquality. All rights reserved.
 //
 
+#define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
 #import "CameraViewController.h"
 
 @interface CameraViewController ()
@@ -18,7 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoPreviewViewWidthConstraint;
 @property (assign, nonatomic) BOOL isDisplayingStillImage;
-@property (assign, nonatomic) BOOL usingFrontCamera;
 @property (strong, nonatomic) CameraController *cameraController;
 @property (strong, nonatomic) UIImageView *stillImageView;
 @property (nonatomic,strong) UIImage *renderedImage;
@@ -99,7 +100,16 @@
 }
 
 - (IBAction)didTapShareButton:(id)sender {
-    
+    if (!self.renderedImage){
+        return;
+    }
+    if (IOS8){
+        NSArray *activityItems = @[self.renderedImage];
+        UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+        [self presentViewController:controller animated:YES completion:nil];
+    } else {
+        
+    }
 }
 
 - (void)takePhoto{
@@ -112,7 +122,7 @@
         [self.cameraController captureStillImage:^(UIImage *image, NSDictionary *metatata){
             
             UIImage *outputImage = image;
-            if (self.usingFrontCamera) {
+            if (self.cameraController.isUsingFrontCamera) {
                 UIImage *mirroredImage = [UIImage imageWithCGImage:image.CGImage scale:1.0 orientation:UIImageOrientationLeftMirrored];
                 outputImage = mirroredImage;
             }
