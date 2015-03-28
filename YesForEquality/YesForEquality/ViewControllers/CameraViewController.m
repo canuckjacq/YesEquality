@@ -11,6 +11,7 @@
 #import "CameraViewController.h"
 #import "YESInformationViewController.h"
 #import "constants.h"
+#import <ShareKit.h>
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -71,6 +72,8 @@
     frame.origin.x = 10.0;
     frame.origin.y = self.cameraView.frame.size.height - self.logoView.frame.size.height - 10.0;
     self.logoView.frame = frame;
+    
+    [self.view layoutSubviews];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -113,7 +116,16 @@
         UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
         [self presentViewController:controller animated:YES completion:nil];
     } else {
+            // Create the item to share (in this example, a url)
+            
+//            UIImageWriteToSavedPhotosAlbum(self.renderedImage, nil, nil, nil);
         
+            SHKItem *item = [SHKItem image:self.renderedImage title:@"I voted YES! #voteYES"];;
+            // Get the ShareKit action sheet
+            SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+            
+            // Display the action sheet
+            [actionSheet showInView:self.view];
     }
 }
 

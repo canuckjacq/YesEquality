@@ -21,6 +21,10 @@
 		4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */; };
 		4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63B8D41AC6D949009329D7 /* Info.storyboard */; };
 		D9CC679B7E280E7CFD0460A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F97A11D004B3BBB0716F05 /* libPods.a */; };
+		E80884F01AC70B1200E9D55C /* YESHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = E80884EF1AC70B1200E9D55C /* YESHKConfigurator.m */; };
+		E899861D1AC70F1400773832 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E899861C1AC70F1400773832 /* SystemConfiguration.framework */; };
+		E899861F1AC70F1C00773832 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E899861E1AC70F1C00773832 /* Security.framework */; };
+		E89986211AC70F2300773832 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89986201AC70F2300773832 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		51F97A11D004B3BBB0716F05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E66EC1E0500C7947A518CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCED561010D2261F36AB415F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E80884EE1AC70B1200E9D55C /* YESHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESHKConfigurator.h; sourceTree = "<group>"; };
+		E80884EF1AC70B1200E9D55C /* YESHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESHKConfigurator.m; sourceTree = "<group>"; };
+		E899861C1AC70F1400773832 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E899861E1AC70F1C00773832 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E89986201AC70F2300773832 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89986211AC70F2300773832 /* MessageUI.framework in Frameworks */,
+				E899861F1AC70F1C00773832 /* Security.framework in Frameworks */,
+				E899861D1AC70F1400773832 /* SystemConfiguration.framework in Frameworks */,
 				D9CC679B7E280E7CFD0460A1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +117,7 @@
 		0A965B2B1AC6C25B00254BE2 /* YesForEquality */ = {
 			isa = PBXGroup;
 			children = (
+				E80884ED1AC70AE700E9D55C /* Sharing */,
 				4C63B8CC1AC6D840009329D7 /* PageViewController */,
 				0A965B301AC6C25B00254BE2 /* AppDelegate.h */,
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
@@ -190,9 +203,21 @@
 		BB6EAB97E5AD393321D006FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E89986201AC70F2300773832 /* MessageUI.framework */,
+				E899861E1AC70F1C00773832 /* Security.framework */,
+				E899861C1AC70F1400773832 /* SystemConfiguration.framework */,
 				51F97A11D004B3BBB0716F05 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E80884ED1AC70AE700E9D55C /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				E80884EE1AC70B1200E9D55C /* YESHKConfigurator.h */,
+				E80884EF1AC70B1200E9D55C /* YESHKConfigurator.m */,
+			);
+			name = Sharing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +271,7 @@
 				TargetAttributes = {
 					0A965B281AC6C25B00254BE2 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = ERF2T2UNH6;
+						DevelopmentTeam = AQV5ZM59WZ;
 					};
 					0A965B411AC6C25B00254BE2 = {
 						CreatedOnToolsVersion = 6.2;
@@ -339,6 +364,7 @@
 				4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
+				E80884F01AC70B1200E9D55C /* YESHKConfigurator.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
 			);
@@ -468,6 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -481,6 +508,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

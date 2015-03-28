@@ -1,4 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '7.0'
-pod 'ECSlidingViewController', '~> 2.0.3'
+pod 'ShareKit/Core', '~> 4.0.4'
+pod 'ShareKit/Facebook', '~> 4.0.4'
+pod 'ShareKit/Twitter', '~> 4.0.4'
