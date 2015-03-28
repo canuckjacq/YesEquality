@@ -41,7 +41,7 @@ static NSString * const kYESMenuVCStoryboardId = @"YESInformationViewController"
 
 }
 
--(IBAction)menuButtonPressed:(id)sender {
+-(IBAction)infoButtonPressed:(id)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
     YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
     
