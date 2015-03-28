@@ -5,8 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -21,36 +19,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
-                                <rect key="frame" x="1" y="264" width="300" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
+                                <rect key="frame" x="-4" y="-44" width="608" height="608"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="pFu-N4-j5A"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
+                                <rect key="frame" x="-4" y="435" width="187" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
-                                    <constraint firstAttribute="width" constant="200" id="Hm3-0n-JuU"/>
-                                    <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="height" multiplier="1:1" id="Mgd-7V-hdy"/>
+                                    <constraint firstAttribute="width" constant="187" id="Hm3-0n-JuU"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="BvF-1Y-ILQ"/>
-                                        <exclude reference="Hm3-0n-JuU"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
-                                <rect key="frame" x="265" y="520" width="70" height="70"/>
+                                <rect key="frame" x="265" y="480" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lLz-Yf-c0p" secondAttribute="height" multiplier="1:1" id="D4r-lu-ddB"/>
                                     <constraint firstAttribute="width" constant="70" id="Upf-RV-VLP"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="CameraButton">
-                                    <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D4r-lu-ddB"/>
+                                        <exclude reference="Upf-RV-VLP"/>
+                                    </mask>
+                                </variation>
                                 <connections>
-                                    <action selector="didTapCameraButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="8Tl-pR-tWQ"/>
+                                    <action selector="didTapMenuButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="0Ya-DY-Ope"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
@@ -63,7 +67,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
-                                <rect key="frame" x="530" y="546" width="44" height="44"/>
+                                <rect key="frame" x="530" y="493" width="44" height="44"/>
                                 <accessibility key="accessibilityConfiguration" label="Share"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -77,7 +81,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
-                                <rect key="frame" x="26" y="546" width="44" height="44"/>
+                                <rect key="frame" x="26" y="493" width="44" height="44"/>
                                 <accessibility key="accessibilityConfiguration" label="Flip"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="DBg-f5-Arx"/>
@@ -92,40 +96,53 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="DBg-f5-Arx"/>
+                                        <exclude reference="HIA-fY-lIh"/>
                                     </mask>
                                 </variation>
                                 <connections>
                                     <action selector="didTapFlipButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="MVY-3V-ZJg"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
-                                <rect key="frame" x="-4" y="-44" width="608" height="608"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="pFu-N4-j5A"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="SW6-Yo-aFP" secondAttribute="bottom" constant="10" id="2sa-59-htb"/>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="10" id="4C9-RA-1ef"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="SW6-Yo-aFP" secondAttribute="bottom" constant="20" id="2sa-59-htb"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="20" id="4C9-RA-1ef"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZK0-nl-sbj" secondAttribute="trailing" constant="-20" id="7C3-H0-xJm"/>
-                            <constraint firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" id="7Wl-d1-yKq"/>
-                            <constraint firstItem="ZK0-nl-sbj" firstAttribute="leading" secondItem="U2c-U9-u0V" secondAttribute="leading" constant="-5" id="7uu-iW-Zaz"/>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="10" id="884-VO-ec2"/>
+                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" id="7Wl-d1-yKq"/>
+                            <constraint firstItem="ZK0-nl-sbj" firstAttribute="leading" secondItem="U2c-U9-u0V" secondAttribute="leading" id="7uu-iW-Zaz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" constant="10" id="8gC-2h-9l4"/>
+                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="A0H-I5-puP"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="50" id="BwY-gP-Q9n"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="EwI-wg-a7T"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" id="FdJ-Q3-NO3"/>
-                            <constraint firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
-                            <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="width" multiplier="2" id="XD9-cz-0v3"/>
+                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
+                            <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="HsJ-oT-dcv"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="Kr1-nH-wSd"/>
+                            <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="POL-mW-6to"/>
+                            <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="QI5-O0-Y6V"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="UX5-zn-4YB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="XFj-by-kX2"/>
                             <constraint firstAttribute="centerY" secondItem="ZK0-nl-sbj" secondAttribute="centerY" constant="40" id="XVA-Fq-ZRo"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="20" id="bqa-n1-5Fa"/>
+                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="d3W-xg-Kdq"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="leading" secondItem="iKA-ir-wqY" secondAttribute="trailing" constant="40" id="g6J-uw-vWB"/>
                             <constraint firstAttribute="centerX" secondItem="ZK0-nl-sbj" secondAttribute="centerX" id="iy1-hb-Amz"/>
+                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="kUp-fx-TnK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lLz-Yf-c0p" secondAttribute="trailing" id="lay-Z7-PTI"/>
                             <constraint firstItem="ZK0-nl-sbj" firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" id="oLY-sl-daw"/>
+                            <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="pLB-VX-TfM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="pXq-Tg-U0E"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="q7a-Al-Tr4"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="centerY" secondItem="iKA-ir-wqY" secondAttribute="centerY" id="qiR-Qs-JcK"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="qp0-FP-UXr"/>
                             <constraint firstItem="iKA-ir-wqY" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leadingMargin" constant="10" id="rIA-mc-3Hh"/>
+                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="rzJ-pp-GWM"/>
                             <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="tul-gj-vot"/>
                             <constraint firstItem="ZK0-nl-sbj" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leadingMargin" constant="-20" id="wAI-bX-9S3"/>
+                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="z8e-mK-2cm"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="znP-iz-ZEb"/>
                         </constraints>
                     </view>
@@ -134,6 +151,11 @@
                         <outlet property="cameraView" destination="ZK0-nl-sbj" id="cop-it-mSs"/>
                         <outlet property="flipCameraButton" destination="iKA-ir-wqY" id="Nj1-fi-zI6"/>
                         <outlet property="logoView" destination="U2c-U9-u0V" id="zXs-aX-Cna"/>
+                        <outlet property="menuButton" destination="Wbf-Ap-RHz" id="Chr-TM-Tph"/>
+                        <outlet property="postPhotoView" destination="28p-ZB-7p4" id="Uuo-Kx-sqG"/>
+                        <outlet property="postPhotoViewBottomConstraint" destination="8Qh-KK-lwk" id="I75-Om-9M1"/>
+                        <outlet property="prePhotoView" destination="Xue-Yh-vE9" id="Mi2-ae-TnR"/>
+                        <outlet property="prePhotoViewBottomConstraint" destination="aX9-DK-Uno" id="Sqq-8T-2eg"/>
                         <outlet property="shareButton" destination="SW6-Yo-aFP" id="c3N-qC-sHD"/>
                     </connections>
                 </viewController>
@@ -145,7 +167,7 @@
     <resources>
         <image name="CameraButton" width="70" height="70"/>
         <image name="FlipButton" width="44" height="44"/>
+        <image name="Logo" width="400" height="400"/>
         <image name="ShareButton" width="44" height="44"/>
-        <image name="YES" width="512" height="512"/>
     </resources>
 </document>
