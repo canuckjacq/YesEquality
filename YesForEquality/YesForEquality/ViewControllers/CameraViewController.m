@@ -9,6 +9,8 @@
 #define IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
 #import "CameraViewController.h"
+#import "YESInformationViewController.h"
+#import "constants.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -85,6 +87,9 @@
 }
 
 - (IBAction)didTapMenuButton:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 - (IBAction)didTapFlipButton:(id)sender {
     [self.cameraController stopRunning];
