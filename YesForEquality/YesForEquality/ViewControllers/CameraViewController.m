@@ -44,7 +44,7 @@
     
     self.cameraView.layer.shadowColor = [UIColor blackColor].CGColor;
     self.cameraView.layer.shadowOffset = CGSizeMake(0, 2);
-    self.cameraView.layer.shadowOpacity = 0.3;
+    self.cameraView.layer.shadowOpacity = 0.2;
     self.cameraView.layer.shadowRadius = 2.0;
     
     [self.cameraView.layer insertSublayer:self.logoView.layer above:previewLayer];
@@ -54,6 +54,18 @@
     previewLayer.bounds = bounds;
     
     self.shareButton.enabled = NO;
+    
+    self.cameraButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.cameraButton.layer.shadowOpacity = 0.2;
+    self.cameraButton.layer.shadowOffset = CGSizeMake(0, 5);
+    
+    self.flipCameraButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.flipCameraButton.layer.shadowOpacity = 0.1;
+    self.flipCameraButton.layer.shadowOffset = CGSizeMake(0, 5);
+    
+    self.shareButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.shareButton.layer.shadowOpacity = 0.1;
+    self.shareButton.layer.shadowOffset = CGSizeMake(0, 5);
 }
 
 - (void)viewDidLayoutSubviews{
