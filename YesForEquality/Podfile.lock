@@ -1,1 +1,10 @@
-COCOAPODS: 0.36.0
+PODS:
+  - MSPageViewController (1.0.1)
+
+DEPENDENCIES:
+  - MSPageViewController (~> 1.0.0)
+
+SPEC CHECKSUMS:
+  MSPageViewController: 14496f16df16db1129caabaffa136a51f11961d2
+
+COCOAPODS: 0.36.1

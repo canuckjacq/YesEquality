@@ -17,7 +17,11 @@
 		0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B531AC6C3FC00254BE2 /* CameraViewController.m */; };
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
 		522BCEA31AC6C9CB006BEEBE /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522BCEA21AC6C9CB006BEEBE /* Info.storyboard */; };
-		522BCEA61AC6CAB3006BEEBE /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEA51AC6CAB3006BEEBE /* InfoViewController.m */; };
+		522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */; };
+		522BCEAF1AC6DB0D006BEEBE /* YesEqualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */; };
+		522BCEB21AC6DBCD006BEEBE /* WhyVotePart1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */; };
+		522BCEB51AC6DBDD006BEEBE /* WhyVotePart2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */; };
+		DB8DBA11A4F3145D663D578B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F1D0878A0F59A1AC342BBA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +52,17 @@
 		0A965B531AC6C3FC00254BE2 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ViewControllers/CameraViewController.m; sourceTree = "<group>"; };
 		0A965B551AC6C40C00254BE2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Camera.storyboard; path = Storyboards/Camera.storyboard; sourceTree = "<group>"; };
 		522BCEA21AC6C9CB006BEEBE /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
-		522BCEA41AC6CAB3006BEEBE /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		522BCEA51AC6CAB3006BEEBE /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageViewController.h; sourceTree = "<group>"; };
+		522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageViewController.m; sourceTree = "<group>"; };
+		522BCEAD1AC6DB0D006BEEBE /* YesEqualityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YesEqualityViewController.h; sourceTree = "<group>"; };
+		522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YesEqualityViewController.m; sourceTree = "<group>"; };
+		522BCEB01AC6DBCD006BEEBE /* WhyVotePart1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhyVotePart1ViewController.h; sourceTree = "<group>"; };
+		522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhyVotePart1ViewController.m; sourceTree = "<group>"; };
+		522BCEB31AC6DBDD006BEEBE /* WhyVotePart2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhyVotePart2ViewController.h; sourceTree = "<group>"; };
+		522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhyVotePart2ViewController.m; sourceTree = "<group>"; };
+		55B66748ED8058388927F716 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C8F1D0878A0F59A1AC342BBA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8DBA11A4F3145D663D578B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +90,8 @@
 				0A965B2B1AC6C25B00254BE2 /* YesForEquality */,
 				0A965B451AC6C25B00254BE2 /* YesForEqualityTests */,
 				0A965B2A1AC6C25B00254BE2 /* Products */,
+				965294A2C875C108AE3AAECE /* Pods */,
+				CFC381B999EDAAF7793E7740 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -152,11 +168,34 @@
 		522BCEA01AC6C95B006BEEBE /* InfoViewController */ = {
 			isa = PBXGroup;
 			children = (
-				522BCEA41AC6CAB3006BEEBE /* InfoViewController.h */,
-				522BCEA51AC6CAB3006BEEBE /* InfoViewController.m */,
 				522BCEA21AC6C9CB006BEEBE /* Info.storyboard */,
+				522BCEAA1AC6DA64006BEEBE /* InfoPageViewController.h */,
+				522BCEAB1AC6DA64006BEEBE /* InfoPageViewController.m */,
+				522BCEAD1AC6DB0D006BEEBE /* YesEqualityViewController.h */,
+				522BCEAE1AC6DB0D006BEEBE /* YesEqualityViewController.m */,
+				522BCEB01AC6DBCD006BEEBE /* WhyVotePart1ViewController.h */,
+				522BCEB11AC6DBCD006BEEBE /* WhyVotePart1ViewController.m */,
+				522BCEB31AC6DBDD006BEEBE /* WhyVotePart2ViewController.h */,
+				522BCEB41AC6DBDD006BEEBE /* WhyVotePart2ViewController.m */,
 			);
 			name = InfoViewController;
+			sourceTree = "<group>";
+		};
+		965294A2C875C108AE3AAECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B66748ED8058388927F716 /* Pods.debug.xcconfig */,
+				D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CFC381B999EDAAF7793E7740 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F1D0878A0F59A1AC342BBA /* libPods.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A965B4C1AC6C25B00254BE2 /* Build configuration list for PBXNativeTarget "YesForEquality" */;
 			buildPhases = (
+				FAD7B9CA92453560870C7EAB /* Check Pods Manifest.lock */,
 				0A965B251AC6C25B00254BE2 /* Sources */,
 				0A965B261AC6C25B00254BE2 /* Frameworks */,
 				0A965B271AC6C25B00254BE2 /* Resources */,
+				EFD6AAC1F18C15CA73FB3D34 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,15 +297,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EFD6AAC1F18C15CA73FB3D34 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAD7B9CA92453560870C7EAB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A965B251AC6C25B00254BE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522BCEAF1AC6DB0D006BEEBE /* YesEqualityViewController.m in Sources */,
+				522BCEB21AC6DBCD006BEEBE /* WhyVotePart1ViewController.m in Sources */,
+				522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
+				522BCEB51AC6DBDD006BEEBE /* WhyVotePart2ViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
-				522BCEA61AC6CAB3006BEEBE /* InfoViewController.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +462,7 @@
 		};
 		0A965B4D1AC6C25B00254BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B66748ED8058388927F716 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YesForEquality/Info.plist;
@@ -395,6 +473,7 @@
 		};
 		0A965B4E1AC6C25B00254BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4181DB206D610F56AD6D1B0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YesForEquality/Info.plist;

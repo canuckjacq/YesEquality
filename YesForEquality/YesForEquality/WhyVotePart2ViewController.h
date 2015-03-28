@@ -1,5 +1,5 @@
 //
-//  InfoViewController.h
+//  WhyVotePart2ViewController.h
 //  YesForEquality
 //
 //  Created by Adam Govan on 28/03/2015.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController
+@interface WhyVotePart2ViewController : UIViewController
 
 @end

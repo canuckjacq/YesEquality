@@ -1,18 +1,18 @@
 //
-//  InfoViewController.m
+//  YesEqualityViewController.m
 //  YesForEquality
 //
 //  Created by Adam Govan on 28/03/2015.
 //  Copyright (c) 2015 YesForEquality. All rights reserved.
 //
 
-#import "InfoViewController.h"
+#import "YesEqualityViewController.h"
 
-@interface InfoViewController ()
+@interface YesEqualityViewController ()
 
 @end
 
-@implementation InfoViewController
+@implementation YesEqualityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
