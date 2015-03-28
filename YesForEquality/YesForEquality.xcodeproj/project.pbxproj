@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A2FE9951AC6FC4900DAA743 /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FE9941AC6FC4900DAA743 /* CameraController.m */; };
+		0A2FE99A1AC7024500DAA743 /* PaddedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2FE9991AC7024500DAA743 /* PaddedButton.m */; };
 		0A965B2F1AC6C25B00254BE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B2E1AC6C25B00254BE2 /* main.m */; };
 		0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B311AC6C25B00254BE2 /* AppDelegate.m */; };
 		0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B341AC6C25B00254BE2 /* HomeViewController.m */; };
@@ -37,6 +38,8 @@
 		0A2FE9931AC6FC4900DAA743 /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraController.h; path = Classes/CameraController.h; sourceTree = "<group>"; };
 		0A2FE9941AC6FC4900DAA743 /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraController.m; path = Classes/CameraController.m; sourceTree = "<group>"; };
 		0A2FE9961AC6FC6F00DAA743 /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		0A2FE9981AC7024500DAA743 /* PaddedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaddedButton.h; path = Classes/PaddedButton.h; sourceTree = "<group>"; };
+		0A2FE9991AC7024500DAA743 /* PaddedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PaddedButton.m; path = Classes/PaddedButton.m; sourceTree = "<group>"; };
 		0A965B291AC6C25B00254BE2 /* YesForEquality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesForEquality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A965B2D1AC6C25B00254BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A965B2E1AC6C25B00254BE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A2FE9971AC7022C00DAA743 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0A2FE9981AC7024500DAA743 /* PaddedButton.h */,
+				0A2FE9991AC7024500DAA743 /* PaddedButton.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		0A965B201AC6C25B00254BE2 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +117,7 @@
 		0A965B2B1AC6C25B00254BE2 /* YesForEquality */ = {
 			isa = PBXGroup;
 			children = (
+				0A2FE9971AC7022C00DAA743 /* Classes */,
 				4C63B8CC1AC6D840009329D7 /* PageViewController */,
 				0A965B301AC6C25B00254BE2 /* AppDelegate.h */,
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
@@ -341,6 +354,7 @@
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
+				0A2FE99A1AC7024500DAA743 /* PaddedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

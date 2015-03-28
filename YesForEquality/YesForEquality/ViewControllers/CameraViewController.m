@@ -16,6 +16,12 @@
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
 @property (weak, nonatomic) IBOutlet UIImageView *logoView;
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
+
+@property (weak, nonatomic) IBOutlet UIView *prePhotoView;
+@property (weak, nonatomic) IBOutlet UIView *postPhotoView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *prePhotoViewBottomConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *postPhotoViewBottomConstraint;
+
 @property (weak, nonatomic) IBOutlet UIButton *flipCameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *cameraButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
@@ -75,6 +81,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self shouldShowShareButton:NO animated:NO];
     [self.cameraController startRunning];
 }
 - (BOOL)prefersStatusBarHidden{
@@ -138,8 +145,12 @@
             self.stillImageView.clipsToBounds = YES;
             self.stillImageView.contentMode = UIViewContentModeScaleAspectFill;
             self.stillImageView.image = outputImage;
+            self.stillImageView.userInteractionEnabled = YES;
             [self.cameraView addSubview:self.stillImageView];
             [self.cameraView sendSubviewToBack:self.stillImageView];
+            
+            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapStillImage:)];
+            [self.stillImageView addGestureRecognizer:tap];
             
             CGSize size = self.cameraView.frame.size;
             
@@ -156,6 +167,9 @@
                 self.stillImageView.alpha = 1.0;
             }];
             
+            
+            [self shouldShowShareButton:YES animated:YES];
+
         }];
         
     } else {
@@ -164,11 +178,18 @@
 
 }
 
+- (void)didTapStillImage:(UITapGestureRecognizer*)gesture{
+    if (self.isDisplayingStillImage){
+        [self removePreviewImageview];
+    }
+}
+
 - (void)removePreviewImageview{
     self.isDisplayingStillImage = NO;
     self.cameraController.previewLayer.hidden = NO;
     [self.stillImageView removeFromSuperview];
     self.shareButton.enabled = NO;
+    [self shouldShowShareButton:NO animated:YES];
 }
 
 - (void)saveImageToSavedPhotosAlbum:(UIImage*)image{
@@ -210,5 +231,32 @@
     }];
 }
 
+- (void)shouldShowShareButton:(BOOL)shouldShowShareButton animated:(BOOL)animated{
+    CGFloat height = -CGRectGetHeight(self.prePhotoView.frame);
+    CGFloat shareButtonAlpha = (shouldShowShareButton?1.0:0.0);
+    if (!shouldShowShareButton){
+        self.prePhotoViewBottomConstraint.constant = 0.0;
+        self.postPhotoViewBottomConstraint.constant = height;
+    } else {
+        self.prePhotoViewBottomConstraint.constant = height;
+        self.postPhotoViewBottomConstraint.constant = 0.0;
+    }
+    
+    void (^uiUpdate)() = ^void(){
+        [self.view layoutIfNeeded];
+        [self.prePhotoView setAlpha:(1.0-shareButtonAlpha)];
+        [self.postPhotoView setAlpha:shareButtonAlpha];
+    };
+    
+    if (animated){
+        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionBeginFromCurrentState
+                         animations:^{
+                             uiUpdate();
+                         } completion:^(BOOL completion){
+                         }];
+    } else {
+        uiUpdate();
+    }
+}
 
 @end
