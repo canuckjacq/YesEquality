@@ -9,7 +9,6 @@
 #import "InfoPageViewController.h"
 
 #include "InfoPageCoverViewController.h"
-#include "InfoPageQuestionViewController.h"
 #include "InfoPageChildViewController.h"
 
 @interface InfoPageViewController ()
@@ -32,17 +31,12 @@
     self.infoViewControllers = [NSMutableArray array];
 
     [self.infoViewControllers addObject:[[InfoPageCoverViewController alloc] init]];
-    
-    for (NSString *text in [self questionPageInfo]) {
-        InfoPageQuestionViewController *child = [[InfoPageQuestionViewController alloc] initWithBodyText:text];
-        [self.infoViewControllers addObject:child];
-    }
 
     for (NSArray *info in [self childPageInfo]) {
         InfoPageChildViewController *child = [[InfoPageChildViewController alloc] initWithTopText:info[0]
-                                                                                             image:nil
-                                                                                        bottomText:info[1]
-                                                                                  backgroundColour:info[2]];
+                                                                                             image:info[1]
+                                                                                        bottomText:info[2]
+                                                                                  backgroundColour:info[3]];
         [self.infoViewControllers addObject:child];
     }
     
@@ -63,26 +57,19 @@
     [self.view addSubview:button];
 }
 
-- (NSArray *)questionPageInfo {
-    return @[
-        @"Irish People are fair-minded, welcoming and confident. This referendum is about making our laws reflect those values.",
-        @"Voting yes in the Marriage Equality Referendum will be saying yes to marriage, yes to equality and yes to strengthening Irish society."
-    ];
-}
-
 - (NSArray *)childPageInfo {
     return @[
-        @[@"To vote on May 22nd you must be:", @"Aged over 18", [UIColor whiteColor]],
-        @[@"To vote on May 22nd you must be:", @"Irish Citizen", [UIColor whiteColor]],
-        @[@"To vote on May 22nd you must be:", @"Resident in the republic", [UIColor whiteColor]],
-        @[@"To vote on May 22nd you must be:", @"Registered To Vote", [UIColor whiteColor]],
-        @[@"Check to see if you are registered", @"checktheregister.ie", [UIColor whiteColor]],
-        @[@"Registering is easy", @"Download the Form", [UIColor purpleColor]],
-        @[@"Registering is easy", @"Get is signed & stamped by a Garda", [UIColor redColor]],
-        @[@"Registering is easy", @"Return it to your local authority office", [UIColor blueColor]],
-        @[@"Student?", @"You can vote by post", [UIColor orangeColor]],
-        @[@"Away for work?", @"You can vote by post too!", [UIColor greenColor]],
-        @[@"Changed address?", @"There’s a form for that.", [UIColor blueColor]]
+        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"1"], @"Aged over 18", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1]],
+        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"2"], @"Irish Citizen", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1]],
+        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"3"], @"Resident in the republic", [UIColor colorWithRed:0.19 green:0.22 blue:0.55 alpha:1]],
+        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"4"], @"Registered To Vote", [UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1]],
+        @[@"Check to see if you are registered", [UIImage imageNamed:@"5"], @"checktheregister.ie", [UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1]],
+        @[@"Registering is easy", [UIImage imageNamed:@"6"], @"Download the Form", [UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1]],
+        @[@"Registering is easy", [UIImage imageNamed:@"7"], @"Get is signed & stamped by a Garda", [UIColor colorWithRed:0.56 green:0.18 blue:0.55 alpha:1]],
+        @[@"Registering is easy", [UIImage imageNamed:@"8"], @"Return it to your local authority office", [UIColor colorWithRed:0.74 green:0.14 blue:0.2 alpha:1]],
+        @[@"Student?", [UIImage imageNamed:@"9"], @"You can vote by post", [UIColor colorWithRed:0.49 green:0.75 blue:0.3 alpha:1]],
+        @[@"Away for work?", [UIImage imageNamed:@"10"], @"You can vote by post too!", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1]],
+        @[@"Changed address?", [UIImage imageNamed:@"11"], @"There’s a form for that.", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1]]
     ];
 }
 
@@ -95,23 +82,21 @@
 }
 
 -(void)viewDidLayoutSubviews {
-    if (self.view.subviews.count == 2) {
-        UIScrollView *scrollView = nil;
-        UIPageControl *pageControl = nil;
-        
-        for (UIView *view in self.view.subviews) {
-            if([view isKindOfClass:[UIScrollView class]] ) {
-                scrollView = (UIScrollView*)view;
-            }
-            else if ([view isKindOfClass:[UIPageControl class]]) {
-                pageControl = (UIPageControl*)view;
-            }
+    UIScrollView *scrollView = nil;
+    UIPageControl *pageControl = nil;
+    
+    for (UIView *view in self.view.subviews) {
+        if([view isKindOfClass:[UIScrollView class]] ) {
+            scrollView = (UIScrollView*)view;
         }
-        
-        if (scrollView != nil && pageControl != nil) {
-            scrollView.frame = self.view.bounds;
-            [self.view bringSubviewToFront:pageControl];
+        else if ([view isKindOfClass:[UIPageControl class]]) {
+            pageControl = (UIPageControl*)view;
         }
+    }
+    
+    if (scrollView != nil && pageControl != nil) {
+        scrollView.frame = self.view.bounds;
+        [self.view bringSubviewToFront:pageControl];
     }
 
     [super viewDidLayoutSubviews];

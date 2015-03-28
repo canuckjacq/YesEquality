@@ -14,7 +14,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="YesEqualityBW" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-HE-Wew">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="mCH-HE-Wew">
                     <rect key="frame" x="200" y="50" width="200" height="200"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="200" id="HYA-AK-vGi"/>
@@ -50,6 +50,6 @@
         </imageView>
     </objects>
     <resources>
-        <image name="YesEqualityBW" width="347" height="231"/>
+        <image name="Logo" width="400" height="400"/>
     </resources>
 </document>
