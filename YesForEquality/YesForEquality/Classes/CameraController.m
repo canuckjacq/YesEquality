@@ -41,12 +41,15 @@
                                              [self showAccessDeniedMessage];
                                          }
                                      }];
-        }
-        case AVAuthorizationStatusAuthorized:
+        } break;
+
+        case AVAuthorizationStatusAuthorized:{
             [self configureSession];
+        } break;
         case AVAuthorizationStatusDenied:
-        case AVAuthorizationStatusRestricted:
+        case AVAuthorizationStatusRestricted:{
             [self showAccessDeniedMessage];
+        } break;
         default:
             break;
     }
@@ -61,7 +64,12 @@
     }];
 }
 - (void)showAccessDeniedMessage{
-    
+    UIAlertView *alert  =[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Camera Access", nil)
+                                                    message:NSLocalizedString(@"We need access to the camera!", nil)
+                                                   delegate:nil
+                                          cancelButtonTitle:NSLocalizedString(@"Ok", nil)
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 - (void)configureDeviceInput{
     [self performConfiguration:^{
@@ -78,13 +86,10 @@
         }
         
         //remove any existing camera input if necessary
-        NSInteger inputCount = self.session.inputs.count;
-        if (inputCount>0) {
-            NSArray *sessionInputs = self.session.inputs;
-            [sessionInputs enumerateObjectsUsingBlock:^(AVCaptureDeviceInput *cameraInput, NSUInteger idx, BOOL *stop){
-                [self.session removeInput:cameraInput];
-            }];
-        }
+        NSArray *sessionInputs = self.session.inputs;
+        [sessionInputs enumerateObjectsUsingBlock:^(AVCaptureDeviceInput *cameraInput, NSUInteger idx, BOOL *stop){
+            [self.session removeInput:cameraInput];
+        }];
         
         // let's set the back camera as the initial device
         //self.currentCameraDevice = self.backCameraDevice
@@ -145,19 +150,13 @@
 - (void)captureStillImage:(void (^)(UIImage *image, NSDictionary *metadata))completion{
     [self performConfiguration:^{
 
-        NSLog(@"######################################");
-        
         [self logSession];
-
-        NSLog(@"######################################");
 
         AVCaptureConnection *connection = [self.stillCameraOutput connectionWithMediaType:AVMediaTypeVideo];
         UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
         connection.videoOrientation = (AVCaptureVideoOrientation)deviceOrientation;
 
         [self logSession];
-
-        NSLog(@"######################################");
 
         [self.stillCameraOutput captureStillImageAsynchronouslyFromConnection:connection completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error){
             
@@ -181,7 +180,27 @@
     }];
 }
 
+//- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
+////    CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+////    CIImage *image = [CIImage imageWithCVPixelBuffer:pixelBuffer];
+////    //self.delegate cameraController(self, didOutputImage: image)
+//}
+//- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
+//}
+
+- (void)toggleCamera{
+    self.isUsingFrontCamera = !self.isUsingFrontCamera;
+    [self configureSession];
+}
+
+- (void)performConfiguration:(void (^)(void))block{
+    dispatch_async(sessionQueue,^{
+        block();
+    });
+}
+
 - (void)logSession{
+    NSLog(@"######################################");
     NSLog(@"AVSESSION:");
     NSLog(@"  session             = %@",self.session);
     NSLog(@"  session.inputs      = %@",self.session.inputs);
@@ -193,26 +212,7 @@
     if (cameraInput){
         NSLog(@"  cameraInput         = %@",cameraInput);
     }
-}
-
-- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection{
-//    CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-//    CIImage *image = [CIImage imageWithCVPixelBuffer:pixelBuffer];
-//    //self.delegate cameraController(self, didOutputImage: image)
-}
-- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection{
-}
-
-- (void)toggleCamera{
-    self.isUsingFrontCamera = !self.isUsingFrontCamera;
-    [self configureSession];
-}
-
-
-- (void)performConfiguration:(void (^)(void))block{
-    dispatch_async(sessionQueue,^{
-        block();
-    });
+    NSLog(@"######################################");
 }
 
 
