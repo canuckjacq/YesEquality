@@ -7,6 +7,9 @@
 //
 
 #import "HomeViewController.h"
+#import "CameraViewController.h"
+#import "YESInformationViewController.h"
+#import "constants.h"
 
 @interface HomeViewController ()
 
@@ -22,6 +25,24 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)didTapInformationButton:(id)sender {
+    
+}
+- (IBAction)didTapRemindMeButton:(id)sender {
+    
+}
+- (IBAction)didTapCameraButton:(id)sender {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Camera" bundle:nil];
+    CameraViewController *controller = (CameraViewController*)[storyboard instantiateViewControllerWithIdentifier:@"CameraViewController"];
+    [self presentViewController:controller animated:YES completion:^{}];
+}
+
+-(IBAction)infoButtonPressed:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end

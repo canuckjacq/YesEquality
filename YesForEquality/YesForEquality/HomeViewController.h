@@ -10,6 +10,8 @@
 
 @interface HomeViewController : UIViewController
 
+-(IBAction)infoButtonPressed:(id)sender;
+
 
 @end
 
