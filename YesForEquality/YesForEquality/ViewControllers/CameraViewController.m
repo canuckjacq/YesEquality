@@ -99,10 +99,8 @@
 }
 
 - (IBAction)didTapMenuButton:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
-    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
-    [self presentViewController:viewController animated:YES completion:nil];
 }
+
 - (IBAction)didTapFlipButton:(id)sender {
     [self.cameraController stopRunning];
     [self.cameraController toggleCamera];
@@ -114,6 +112,10 @@
     [self takePhoto];
 }
 - (IBAction)didTapInfoButton:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 - (IBAction)didTapShareButton:(id)sender {
