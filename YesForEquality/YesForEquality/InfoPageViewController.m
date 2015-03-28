@@ -15,7 +15,7 @@
 
 @end
 
-@implementation InfoPageViewControllerg
+@implementation InfoPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
