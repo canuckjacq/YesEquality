@@ -15,13 +15,7 @@
 
 @end
 
-@implementation InfoPageViewController
-
-+ (void)initialize {
-    if (self == InfoPageViewController.class) {
-        
-    }
-}
+@implementation InfoPageViewControllerg
 
 - (void)viewDidLoad {
     [super viewDidLoad];
