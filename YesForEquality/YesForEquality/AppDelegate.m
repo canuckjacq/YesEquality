@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+#import "YESHKConfigurator.h"
+#import <ShareKit/ShareKit.h>
+#import <ShareKit/SHKFacebook.h>
+#import <ShareKit/SHKConfiguration.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +21,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    YESHKConfigurator *configurator = [[YESHKConfigurator alloc] init];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
+
     return YES;
 }
 
@@ -40,6 +47,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    NSString *scheme = [url scheme];
+    
+    if ([scheme hasPrefix:[NSString stringWithFormat:@"fb%@", SHKCONFIG(facebookAppId)]]) {
+        return [SHKFacebook handleOpenURL:url sourceApplication:sourceApplication];
+    }
+    
+    return YES;
 }
 
 @end
