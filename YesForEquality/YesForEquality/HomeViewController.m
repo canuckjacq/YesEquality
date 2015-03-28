@@ -34,7 +34,6 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Camera" bundle:nil];
     CameraViewController *controller = (CameraViewController*)[storyboard instantiateViewControllerWithIdentifier:@"CameraViewController"];
     [self presentViewController:controller animated:YES completion:^{}];
-
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A29CFA91AC6D0F300FA01CF /* CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A29CFA81AC6D0F300FA01CF /* CameraController.m */; };
 		0A965B2F1AC6C25B00254BE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B2E1AC6C25B00254BE2 /* main.m */; };
 		0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B311AC6C25B00254BE2 /* AppDelegate.m */; };
 		0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B341AC6C25B00254BE2 /* HomeViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A29CFA71AC6D0F300FA01CF /* CameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraController.h; path = Classes/CameraController.h; sourceTree = "<group>"; };
+		0A29CFA81AC6D0F300FA01CF /* CameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraController.m; path = Classes/CameraController.m; sourceTree = "<group>"; };
 		0A965B291AC6C25B00254BE2 /* YesForEquality.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YesForEquality.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A965B2D1AC6C25B00254BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A965B2E1AC6C25B00254BE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 			children = (
 				0A965B521AC6C3FC00254BE2 /* CameraViewController.h */,
 				0A965B531AC6C3FC00254BE2 /* CameraViewController.m */,
+				0A29CFA71AC6D0F300FA01CF /* CameraController.h */,
+				0A29CFA81AC6D0F300FA01CF /* CameraController.m */,
 				0A965B551AC6C40C00254BE2 /* Camera.storyboard */,
 			);
 			name = CameraViewController;
@@ -338,6 +343,7 @@
 				522BCEAF1AC6DB0D006BEEBE /* YesEqualityViewController.m in Sources */,
 				522BCEB21AC6DBCD006BEEBE /* WhyVotePart1ViewController.m in Sources */,
 				522BCEAC1AC6DA64006BEEBE /* InfoPageViewController.m in Sources */,
+				0A29CFA91AC6D0F300FA01CF /* CameraController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				522BCEB51AC6DBDD006BEEBE /* WhyVotePart2ViewController.m in Sources */,

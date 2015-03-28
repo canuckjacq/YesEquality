@@ -47,7 +47,7 @@
         <!--Why Vote Part2 View Controller-->
         <scene sceneID="Ocs-B8-hb7">
             <objects>
-                <viewController id="f5i-ck-D5o" customClass="WhyVotePart2ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyVotePart2ViewController" id="f5i-ck-D5o" customClass="WhyVotePart2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tbd-Lt-OTi"/>
                         <viewControllerLayoutGuide type="bottom" id="gcw-wu-ZgE"/>
@@ -78,7 +78,7 @@
         <!--Why Vote Part1 View Controller-->
         <scene sceneID="sKt-La-bbK">
             <objects>
-                <viewController id="PUC-9t-GsF" customClass="WhyVotePart1ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhyVotePart1ViewController" id="PUC-9t-GsF" customClass="WhyVotePart1ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gZT-zl-6Mr"/>
                         <viewControllerLayoutGuide type="bottom" id="PjO-eW-FeI"/>
