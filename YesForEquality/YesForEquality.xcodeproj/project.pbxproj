@@ -16,6 +16,9 @@
 		0A965B491AC6C25B00254BE2 /* YesForEqualityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B481AC6C25B00254BE2 /* YesForEqualityTests.m */; };
 		0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B531AC6C3FC00254BE2 /* CameraViewController.m */; };
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
+		4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */; };
+		4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */; };
+		4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63B8D41AC6D949009329D7 /* Info.storyboard */; };
 		D9CC679B7E280E7CFD0460A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F97A11D004B3BBB0716F05 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,11 @@
 		0A965B521AC6C3FC00254BE2 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ViewControllers/CameraViewController.h; sourceTree = "<group>"; };
 		0A965B531AC6C3FC00254BE2 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ViewControllers/CameraViewController.m; sourceTree = "<group>"; };
 		0A965B551AC6C40C00254BE2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Camera.storyboard; path = Storyboards/Camera.storyboard; sourceTree = "<group>"; };
+		4C63B8CE1AC6D85B009329D7 /* YESContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESContentViewController.h; sourceTree = "<group>"; };
+		4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESContentViewController.m; sourceTree = "<group>"; };
+		4C63B8D11AC6D879009329D7 /* YESInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESInformationViewController.h; sourceTree = "<group>"; };
+		4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESInformationViewController.m; sourceTree = "<group>"; };
+		4C63B8D41AC6D949009329D7 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		51F97A11D004B3BBB0716F05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1E66EC1E0500C7947A518CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CCED561010D2261F36AB415F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 		0A965B2B1AC6C25B00254BE2 /* YesForEquality */ = {
 			isa = PBXGroup;
 			children = (
+				4C63B8CC1AC6D840009329D7 /* PageViewController */,
 				0A965B301AC6C25B00254BE2 /* AppDelegate.h */,
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
 				0A965B581AC6C53C00254BE2 /* Home */,
@@ -148,6 +157,18 @@
 				0A965B361AC6C25B00254BE2 /* Home.storyboard */,
 			);
 			name = Home;
+			sourceTree = "<group>";
+		};
+		4C63B8CC1AC6D840009329D7 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C63B8CE1AC6D85B009329D7 /* YESContentViewController.h */,
+				4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */,
+				4C63B8D11AC6D879009329D7 /* YESInformationViewController.h */,
+				4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */,
+				4C63B8D41AC6D949009329D7 /* Info.storyboard */,
+			);
+			name = PageViewController;
 			sourceTree = "<group>";
 		};
 		B7FD5B59BE89908F99C11016 /* Pods */ = {
@@ -253,6 +274,7 @@
 				0A965B381AC6C25B00254BE2 /* Home.storyboard in Resources */,
 				0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */,
 				0A965B3D1AC6C25B00254BE2 /* LaunchScreen.xib in Resources */,
+				4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */,
 				0A965B3A1AC6C25B00254BE2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */,
+				4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,

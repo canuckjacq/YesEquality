@@ -7,6 +7,10 @@
 //
 
 #import "HomeViewController.h"
+#import "YESInformationViewController.h"
+
+static NSString * const kYESInfoStoryboardName = @"Info";
+static NSString * const kYESMenuVCStoryboardId = @"YESInformationViewController";
 
 @interface HomeViewController ()
 
@@ -22,6 +26,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(IBAction)menuButtonPressed:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 
 @end
