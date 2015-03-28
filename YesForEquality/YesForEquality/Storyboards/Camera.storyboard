@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tNA-zD-7st">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="Jwr-1q-y8p" customClass="CameraViewController" customModule="YesForEquality" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vVW-V0-Ndc"/>
+                        <viewControllerLayoutGuide type="bottom" id="CVl-7J-Oxz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vf8-1z-ILR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QW9-w6-vMd" userLabel="Video Preview">
+                                <rect key="frame" x="140" y="140" width="320" height="320"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="999" constant="320" id="DqU-IN-ZRL"/>
+                                    <constraint firstAttribute="width" secondItem="QW9-w6-vMd" secondAttribute="height" multiplier="1:1" id="anT-Ll-Ouy"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="keV-n4-HQa">
+                                <rect key="frame" x="150" y="321" width="187" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="keV-n4-HQa" secondAttribute="height" multiplier="350:241" id="a0Y-Ra-nFb"/>
+                                </constraints>
+                                <variation key="heightClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="150" y="221.5" width="186.5" height="128.5"/>
+                                </variation>
+                                <variation key="heightClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="150" y="421" width="186.5" height="128.5"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="50" y="221.5" width="186.5" height="128.5"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="250" y="221" width="186.5" height="128.5"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="50" y="421" width="186.5" height="128.5"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                                    <rect key="frame" x="250" y="421" width="186.5" height="128.5"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddX-Sq-hUu">
+                                <rect key="frame" x="185" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PQZ-yq-hu5"/>
+                                    <constraint firstAttribute="width" secondItem="ddX-Sq-hUu" secondAttribute="height" multiplier="1:1" id="lWc-iM-FBN"/>
+                                </constraints>
+                                <state key="normal" title="Flip">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapFlipCameraButton:" destination="Jwr-1q-y8p" eventType="touchUpInside" id="wcj-bd-uVw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-tW-RPE" userLabel="Shutter Button">
+                                <rect key="frame" x="275" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="J2Z-Lm-ulP"/>
+                                    <constraint firstAttribute="width" secondItem="pkM-tW-RPE" secondAttribute="height" multiplier="1:1" id="OSg-mx-r5c"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleShutterButton:" destination="Jwr-1q-y8p" eventType="touchUpInside" id="yZU-2A-3tk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vZ-nQ-s9L">
+                                <rect key="frame" x="365" y="530" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DC0-0h-egt"/>
+                                    <constraint firstAttribute="width" secondItem="7vZ-nQ-s9L" secondAttribute="height" multiplier="1:1" id="iiG-JM-cB3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="Jwr-1q-y8p" eventType="touchUpInside" id="jql-Le-2n7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="QW9-w6-vMd" secondAttribute="height" priority="100" id="4hK-u0-Z1r"/>
+                            <constraint firstItem="CVl-7J-Oxz" firstAttribute="top" secondItem="ddX-Sq-hUu" secondAttribute="bottom" constant="20" id="5Cg-YR-Mxb"/>
+                            <constraint firstItem="keV-n4-HQa" firstAttribute="width" secondItem="QW9-w6-vMd" secondAttribute="width" multiplier="0.583333" id="6lq-cM-cVg"/>
+                            <constraint firstAttribute="centerX" secondItem="QW9-w6-vMd" secondAttribute="centerX" id="7XH-tM-2Yr"/>
+                            <constraint firstItem="CVl-7J-Oxz" firstAttribute="top" secondItem="pkM-tW-RPE" secondAttribute="bottom" constant="20" id="BIw-gT-JdI"/>
+                            <constraint firstItem="7vZ-nQ-s9L" firstAttribute="leading" secondItem="pkM-tW-RPE" secondAttribute="trailing" constant="40" id="LWG-4G-HMC"/>
+                            <constraint firstItem="keV-n4-HQa" firstAttribute="bottom" secondItem="QW9-w6-vMd" secondAttribute="bottom" constant="-10" id="OTK-g6-8GM"/>
+                            <constraint firstItem="keV-n4-HQa" firstAttribute="leading" secondItem="QW9-w6-vMd" secondAttribute="leading" constant="10" id="P10-yC-6gq"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="QW9-w6-vMd" secondAttribute="width" priority="100" id="hfE-aN-fqf"/>
+                            <constraint firstAttribute="centerY" secondItem="QW9-w6-vMd" secondAttribute="centerY" id="vYl-wk-nro"/>
+                            <constraint firstItem="CVl-7J-Oxz" firstAttribute="top" secondItem="7vZ-nQ-s9L" secondAttribute="bottom" constant="20" id="x79-gv-lXR"/>
+                            <constraint firstItem="pkM-tW-RPE" firstAttribute="leading" secondItem="ddX-Sq-hUu" secondAttribute="trailing" constant="40" id="xIT-nT-Nce"/>
+                            <constraint firstAttribute="centerX" secondItem="pkM-tW-RPE" secondAttribute="centerX" id="xh3-OU-KYQ"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hbY-Pe-WvT" appends="YES" id="Doe-jX-Xwv"/>
+                        </connections>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="flipCameraButton" destination="ddX-Sq-hUu" id="L4R-4V-srS"/>
+                        <outlet property="logoImageView" destination="keV-n4-HQa" id="PaW-Ft-4am"/>
+                        <outlet property="shareButton" destination="7vZ-nQ-s9L" id="Tsn-0M-ubM"/>
+                        <outlet property="videoPreviewView" destination="QW9-w6-vMd" id="iYr-uF-keF"/>
+                        <outlet property="videoPreviewViewWidthConstraint" destination="DqU-IN-ZRL" id="zd6-qb-0Wc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6V6-BC-ilg" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hbY-Pe-WvT">
+                    <connections>
+                        <action selector="focusOnPointOfInterest:" destination="Jwr-1q-y8p" id="grd-VI-Nht"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="273" y="445"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="400" height="400"/>
+    </resources>
+</document>

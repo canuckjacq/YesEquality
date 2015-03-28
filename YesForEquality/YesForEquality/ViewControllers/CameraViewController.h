@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CameraViewController.h
 //  YesForEquality
 //
 //  Created by Liam Dunne on 28/03/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface CameraViewController : UIViewController
 
 @end
-
