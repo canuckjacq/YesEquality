@@ -7,7 +7,6 @@
 //
 
 #import "CameraViewController.h"
-#import "CameraController.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -31,6 +30,52 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.cameraController = [[CameraController alloc] initWithDelegate:self];
+    AVCaptureVideoPreviewLayer *previewLayer = self.cameraController.previewLayer;
+    self.cameraView.contentMode = UIViewContentModeScaleAspectFill;
+    previewLayer.frame = self.cameraView.bounds;
+    
+    [self.cameraView.layer insertSublayer:previewLayer atIndex:0];
+    self.cameraView.clipsToBounds = YES;
+    
+    self.cameraView.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.cameraView.layer.shadowOffset = CGSizeMake(0, 2);
+    self.cameraView.layer.shadowOpacity = 0.3;
+    self.cameraView.layer.shadowRadius = 2.0;
+    
+    [self.cameraView.layer insertSublayer:self.logoView.layer above:previewLayer];
+    
+    CGRect bounds = self.cameraView.bounds;
+    previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    previewLayer.bounds = bounds;
+    
+    self.shareButton.enabled = NO;
+}
+
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+
+    CGFloat minDimension = MIN(CGRectGetWidth(self.view.frame),CGRectGetHeight(self.view.frame));
+    self.videoPreviewViewWidthConstraint.constant = minDimension - 10;
+    [self.cameraView layoutIfNeeded];
+
+    AVCaptureVideoPreviewLayer *previewLayer = self.cameraController.previewLayer;
+    previewLayer.frame = self.cameraView.bounds;
+
+    [self.logoView layoutIfNeeded];
+    CGRect frame = self.logoView.frame;
+    frame.origin.x = 10.0;
+    frame.origin.y = self.cameraView.frame.size.height - self.logoView.frame.size.height - 10.0;
+    self.logoView.frame = frame;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.cameraController startRunning];
+}
+- (BOOL)prefersStatusBarHidden{
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,13 +86,20 @@
 - (IBAction)didTapMenuButton:(id)sender {
 }
 - (IBAction)didTapFlipButton:(id)sender {
+    [self.cameraController stopRunning];
+    [self.cameraController toggleCamera];
+    [self.cameraController startRunning];
+    [self removePreviewImageview];
+
 }
 - (IBAction)didTapCameraButton:(id)sender {
+    [self takePhoto];
 }
 - (IBAction)didTapInfoButton:(id)sender {
 }
 
 - (IBAction)didTapShareButton:(id)sender {
+    
 }
 
 - (void)takePhoto{
@@ -92,18 +144,17 @@
         }];
         
     } else {
-        self.isDisplayingStillImage = NO;
         [self removePreviewImageview];
-        self.shareButton.enabled = NO;
     }
 
 }
 
 - (void)removePreviewImageview{
+    self.isDisplayingStillImage = NO;
     self.cameraController.previewLayer.hidden = NO;
     [self.stillImageView removeFromSuperview];
+    self.shareButton.enabled = NO;
 }
-
 
 - (void)saveImageToSavedPhotosAlbum:(UIImage*)image{
     UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);

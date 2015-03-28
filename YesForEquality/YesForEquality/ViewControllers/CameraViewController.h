@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <Social/Social.h>
+#import "CameraController.h"
 
-@interface CameraViewController : UIViewController
+@interface CameraViewController : UIViewController <CameraControllerDelegate>
 
 @end
