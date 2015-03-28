@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <Social/Social.h>
 
 @interface CameraViewController : UIViewController
 

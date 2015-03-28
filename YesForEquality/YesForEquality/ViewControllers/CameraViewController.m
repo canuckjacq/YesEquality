@@ -9,6 +9,11 @@
 #import "CameraViewController.h"
 
 @interface CameraViewController ()
+@property (weak, nonatomic) IBOutlet UIView *cameraView;
+@property (weak, nonatomic) IBOutlet UIImageView *logoView;
+@property (weak, nonatomic) IBOutlet UIButton *flipCameraButton;
+@property (weak, nonatomic) IBOutlet UIButton *cameraButton;
+@property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @end
 

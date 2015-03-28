@@ -91,11 +91,11 @@
 		0A965B2B1AC6C25B00254BE2 /* YesForEquality */ = {
 			isa = PBXGroup;
 			children = (
-				522BCEA01AC6C95B006BEEBE /* InfoViewController */,
 				0A965B301AC6C25B00254BE2 /* AppDelegate.h */,
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
 				0A965B581AC6C53C00254BE2 /* Home */,
 				0A965B571AC6C52900254BE2 /* CameraViewController */,
+				522BCEA01AC6C95B006BEEBE /* InfoViewController */,
 				0A965B391AC6C25B00254BE2 /* Images.xcassets */,
 				0A965B3B1AC6C25B00254BE2 /* LaunchScreen.xib */,
 				0A965B2C1AC6C25B00254BE2 /* Supporting Files */,
