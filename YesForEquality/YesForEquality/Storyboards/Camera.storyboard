@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -21,18 +22,37 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
                                 <rect key="frame" x="-4" y="-44" width="608" height="608"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
+                                        <rect key="frame" x="10" y="427" width="304" height="171"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
+                                            <constraint firstAttribute="width" constant="187" id="Hm3-0n-JuU"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="BvF-1Y-ILQ"/>
+                                                <exclude reference="Hm3-0n-JuU"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="width" multiplier="2" id="DQ6-Ms-AQO"/>
+                                    <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" id="Z8b-kx-K8w"/>
+                                    <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" id="bjm-64-LvV"/>
+                                    <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" constant="10" id="gAE-HL-EFo"/>
                                     <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="pFu-N4-j5A"/>
+                                    <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" constant="10" id="vB9-kq-ELO"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Z8b-kx-K8w"/>
+                                        <exclude reference="bjm-64-LvV"/>
+                                    </mask>
+                                </variation>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
-                                <rect key="frame" x="-4" y="435" width="187" height="129"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
-                                    <constraint firstAttribute="width" constant="187" id="Hm3-0n-JuU"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
                                 <rect key="frame" x="265" y="480" width="70" height="70"/>
                                 <constraints>
@@ -123,7 +143,6 @@
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="20" id="4C9-RA-1ef"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZK0-nl-sbj" secondAttribute="trailing" constant="-20" id="7C3-H0-xJm"/>
                             <constraint firstItem="Wbf-Ap-RHz" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" symbolic="YES" id="7Wl-d1-yKq"/>
-                            <constraint firstItem="ZK0-nl-sbj" firstAttribute="leading" secondItem="U2c-U9-u0V" secondAttribute="leading" id="7uu-iW-Zaz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" constant="10" id="8gC-2h-9l4"/>
                             <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="A0H-I5-puP"/>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="50" id="BwY-gP-Q9n"/>
@@ -144,7 +163,6 @@
                             <constraint firstAttribute="centerX" secondItem="ZK0-nl-sbj" secondAttribute="centerX" id="iy1-hb-Amz"/>
                             <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="kUp-fx-TnK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lLz-Yf-c0p" secondAttribute="trailing" id="lay-Z7-PTI"/>
-                            <constraint firstItem="ZK0-nl-sbj" firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" id="oLY-sl-daw"/>
                             <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="pLB-VX-TfM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="pXq-Tg-U0E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="q7a-Al-Tr4"/>
@@ -202,8 +220,8 @@
     <resources>
         <image name="CameraButton" width="70" height="70"/>
         <image name="FlipButton" width="44" height="44"/>
-        <image name="Logo" width="400" height="400"/>
         <image name="ShareButton" width="44" height="44"/>
+        <image name="YES_white" width="439" height="171"/>
         <image name="infobutton" width="24" height="24"/>
     </resources>
 </document>
