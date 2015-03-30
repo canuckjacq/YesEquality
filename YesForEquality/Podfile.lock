@@ -1,10 +1,45 @@
 PODS:
+  - Bolts (1.1.4)
   - ECSlidingViewController (2.0.3)
+  - Facebook-iOS-SDK (3.23.2):
+    - Bolts (~> 1.0)
+  - PKMultipartInputStream (1.1.0)
+  - SAMTextView (0.2.2)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage/Core (3.7.2)
+  - ShareKit/Core (4.0.4):
+    - PKMultipartInputStream
+    - SAMTextView (~> 0.2.1)
+    - SDWebImage (~> 3.7)
+    - ShareKit/Reachability
+    - SSKeychain (~> 1.2.2)
+    - UIActivityIndicator-for-SDWebImage (~> 1.2)
+  - ShareKit/Facebook (4.0.4):
+    - Facebook-iOS-SDK (~> 3.2)
+    - ShareKit/Core
+  - ShareKit/Reachability (4.0.4)
+  - ShareKit/Twitter (4.0.4):
+    - ShareKit/Core
+  - SSKeychain (1.2.2)
+  - UIActivityIndicator-for-SDWebImage (1.2):
+    - SDWebImage (~> 3.7)
 
 DEPENDENCIES:
   - ECSlidingViewController (~> 2.0.3)
+  - ShareKit/Core (~> 4.0.4)
+  - ShareKit/Facebook (~> 4.0.4)
+  - ShareKit/Twitter (~> 4.0.4)
 
 SPEC CHECKSUMS:
+  Bolts: f8e2f94edbf9fec7bb8de5ecaaa3aa6b7de6f64e
   ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
+  Facebook-iOS-SDK: cd87f0b2f0c1d9574b44e8fa2baacc275524bac3
+  PKMultipartInputStream: 1fb466fac9347857e3477e4dfc6fcc62fea7a944
+  SAMTextView: 979c43bb1fa5859ddfbfeb35e9c296a2b0ec55fd
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  ShareKit: 48a9a3aed20d4b59b49ae3c8efdbb46e95beab33
+  SSKeychain: 88767e903ee8d274ed380e364d96b7a101235286
+  UIActivityIndicator-for-SDWebImage: 7bf7ebbf0ed1747dedc0d6e949c4603a6d0f9e0c
 
 COCOAPODS: 0.36.1
