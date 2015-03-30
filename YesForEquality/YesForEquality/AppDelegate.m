@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "constants.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,10 @@
 
 @implementation AppDelegate
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UIPageControl.appearance.pageIndicatorTintColor = UIColor.blackColor;
+    UIPageControl.appearance.currentPageIndicatorTintColor = UIColor.redColor;
     
     // Ask for Notification permissions
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){

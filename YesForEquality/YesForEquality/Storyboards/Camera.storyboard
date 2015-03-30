@@ -83,9 +83,6 @@
                                 <state key="normal" image="infobutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="didTapInfoButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="een-cT-Ksv"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
                                 <rect key="frame" x="530" y="493" width="44" height="44"/>
@@ -98,10 +95,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didTapInfoButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="een-cT-Ksv"/>
                                     <action selector="didTapShareButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="u80-nF-b93"/>
+                                    <action selector="transitionToInfoView:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="xAF-lU-hME"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
                                 <rect key="frame" x="26" y="493" width="44" height="44"/>
                                 <accessibility key="accessibilityConfiguration" label="Flip"/>
                                 <constraints>
@@ -114,12 +113,6 @@
                                     <color key="titleColor" red="0.23529411764705882" green="0.60392156862745094" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="DBg-f5-Arx"/>
-                                        <exclude reference="HIA-fY-lIh"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="didTapFlipButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="MVY-3V-ZJg"/>
                                 </connections>

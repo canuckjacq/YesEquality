@@ -11,6 +11,7 @@
 #import "CameraViewController.h"
 #import "YESInformationViewController.h"
 #import "constants.h"
+#import "CameraController.h"
 #import "ReminderViewController.h"
 
 @interface CameraViewController ()
@@ -30,6 +31,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoPreviewViewWidthConstraint;
 @property (assign, nonatomic) BOOL isDisplayingStillImage;
+@property (assign, nonatomic) BOOL usingFrontCamera;
 @property (strong, nonatomic) CameraController *cameraController;
 @property (strong, nonatomic) UIImageView *stillImageView;
 @property (nonatomic,strong) UIImage *renderedImage;
@@ -252,6 +254,13 @@
     }];
 }
 
+#pragma mark - Info page
+- (IBAction)transitionToInfoView:(id)sender {
+//    UIStoryboard *infoStoryboard = [UIStoryboard storyboardWithName:@"Info" bundle:nil];
+//    InfoPageViewController * infoViewController = [infoStoryboard instantiateViewControllerWithIdentifier:@"InfoPageViewController"];
+//    [self presentViewController:infoViewController animated:YES completion: nil];
+}
+
 - (void)shouldShowShareButton:(BOOL)shouldShowShareButton animated:(BOOL)animated{
     CGFloat height = -CGRectGetHeight(self.prePhotoView.frame);
     CGFloat shareButtonAlpha = (shouldShowShareButton?1.0:0.0);
@@ -278,6 +287,6 @@
     } else {
         uiUpdate();
     }
+    
 }
-
 @end
