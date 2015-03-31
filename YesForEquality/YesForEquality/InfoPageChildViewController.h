@@ -17,6 +17,7 @@
 - (instancetype)initWithTopText:(NSString *)topText
                           image:(UIImage *)image
                      bottomText:(NSString *)bottomText
-               backgroundColour:(UIColor *)backgroundColour;
+               backgroundColour:(UIColor *)backgroundColour
+                      textColor:(UIColor *)textColor;
 
 @end

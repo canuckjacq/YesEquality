@@ -18,6 +18,11 @@
 		0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B531AC6C3FC00254BE2 /* CameraViewController.m */; };
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
 		0AC63E5F1ACA13F800CD0DE5 /* YESHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC63E5E1ACA13F800CD0DE5 /* YESHKConfigurator.m */; };
+		0AC63E681ACA1B8E00CD0DE5 /* InfoPageChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC63E611ACA1B8E00CD0DE5 /* InfoPageChildViewController.m */; };
+		0AC63E691ACA1B8E00CD0DE5 /* InfoPageChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC63E621ACA1B8E00CD0DE5 /* InfoPageChildViewController.xib */; };
+		0AC63E6A1ACA1B8E00CD0DE5 /* InfoPageCoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC63E641ACA1B8E00CD0DE5 /* InfoPageCoverViewController.m */; };
+		0AC63E6B1ACA1B8E00CD0DE5 /* InfoPageCoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AC63E651ACA1B8E00CD0DE5 /* InfoPageCoverViewController.xib */; };
+		0AC63E6C1ACA1B8E00CD0DE5 /* InfoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC63E671ACA1B8E00CD0DE5 /* InfoPageViewController.m */; };
 		4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */; };
 		4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */; };
 		4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63B8D41AC6D949009329D7 /* Info.storyboard */; };
@@ -58,6 +63,14 @@
 		0A965B551AC6C40C00254BE2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Camera.storyboard; path = Storyboards/Camera.storyboard; sourceTree = "<group>"; };
 		0AC63E5D1ACA13F800CD0DE5 /* YESHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESHKConfigurator.h; sourceTree = "<group>"; };
 		0AC63E5E1ACA13F800CD0DE5 /* YESHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESHKConfigurator.m; sourceTree = "<group>"; };
+		0AC63E601ACA1B8E00CD0DE5 /* InfoPageChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageChildViewController.h; sourceTree = "<group>"; };
+		0AC63E611ACA1B8E00CD0DE5 /* InfoPageChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageChildViewController.m; sourceTree = "<group>"; };
+		0AC63E621ACA1B8E00CD0DE5 /* InfoPageChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageChildViewController.xib; sourceTree = "<group>"; };
+		0AC63E631ACA1B8E00CD0DE5 /* InfoPageCoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageCoverViewController.h; sourceTree = "<group>"; };
+		0AC63E641ACA1B8E00CD0DE5 /* InfoPageCoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageCoverViewController.m; sourceTree = "<group>"; };
+		0AC63E651ACA1B8E00CD0DE5 /* InfoPageCoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPageCoverViewController.xib; sourceTree = "<group>"; };
+		0AC63E661ACA1B8E00CD0DE5 /* InfoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoPageViewController.h; sourceTree = "<group>"; };
+		0AC63E671ACA1B8E00CD0DE5 /* InfoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoPageViewController.m; sourceTree = "<group>"; };
 		4C63B8CE1AC6D85B009329D7 /* YESContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESContentViewController.h; sourceTree = "<group>"; };
 		4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESContentViewController.m; sourceTree = "<group>"; };
 		4C63B8D11AC6D879009329D7 /* YESInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESInformationViewController.h; sourceTree = "<group>"; };
@@ -115,6 +128,14 @@
 		0A965B2B1AC6C25B00254BE2 /* YesForEquality */ = {
 			isa = PBXGroup;
 			children = (
+				0AC63E601ACA1B8E00CD0DE5 /* InfoPageChildViewController.h */,
+				0AC63E611ACA1B8E00CD0DE5 /* InfoPageChildViewController.m */,
+				0AC63E621ACA1B8E00CD0DE5 /* InfoPageChildViewController.xib */,
+				0AC63E631ACA1B8E00CD0DE5 /* InfoPageCoverViewController.h */,
+				0AC63E641ACA1B8E00CD0DE5 /* InfoPageCoverViewController.m */,
+				0AC63E651ACA1B8E00CD0DE5 /* InfoPageCoverViewController.xib */,
+				0AC63E661ACA1B8E00CD0DE5 /* InfoPageViewController.h */,
+				0AC63E671ACA1B8E00CD0DE5 /* InfoPageViewController.m */,
 				0AC63E5D1ACA13F800CD0DE5 /* YESHKConfigurator.h */,
 				0AC63E5E1ACA13F800CD0DE5 /* YESHKConfigurator.m */,
 				4C63B8CC1AC6D840009329D7 /* PageViewController */,
@@ -308,7 +329,9 @@
 				0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */,
 				0A965B3D1AC6C25B00254BE2 /* LaunchScreen.xib in Resources */,
 				4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */,
+				0AC63E691ACA1B8E00CD0DE5 /* InfoPageChildViewController.xib in Resources */,
 				0A965B3A1AC6C25B00254BE2 /* Images.xcassets in Resources */,
+				0AC63E6B1ACA1B8E00CD0DE5 /* InfoPageCoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,13 +383,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A2FE9951AC6FC4900DAA743 /* CameraController.m in Sources */,
+				0AC63E6A1ACA1B8E00CD0DE5 /* InfoPageCoverViewController.m in Sources */,
 				4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */,
+				0AC63E6C1ACA1B8E00CD0DE5 /* InfoPageViewController.m in Sources */,
 				4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,
 				0A965B2F1AC6C25B00254BE2 /* main.m in Sources */,
 				0AC63E5F1ACA13F800CD0DE5 /* YESHKConfigurator.m in Sources */,
+				0AC63E681ACA1B8E00CD0DE5 /* InfoPageChildViewController.m in Sources */,
 				D490094B1AC6C7CA0013FCC1 /* ReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

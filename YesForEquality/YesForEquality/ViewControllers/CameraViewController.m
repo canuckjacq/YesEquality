@@ -13,6 +13,7 @@
 #import "constants.h"
 #import "CameraController.h"
 #import "ReminderViewController.h"
+#import "InfoPageViewController.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -128,10 +129,11 @@
     [self takePhoto];
 }
 - (IBAction)didTapInfoButton:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
-    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+//    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
     
-    [self presentViewController:viewController animated:YES completion:nil];
+    InfoPageViewController *controller = [[InfoPageViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)didTapShareButton:(id)sender {
@@ -256,9 +258,11 @@
 
 #pragma mark - Info page
 - (IBAction)transitionToInfoView:(id)sender {
-    UIStoryboard *infoStoryboard = [UIStoryboard storyboardWithName:@"Info" bundle:nil];
-    YESInformationViewController * infoViewController = [infoStoryboard instantiateViewControllerWithIdentifier:@"YESInformationViewController"];
-    [self presentViewController:infoViewController animated:YES completion: nil];
+//    UIStoryboard *infoStoryboard = [UIStoryboard storyboardWithName:@"Info" bundle:nil];
+//    YESInformationViewController * infoViewController = [infoStoryboard instantiateViewControllerWithIdentifier:@"YESInformationViewController"];
+//    [self presentViewController:infoViewController animated:YES completion: nil];
+    InfoPageViewController *controller = [[InfoPageViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (void)shouldShowShareButton:(BOOL)shouldShowShareButton animated:(BOOL)animated{

@@ -29,14 +29,15 @@
     
     
     self.infoViewControllers = [NSMutableArray array];
-
+    
     [self.infoViewControllers addObject:[[InfoPageCoverViewController alloc] init]];
-
+    
     for (NSArray *info in [self childPageInfo]) {
         InfoPageChildViewController *child = [[InfoPageChildViewController alloc] initWithTopText:info[0]
-                                                                                             image:info[1]
-                                                                                        bottomText:info[2]
-                                                                                  backgroundColour:info[3]];
+                                                                                            image:info[1]
+                                                                                       bottomText:info[2]
+                                                                                 backgroundColour:info[3]
+                                                                                        textColor:info[4]];
         [self.infoViewControllers addObject:child];
     }
     
@@ -46,31 +47,29 @@
                   completion:nil];
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [button setTitle:@"Back" forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"X"] forState:UIControlStateNormal];
     button.frame = CGRectMake(0.0, 20.0, 60.0, 40.0);
-    button.tintColor = [UIColor blueColor];
     
-    [button addTarget:self.parentViewController
-               action:@selector(didTouchUpInsideBackButton)
-     forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self.parentViewController action:@selector(didTouchUpInsideBackButton) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
 }
 
 - (NSArray *)childPageInfo {
     return @[
-        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"1"], @"Aged over 18", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1]],
-        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"2"], @"Irish Citizen", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1]],
-        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"3"], @"Resident in the republic", [UIColor colorWithRed:0.19 green:0.22 blue:0.55 alpha:1]],
-        @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"4"], @"Registered To Vote", [UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1]],
-        @[@"Check to see if you are registered", [UIImage imageNamed:@"5"], @"checktheregister.ie", [UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1]],
-        @[@"Registering is easy", [UIImage imageNamed:@"6"], @"Download the Form", [UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1]],
-        @[@"Registering is easy", [UIImage imageNamed:@"7"], @"Get is signed & stamped by a Garda", [UIColor colorWithRed:0.56 green:0.18 blue:0.55 alpha:1]],
-        @[@"Registering is easy", [UIImage imageNamed:@"8"], @"Return it to your local authority office", [UIColor colorWithRed:0.74 green:0.14 blue:0.2 alpha:1]],
-        @[@"Student?", [UIImage imageNamed:@"9"], @"You can vote by post", [UIColor colorWithRed:0.49 green:0.75 blue:0.3 alpha:1]],
-        @[@"Away for work?", [UIImage imageNamed:@"10"], @"You can vote by post too!", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1]],
-        @[@"Changed address?", [UIImage imageNamed:@"11"], @"There’s a form for that.", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1]]
-    ];
+             @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"1"], @"Aged over 18", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1],[UIColor whiteColor]],
+             @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"2"], @"Irish Citizen", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1],[UIColor whiteColor]],
+             @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"3"], @"Resident in the republic", [UIColor colorWithRed:0.19 green:0.22 blue:0.55 alpha:1],[UIColor whiteColor]],
+             @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"4"], @"Registered To Vote", [UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1],[UIColor whiteColor]],
+             @[@"Check to see if you are registered", [UIImage imageNamed:@"5"], @"checktheregister.ie", [UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1],[UIColor whiteColor]],
+             @[@"Registering is easy", [UIImage imageNamed:@"6"], @"Download the Form", [UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1],[UIColor whiteColor]],
+             @[@"Registering is easy", [UIImage imageNamed:@"7"], @"Get it signed & stamped by a Garda", [UIColor colorWithRed:0.56 green:0.18 blue:0.55 alpha:1],[UIColor whiteColor]],
+             @[@"Registering is easy", [UIImage imageNamed:@"8"], @"Return it to your local authority office", [UIColor colorWithRed:0.74 green:0.14 blue:0.2 alpha:1],[UIColor whiteColor]],
+             @[@"Student?", [UIImage imageNamed:@"9"], @"You can vote by post", [UIColor colorWithRed:0.49 green:0.75 blue:0.3 alpha:1],[UIColor whiteColor]],
+             @[@"Away for work?", [UIImage imageNamed:@"10"], @"You can vote by post too!", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1],[UIColor whiteColor]],
+             @[@"Changed address?", [UIImage imageNamed:@"11"], @"There’s a form for that.", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1],[UIColor whiteColor]],
+             @[@"And remember...", [UIImage imageNamed:@"Logo"], @"Your vote counts.\nDon't forget to use it.", [UIColor whiteColor],[UIColor darkGrayColor]]
+             ];
 }
 
 - (void)didTouchUpInsideBackButton {
@@ -98,7 +97,7 @@
         scrollView.frame = self.view.bounds;
         [self.view bringSubviewToFront:pageControl];
     }
-
+    
     [super viewDidLayoutSubviews];
 }
 

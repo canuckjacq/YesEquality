@@ -14,6 +14,7 @@
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) NSString *bottomText;
 @property (nonatomic, strong) UIColor *backgroundColour;
+@property (nonatomic, strong) UIColor *textColor;
 
 @end
 
@@ -22,12 +23,14 @@
 - (instancetype)initWithTopText:(NSString *)topText
                           image:(UIImage *)image
                      bottomText:(NSString *)bottomText
-               backgroundColour:(UIColor *)backgroundColour {
+               backgroundColour:(UIColor *)backgroundColour
+               textColor:(UIColor *)textColor{
     if (self = [super init]) {
         self.topText = topText;
         self.image = image;
         self.bottomText = bottomText;
         self.backgroundColour = backgroundColour;
+        self.textColor = textColor;
     }
     
     return self;
@@ -41,6 +44,10 @@
     self.bottomLabel.text = self.bottomText;
     
     self.view.backgroundColor = self.backgroundColour;
+
+    self.topLabel.textColor = self.textColor;
+    self.bottomLabel.textColor = self.textColor;
+
 }
 
 @end
