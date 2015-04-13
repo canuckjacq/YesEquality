@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Zb-jf-eIt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4Zb-jf-eIt">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
-                                <rect key="frame" x="20" y="34" width="24" height="24"/>
+                                <rect key="frame" x="20" y="28" width="24" height="24"/>
                                 <color key="tintColor" red="0.15686274509803921" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="infobutton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -69,7 +69,7 @@
                                 <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
-                                        <rect key="frame" x="277.5" y="17.5" width="44" height="44"/>
+                                        <rect key="frame" x="278" y="18" width="44" height="44"/>
                                         <accessibility key="accessibilityConfiguration" label="Share"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="naL-yv-Il8"/>
@@ -188,8 +188,8 @@
                         <constraints>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="yPA-8Y-6Ie" secondAttribute="bottom" id="43d-e2-Pch"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZK0-nl-sbj" secondAttribute="trailing" constant="-20" id="7C3-H0-xJm"/>
-                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" symbolic="YES" id="7Wl-d1-yKq"/>
-                            <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="14" id="FdJ-Q3-NO3"/>
+                            <constraint firstItem="Wbf-Ap-RHz" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" id="7Wl-d1-yKq"/>
+                            <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" id="FdJ-Q3-NO3"/>
                             <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="hdE-oe-yxt" secondAttribute="bottom" id="G68-hD-NML"/>
                             <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
                             <constraint firstAttribute="trailing" secondItem="yPA-8Y-6Ie" secondAttribute="trailing" id="Mau-fg-MRA"/>

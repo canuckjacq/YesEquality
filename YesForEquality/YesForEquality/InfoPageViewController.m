@@ -68,7 +68,7 @@
              @[@"Student?", [UIImage imageNamed:@"9"], @"You can vote by post", [UIColor colorWithRed:0.49 green:0.75 blue:0.3 alpha:1],[UIColor whiteColor]],
              @[@"Away for work?", [UIImage imageNamed:@"10"], @"You can vote by post too!", [UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1],[UIColor whiteColor]],
              @[@"Changed address?", [UIImage imageNamed:@"11"], @"There’s a form for that.", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1],[UIColor whiteColor]],
-             @[@"And remember...", [UIImage imageNamed:@"Logo"], @"Your vote counts.\nDon't forget to use it.", [UIColor whiteColor],[UIColor darkGrayColor]]
+             @[@"And remember...", [UIImage imageNamed:@"Logo"], @"Your vote counts.\nDon't forget\nto use it.", [UIColor whiteColor],[UIColor darkGrayColor]]
              ];
 }
 
