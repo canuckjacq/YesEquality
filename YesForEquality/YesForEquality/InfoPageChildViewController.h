@@ -18,6 +18,10 @@
                           image:(UIImage *)image
                      bottomText:(NSString *)bottomText
                backgroundColour:(UIColor *)backgroundColour
-                      textColor:(UIColor *)textColor;
+                      textColor:(UIColor *)textColor
+                            url:(NSURL*)url
+                      linkTitle:(NSString*)linkTitle;
+
+- (void)addLink:(NSURL*)url;
 
 @end
