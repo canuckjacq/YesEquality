@@ -11,6 +11,6 @@
 #import <Social/Social.h>
 #import "CameraController.h"
 
-@interface CameraViewController : UIViewController <CameraControllerDelegate>
+@interface CameraViewController : UIViewController <CameraControllerDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end
