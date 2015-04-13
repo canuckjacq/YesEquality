@@ -150,8 +150,6 @@
         
         self.shareButton.enabled = YES;
         
-        [self.cameraController logSession];
-        
         [self.cameraController captureStillImage:^(UIImage *image, NSDictionary *metatata){
             
             UIImage *outputImage = image;
