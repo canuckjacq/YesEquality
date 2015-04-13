@@ -61,7 +61,7 @@
              @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"2"], @"Irish Citizen", [UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1],[UIColor whiteColor]],
              @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"3"], @"Resident in the republic", [UIColor colorWithRed:0.19 green:0.22 blue:0.55 alpha:1],[UIColor whiteColor]],
              @[@"To vote on May 22nd you must be:", [UIImage imageNamed:@"4"], @"Registered To Vote", [UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1],[UIColor whiteColor]],
-             @[@"Check to see if you are registered", [UIImage imageNamed:@"5"], @"checktheregister.ie", [UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1],[UIColor whiteColor]],
+             @[@"Check to see if you are registered", [UIImage imageNamed:@"5"], @"www.checktheregister.ie", [UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1],[UIColor whiteColor]],
              @[@"Registering is easy", [UIImage imageNamed:@"6"], @"Download the Form", [UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1],[UIColor whiteColor]],
              @[@"Registering is easy", [UIImage imageNamed:@"7"], @"Get it signed & stamped by a Garda", [UIColor colorWithRed:0.56 green:0.18 blue:0.55 alpha:1],[UIColor whiteColor]],
              @[@"Registering is easy", [UIImage imageNamed:@"8"], @"Return it to your local authority office", [UIColor colorWithRed:0.74 green:0.14 blue:0.2 alpha:1],[UIColor whiteColor]],

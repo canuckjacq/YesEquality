@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *topLabel;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;
-@property (nonatomic, strong) IBOutlet UILabel *bottomLabel;
+@property (nonatomic, strong) IBOutlet UITextView *bottomLabel;
 
 - (instancetype)initWithTopText:(NSString *)topText
                           image:(UIImage *)image
