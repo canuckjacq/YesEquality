@@ -7,6 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "constants.h"
+#import "YESHKConfigurator.h"
+#import <ShareKit/ShareKit.h>
+#import <ShareKit/SHKFacebook.h>
+#import <ShareKit/SHKConfiguration.h>
 
 @interface AppDelegate ()
 
@@ -14,13 +19,16 @@
 
 @implementation AppDelegate
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UIPageControl.appearance.pageIndicatorTintColor = UIColor.blackColor;
+    YESHKConfigurator *configurator = [[YESHKConfigurator alloc] init];
+    UIPageControl.appearance.currentPageIndicatorTintColor = UIColor.redColor;
     
     // Ask for Notification permissions
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     }
 
 
@@ -115,6 +123,19 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    NSString *scheme = [url scheme];
+    
+    if ([scheme hasPrefix:[NSString stringWithFormat:@"fb%@", SHKCONFIG(facebookAppId)]]) {
+        return [SHKFacebook handleOpenURL:url sourceApplication:sourceApplication];
+    }
+    
+    return YES;
 }
 
 @end

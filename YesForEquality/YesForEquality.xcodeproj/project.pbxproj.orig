@@ -17,15 +17,14 @@
 		0A965B491AC6C25B00254BE2 /* YesForEqualityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B481AC6C25B00254BE2 /* YesForEqualityTests.m */; };
 		0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A965B531AC6C3FC00254BE2 /* CameraViewController.m */; };
 		0A965B561AC6C40C00254BE2 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A965B551AC6C40C00254BE2 /* Camera.storyboard */; };
-<<<<<<< HEAD
-		D490094B1AC6C7CA0013FCC1 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */; };
-		D49009501AC6C8040013FCC1 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D490094F1AC6C8040013FCC1 /* Reminder.storyboard */; };
-=======
 		4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */; };
+		8BDC8F991AC6D2B400AE23EB /* YESHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDC8F981AC6D2B400AE23EB /* YESHKConfigurator.m */; };
 		4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */; };
 		4C63B8D51AC6D949009329D7 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C63B8D41AC6D949009329D7 /* Info.storyboard */; };
 		D9CC679B7E280E7CFD0460A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51F97A11D004B3BBB0716F05 /* libPods.a */; };
->>>>>>> e9b0b20a84ff234267f63938e994f8dbb46b78ad
+		DB6675821ECE12D361F48DD4 /* libPods-YesForEquality.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6469EFFBBF2341DD8C5CDC89 /* libPods-YesForEquality.a */; };
+		D490094B1AC6C7CA0013FCC1 /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */; };
+		D49009501AC6C8040013FCC1 /* Reminder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D490094F1AC6C8040013FCC1 /* Reminder.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,20 +57,20 @@
 		0A965B521AC6C3FC00254BE2 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ViewControllers/CameraViewController.h; sourceTree = "<group>"; };
 		0A965B531AC6C3FC00254BE2 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ViewControllers/CameraViewController.m; sourceTree = "<group>"; };
 		0A965B551AC6C40C00254BE2 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Camera.storyboard; path = Storyboards/Camera.storyboard; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
-		D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
-		D490094F1AC6C8040013FCC1 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
-=======
 		4C63B8CE1AC6D85B009329D7 /* YESContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESContentViewController.h; sourceTree = "<group>"; };
+		6469EFFBBF2341DD8C5CDC89 /* libPods-YesForEquality.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YesForEquality.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C63B8CF1AC6D85B009329D7 /* YESContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESContentViewController.m; sourceTree = "<group>"; };
 		4C63B8D11AC6D879009329D7 /* YESInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESInformationViewController.h; sourceTree = "<group>"; };
 		4C63B8D21AC6D879009329D7 /* YESInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESInformationViewController.m; sourceTree = "<group>"; };
+		8BDC8F971AC6D2B400AE23EB /* YESHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YESHKConfigurator.h; sourceTree = "<group>"; };
+		8BDC8F981AC6D2B400AE23EB /* YESHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YESHKConfigurator.m; sourceTree = "<group>"; };
 		4C63B8D41AC6D949009329D7 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		51F97A11D004B3BBB0716F05 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1E66EC1E0500C7947A518CC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		CCED561010D2261F36AB415F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
->>>>>>> e9b0b20a84ff234267f63938e994f8dbb46b78ad
+		B5EDB8342143C7330816DE47 /* Pods-YesForEquality.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality.release.xcconfig"; path = "Pods/Target Support Files/Pods-YesForEquality/Pods-YesForEquality.release.xcconfig"; sourceTree = "<group>"; };
+		BAFF31C7BE24BFD7E9DFB5D5 /* Pods-YesForEquality.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesForEquality.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YesForEquality/Pods-YesForEquality.debug.xcconfig"; sourceTree = "<group>"; };
+		D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		D490094F1AC6C8040013FCC1 /* Reminder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reminder.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CC679B7E280E7CFD0460A1 /* libPods.a in Frameworks */,
+				DB6675821ECE12D361F48DD4 /* libPods-YesForEquality.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,8 +98,8 @@
 				0A965B2B1AC6C25B00254BE2 /* YesForEquality */,
 				0A965B451AC6C25B00254BE2 /* YesForEqualityTests */,
 				0A965B2A1AC6C25B00254BE2 /* Products */,
-				B7FD5B59BE89908F99C11016 /* Pods */,
-				BB6EAB97E5AD393321D006FE /* Frameworks */,
+
+
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +118,7 @@
 				4C63B8CC1AC6D840009329D7 /* PageViewController */,
 				0A965B301AC6C25B00254BE2 /* AppDelegate.h */,
 				0A965B311AC6C25B00254BE2 /* AppDelegate.m */,
+				8BDC8F9A1AC6D2B700AE23EB /* New Group */,
 				0A965B581AC6C53C00254BE2 /* Home */,
 				0A965B571AC6C52900254BE2 /* CameraViewController */,
 				D490094C1AC6C7CF0013FCC1 /* Reminder */,
@@ -178,16 +178,6 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		D490094C1AC6C7CF0013FCC1 /* Reminder */ = {
-			isa = PBXGroup;
-			children = (
-				D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */,
-				D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */,
-				D490094F1AC6C8040013FCC1 /* Reminder.storyboard */,
-			);
-			name = Reminder;
-=======
 		4C63B8CC1AC6D840009329D7 /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,10 +202,20 @@
 		BB6EAB97E5AD393321D006FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAFF31C7BE24BFD7E9DFB5D5 /* Pods-YesForEquality.debug.xcconfig */,
 				51F97A11D004B3BBB0716F05 /* libPods.a */,
 			);
 			name = Frameworks;
->>>>>>> e9b0b20a84ff234267f63938e994f8dbb46b78ad
+			sourceTree = "<group>";
+		};
+		D490094C1AC6C7CF0013FCC1 /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				D49009491AC6C7CA0013FCC1 /* ReminderViewController.h */,
+				D490094A1AC6C7CA0013FCC1 /* ReminderViewController.m */,
+				D490094F1AC6C8040013FCC1 /* Reminder.storyboard */,
+			);
+			name = Reminder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +361,7 @@
 				0A2FE9951AC6FC4900DAA743 /* CameraController.m in Sources */,
 				4C63B8D01AC6D85B009329D7 /* YESContentViewController.m in Sources */,
 				4C63B8D31AC6D879009329D7 /* YESInformationViewController.m in Sources */,
+				8BDC8F991AC6D2B400AE23EB /* YESHKConfigurator.m in Sources */,
 				0A965B351AC6C25B00254BE2 /* HomeViewController.m in Sources */,
 				0A965B541AC6C3FC00254BE2 /* CameraViewController.m in Sources */,
 				0A965B321AC6C25B00254BE2 /* AppDelegate.m in Sources */,

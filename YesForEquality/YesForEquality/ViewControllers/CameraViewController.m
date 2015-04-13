@@ -11,7 +11,9 @@
 #import "CameraViewController.h"
 #import "YESInformationViewController.h"
 #import "constants.h"
+#import "CameraController.h"
 #import "ReminderViewController.h"
+#import "InfoPageViewController.h"
 
 @interface CameraViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cameraView;
@@ -30,6 +32,7 @@
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *videoPreviewViewWidthConstraint;
 @property (assign, nonatomic) BOOL isDisplayingStillImage;
+@property (assign, nonatomic) BOOL usingFrontCamera;
 @property (strong, nonatomic) CameraController *cameraController;
 @property (strong, nonatomic) UIImageView *stillImageView;
 @property (nonatomic,strong) UIImage *renderedImage;
@@ -126,10 +129,11 @@
     [self takePhoto];
 }
 - (IBAction)didTapInfoButton:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
-    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:kYESInfoStoryboardName bundle:nil];
+//    YESInformationViewController *viewController = [sb instantiateViewControllerWithIdentifier:kYESMenuVCStoryboardId];
     
-    [self presentViewController:viewController animated:YES completion:nil];
+    InfoPageViewController *controller = [[InfoPageViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 - (IBAction)didTapShareButton:(id)sender {
@@ -168,8 +172,8 @@
             [self.cameraView addSubview:self.stillImageView];
             [self.cameraView sendSubviewToBack:self.stillImageView];
             
-            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapStillImage:)];
-            [self.stillImageView addGestureRecognizer:tap];
+//            UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapStillImage:)];
+//            [self.stillImageView addGestureRecognizer:tap];
             
             CGSize size = self.cameraView.frame.size;
             
@@ -197,7 +201,7 @@
 
 }
 
-- (void)didTapStillImage:(UITapGestureRecognizer*)gesture{
+- (IBAction)discardImage:(id)sender{
     if (self.isDisplayingStillImage){
         [self removePreviewImageview:nil];
     }
@@ -250,6 +254,15 @@
     }];
 }
 
+#pragma mark - Info page
+- (IBAction)transitionToInfoView:(id)sender {
+//    UIStoryboard *infoStoryboard = [UIStoryboard storyboardWithName:@"Info" bundle:nil];
+//    YESInformationViewController * infoViewController = [infoStoryboard instantiateViewControllerWithIdentifier:@"YESInformationViewController"];
+//    [self presentViewController:infoViewController animated:YES completion: nil];
+    InfoPageViewController *controller = [[InfoPageViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
 - (void)shouldShowShareButton:(BOOL)shouldShowShareButton animated:(BOOL)animated{
     CGFloat height = -CGRectGetHeight(self.prePhotoView.frame);
     CGFloat shareButtonAlpha = (shouldShowShareButton?1.0:0.0);
@@ -268,7 +281,7 @@
     };
     
     if (animated){
-        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionBeginFromCurrentState
+        [UIView animateWithDuration:0.76 delay:0.23 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionBeginFromCurrentState
                          animations:^{
                              uiUpdate();
                          } completion:^(BOOL completion){
@@ -276,6 +289,6 @@
     } else {
         uiUpdate();
     }
+    
 }
-
 @end

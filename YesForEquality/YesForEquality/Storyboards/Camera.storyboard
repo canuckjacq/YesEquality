@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
                                 <rect key="frame" x="-4" y="-44" width="608" height="608"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" misplaced="YES" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V">
                                         <rect key="frame" x="10" y="427" width="304" height="171"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
@@ -40,43 +40,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="width" multiplier="2" id="DQ6-Ms-AQO"/>
-                                    <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" id="Z8b-kx-K8w"/>
-                                    <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" id="bjm-64-LvV"/>
                                     <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" constant="10" id="gAE-HL-EFo"/>
                                     <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="pFu-N4-j5A"/>
                                     <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" constant="10" id="vB9-kq-ELO"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Z8b-kx-K8w"/>
-                                        <exclude reference="bjm-64-LvV"/>
-                                    </mask>
-                                </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
-                                <rect key="frame" x="265" y="480" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lLz-Yf-c0p" secondAttribute="height" multiplier="1:1" id="D4r-lu-ddB"/>
-                                    <constraint firstAttribute="width" constant="70" id="Upf-RV-VLP"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="CameraButton">
-                                    <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="D4r-lu-ddB"/>
-                                        <exclude reference="Upf-RV-VLP"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="didTapCameraButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="77b-em-9zt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
                                 <rect key="frame" x="20" y="34" width="24" height="24"/>
                                 <color key="tintColor" red="0.15686274509803921" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,122 +52,161 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didTapInfoButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="een-cT-Ksv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
-                                <rect key="frame" x="530" y="493" width="44" height="44"/>
-                                <accessibility key="accessibilityConfiguration" label="Share"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
-                                <state key="normal" title="SHARE" backgroundImage="ShareButton">
-                                    <color key="titleColor" red="0.41176470588235292" green="0.71764705882352942" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapShareButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="u80-nF-b93"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
-                                <rect key="frame" x="26" y="493" width="44" height="44"/>
-                                <accessibility key="accessibilityConfiguration" label="Flip"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="22" id="DBg-f5-Arx"/>
-                                    <constraint firstAttribute="width" secondItem="iKA-ir-wqY" secondAttribute="height" multiplier="1:1" id="HIA-fY-lIh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
-                                <state key="normal" title="FLIP" backgroundImage="FlipButton">
-                                    <color key="titleColor" red="0.23529411764705882" green="0.60392156862745094" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="DBg-f5-Arx"/>
-                                        <exclude reference="HIA-fY-lIh"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="didTapFlipButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="MVY-3V-ZJg"/>
+                                    <action selector="transitionToInfoView:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="t3D-rk-dGd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz">
-                                <rect key="frame" x="538" y="28" width="42" height="32"/>
+                                <rect key="frame" x="499" y="28" width="81" height="32"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Menu">
+                                <state key="normal" title="Reminders">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapMenuButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="0Ya-DY-Ope"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdE-oe-yxt" userLabel="postPhotoView">
+                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW6-Yo-aFP">
+                                        <rect key="frame" x="277.5" y="17.5" width="44" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" label="Share"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="naL-yv-Il8"/>
+                                            <constraint firstAttribute="width" secondItem="SW6-Yo-aFP" secondAttribute="height" multiplier="1:1" id="wHs-fy-N4V"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="11"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
+                                        <state key="normal" image="ShareButton">
+                                            <color key="titleColor" red="0.41176470588235292" green="0.71764705882352942" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapInfoButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="een-cT-Ksv"/>
+                                            <action selector="didTapShareButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="u80-nF-b93"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMV-0m-erT" userLabel="X">
+                                        <rect key="frame" x="549" y="24" width="31" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" label="Share"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hMV-0m-erT" secondAttribute="height" multiplier="1:1" id="Gkp-lx-5ji"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <color key="tintColor" red="0.57254904510000004" green="0.77647066119999997" blue="0.31764706970000001" alpha="1" colorSpace="deviceRGB"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
+                                        <state key="normal" image="X">
+                                            <color key="titleColor" red="0.41176470590000003" green="0.71764705880000002" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="discardImage:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="whZ-Ny-5X2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hMV-0m-erT" firstAttribute="leading" secondItem="SW6-Yo-aFP" secondAttribute="trailing" constant="20" id="8bt-aR-cap"/>
+                                    <constraint firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="9AF-Tl-sZe"/>
+                                    <constraint firstItem="hMV-0m-erT" firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="SGb-hO-yeU"/>
+                                    <constraint firstAttribute="height" constant="80" id="Snn-Ke-w6r"/>
+                                    <constraint firstItem="hMV-0m-erT" firstAttribute="height" secondItem="SW6-Yo-aFP" secondAttribute="height" id="iaK-Lb-XY6"/>
+                                    <constraint firstAttribute="centerX" secondItem="SW6-Yo-aFP" secondAttribute="centerX" id="jTo-qv-Zmi"/>
+                                    <constraint firstAttribute="trailing" secondItem="hMV-0m-erT" secondAttribute="trailing" constant="20" id="kkD-hB-LEp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8bt-aR-cap"/>
+                                        <exclude reference="iaK-Lb-XY6"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yPA-8Y-6Ie" userLabel="prePhotoView">
+                                <rect key="frame" x="0.0" y="520" width="600" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLz-Yf-c0p" userLabel="Shutter Button">
+                                        <rect key="frame" x="265" y="5" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lLz-Yf-c0p" secondAttribute="height" multiplier="1:1" id="D4r-lu-ddB"/>
+                                            <constraint firstAttribute="width" constant="70" id="Upf-RV-VLP"/>
+                                        </constraints>
+                                        <state key="normal" image="CameraButton">
+                                            <color key="titleColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D4r-lu-ddB"/>
+                                                <exclude reference="Upf-RV-VLP"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="didTapCameraButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="77b-em-9zt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="center" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-ir-wqY">
+                                        <rect key="frame" x="20" y="18" width="44" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" label="Flip"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="DBg-f5-Arx"/>
+                                            <constraint firstAttribute="width" secondItem="iKA-ir-wqY" secondAttribute="height" multiplier="1:1" id="HIA-fY-lIh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
+                                        <state key="normal" title="FLIP" image="FlipButton">
+                                            <color key="titleColor" red="0.23529411764705882" green="0.60392156862745094" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DBg-f5-Arx"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="didTapFlipButton:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="MVY-3V-ZJg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="NTn-4J-X7l"/>
+                                    <constraint firstAttribute="centerY" secondItem="iKA-ir-wqY" secondAttribute="centerY" id="ZAV-Hf-8Qm"/>
+                                    <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="cEq-t1-sCU"/>
+                                    <constraint firstAttribute="height" constant="80" id="hZo-LB-YUs"/>
+                                    <constraint firstItem="iKA-ir-wqY" firstAttribute="leading" secondItem="yPA-8Y-6Ie" secondAttribute="leading" constant="20" id="zw2-ki-Uye"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="SW6-Yo-aFP" secondAttribute="bottom" constant="20" id="2sa-59-htb"/>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="20" id="4C9-RA-1ef"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="yPA-8Y-6Ie" secondAttribute="bottom" id="43d-e2-Pch"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZK0-nl-sbj" secondAttribute="trailing" constant="-20" id="7C3-H0-xJm"/>
                             <constraint firstItem="Wbf-Ap-RHz" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="8" symbolic="YES" id="7Wl-d1-yKq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" constant="10" id="8gC-2h-9l4"/>
-                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="A0H-I5-puP"/>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="50" id="BwY-gP-Q9n"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="EwI-wg-a7T"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="top" secondItem="GD0-IN-Hbq" secondAttribute="bottom" constant="14" id="FdJ-Q3-NO3"/>
+                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="hdE-oe-yxt" secondAttribute="bottom" id="G68-hD-NML"/>
                             <constraint firstItem="Wbf-Ap-RHz" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="16" id="Gdl-qu-y7w"/>
-                            <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="HsJ-oT-dcv"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="Kr1-nH-wSd"/>
-                            <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="POL-mW-6to"/>
-                            <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="QI5-O0-Y6V"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="UX5-zn-4YB"/>
+                            <constraint firstAttribute="trailing" secondItem="yPA-8Y-6Ie" secondAttribute="trailing" id="Mau-fg-MRA"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" constant="20" symbolic="YES" id="Ujl-kD-RNW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="iKA-ir-wqY" secondAttribute="trailing" id="XFj-by-kX2"/>
                             <constraint firstAttribute="centerY" secondItem="ZK0-nl-sbj" secondAttribute="centerY" constant="40" id="XVA-Fq-ZRo"/>
-                            <constraint firstItem="P7Z-bg-fFb" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="20" id="bqa-n1-5Fa"/>
-                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="top" secondItem="lLz-Yf-c0p" secondAttribute="bottom" constant="40" id="d3W-xg-Kdq"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="leading" secondItem="iKA-ir-wqY" secondAttribute="trailing" constant="40" id="g6J-uw-vWB"/>
+                            <constraint firstItem="yPA-8Y-6Ie" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" id="YJh-KU-EeP"/>
+                            <constraint firstItem="hdE-oe-yxt" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leading" id="eZO-tz-eZP"/>
                             <constraint firstAttribute="centerX" secondItem="ZK0-nl-sbj" secondAttribute="centerX" id="iy1-hb-Amz"/>
-                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="kUp-fx-TnK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lLz-Yf-c0p" secondAttribute="trailing" id="lay-Z7-PTI"/>
-                            <constraint firstAttribute="centerY" secondItem="lLz-Yf-c0p" secondAttribute="centerY" id="pLB-VX-TfM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="pXq-Tg-U0E"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SW6-Yo-aFP" secondAttribute="trailing" id="q7a-Al-Tr4"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="centerY" secondItem="iKA-ir-wqY" secondAttribute="centerY" id="qiR-Qs-JcK"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="centerY" secondItem="SW6-Yo-aFP" secondAttribute="centerY" id="qp0-FP-UXr"/>
-                            <constraint firstItem="iKA-ir-wqY" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leadingMargin" constant="10" id="rIA-mc-3Hh"/>
-                            <constraint firstItem="lLz-Yf-c0p" firstAttribute="top" secondItem="iKA-ir-wqY" secondAttribute="bottom" constant="40" id="rzJ-pp-GWM"/>
-                            <constraint firstAttribute="centerX" secondItem="lLz-Yf-c0p" secondAttribute="centerX" id="tul-gj-vot"/>
                             <constraint firstItem="ZK0-nl-sbj" firstAttribute="leading" secondItem="Cdl-ME-hts" secondAttribute="leadingMargin" constant="-20" id="wAI-bX-9S3"/>
                             <constraint firstAttribute="trailing" secondItem="Wbf-Ap-RHz" secondAttribute="trailing" constant="20" symbolic="YES" id="yND-PP-AIG"/>
-                            <constraint firstItem="SW6-Yo-aFP" firstAttribute="leading" secondItem="lLz-Yf-c0p" secondAttribute="trailing" constant="40" id="z8e-mK-2cm"/>
+                            <constraint firstAttribute="trailing" secondItem="hdE-oe-yxt" secondAttribute="trailing" id="ykp-YO-5Ic"/>
                             <constraint firstItem="5xa-d9-dTb" firstAttribute="trailing" secondItem="Cdl-ME-hts" secondAttribute="trailingMargin" id="znP-iz-ZEb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="znP-iz-ZEb"/>
-                                <exclude reference="UX5-zn-4YB"/>
-                                <exclude reference="XFj-by-kX2"/>
                                 <exclude reference="Gdl-qu-y7w"/>
-                                <exclude reference="EwI-wg-a7T"/>
-                                <exclude reference="HsJ-oT-dcv"/>
-                                <exclude reference="Kr1-nH-wSd"/>
-                                <exclude reference="QI5-O0-Y6V"/>
-                                <exclude reference="g6J-uw-vWB"/>
-                                <exclude reference="lay-Z7-PTI"/>
-                                <exclude reference="pLB-VX-TfM"/>
-                                <exclude reference="rzJ-pp-GWM"/>
-                                <exclude reference="tul-gj-vot"/>
-                                <exclude reference="2sa-59-htb"/>
-                                <exclude reference="4C9-RA-1ef"/>
-                                <exclude reference="bqa-n1-5Fa"/>
-                                <exclude reference="A0H-I5-puP"/>
-                                <exclude reference="d3W-xg-Kdq"/>
-                                <exclude reference="kUp-fx-TnK"/>
-                                <exclude reference="pXq-Tg-U0E"/>
-                                <exclude reference="q7a-Al-Tr4"/>
-                                <exclude reference="z8e-mK-2cm"/>
                             </mask>
                         </variation>
                     </view>
@@ -209,6 +216,10 @@
                         <outlet property="flipCameraButton" destination="iKA-ir-wqY" id="Nj1-fi-zI6"/>
                         <outlet property="logoView" destination="U2c-U9-u0V" id="zXs-aX-Cna"/>
                         <outlet property="menuButton" destination="Wbf-Ap-RHz" id="Chr-TM-Tph"/>
+                        <outlet property="postPhotoView" destination="hdE-oe-yxt" id="Tzn-Z2-I7k"/>
+                        <outlet property="postPhotoViewBottomConstraint" destination="G68-hD-NML" id="Eil-fS-vgH"/>
+                        <outlet property="prePhotoView" destination="yPA-8Y-6Ie" id="X89-Al-ecc"/>
+                        <outlet property="prePhotoViewBottomConstraint" destination="43d-e2-Pch" id="IwJ-HO-eAx"/>
                         <outlet property="shareButton" destination="SW6-Yo-aFP" id="c3N-qC-sHD"/>
                     </connections>
                 </viewController>
@@ -221,6 +232,7 @@
         <image name="CameraButton" width="70" height="70"/>
         <image name="FlipButton" width="44" height="44"/>
         <image name="ShareButton" width="44" height="44"/>
+        <image name="X" width="31" height="31"/>
         <image name="YES_white" width="439" height="171"/>
         <image name="infobutton" width="24" height="24"/>
     </resources>
