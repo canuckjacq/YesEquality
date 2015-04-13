@@ -28,20 +28,22 @@
     // Ask for Notification permissions
     if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
         [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
-    [SHKConfiguration sharedInstanceWithConfigurator:configurator];
+        [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     }
 
 
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
-        
         if (grantedSettings.types == UIUserNotificationTypeNone) {
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
             [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
         }
-        
+    } else {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
     }
 
+    
     return YES;
 }
 
@@ -50,64 +52,58 @@
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        // Create notification for the day
-        UILocalNotification *notificationDay = [[UILocalNotification alloc]init];
-        notificationDay.repeatInterval = NSCalendarUnitDay;
-        notificationDay.soundName = UILocalNotificationDefaultSoundName;
-        notificationDay.applicationIconBadgeNumber = 1;
-        
-        // Create notification for the day before
-        UILocalNotification *notificationDayBefore = [[UILocalNotification alloc]init];
-        notificationDayBefore.repeatInterval = NSCalendarUnitDay;
-        notificationDayBefore.soundName = UILocalNotificationDefaultSoundName;
-        notificationDayBefore.applicationIconBadgeNumber = 1;
-        
-        
-        // Set the day for the notification
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        NSDateComponents *componentsDayReminder = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:[NSDate date]];
-        
-        [componentsDayReminder setDay:22];
-        [componentsDayReminder setMonth:5];
-        [componentsDayReminder setYear:2015];
-        [componentsDayReminder setHour:8];
-        [componentsDayReminder setMinute:58];
-        
-        NSDate *dayReminder = [gregorian dateFromComponents:componentsDayReminder];
-        
-        
-        // Set the day before for the notification
-        NSDateComponents *componentsDayBeforeReminder = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:[NSDate date]];
-        
-        [componentsDayBeforeReminder setDay:21];
-        [componentsDayBeforeReminder setMonth:5];
-        [componentsDayBeforeReminder setYear:2015];
-        [componentsDayBeforeReminder setHour:12];
-        [componentsDayBeforeReminder setMinute:58];
-        
-        NSDate *dayBeforeReminder = [gregorian dateFromComponents:componentsDayBeforeReminder];
-        
-        
-        if([[NSUserDefaults standardUserDefaults] boolForKey:@"dayReminder"]) {
-            [notificationDay setAlertBody:@"Don´t forget to vote!"];
-            [notificationDay setFireDate:dayReminder];
-            //        [notificationDay setFireDate:[NSDate dateWithTimeIntervalSinceNow:15]];
-            [notificationDay setTimeZone:[NSTimeZone  defaultTimeZone]];
-            [application setScheduledLocalNotifications:[NSArray arrayWithObject:notificationDay]];
-            [application scheduleLocalNotification:notificationDay];
-        }
-        
-        if([[NSUserDefaults standardUserDefaults] boolForKey:@"dayBeforeReminder"]){
-            [notificationDayBefore setAlertBody:@"Remind your friends to vote YES!"];
-            [notificationDayBefore setFireDate:dayBeforeReminder];
-            //        [notificationDayBefore setFireDate:[NSDate dateWithTimeIntervalSinceNow:5]];
-            [notificationDayBefore setTimeZone:[NSTimeZone  defaultTimeZone]];
-            [application scheduleLocalNotification:notificationDayBefore];
-        }
+- (void)applicationDidEnterBackground:(UIApplication *)application{
+    
+    // Create notification for the day
+    UILocalNotification *notificationDay = [[UILocalNotification alloc]init];
+    notificationDay.repeatInterval = NSCalendarUnitDay;
+    notificationDay.soundName = UILocalNotificationDefaultSoundName;
+    notificationDay.applicationIconBadgeNumber = 1;
+    
+    // Create notification for the day before
+    UILocalNotification *notificationDayBefore = [[UILocalNotification alloc]init];
+    notificationDayBefore.repeatInterval = NSCalendarUnitDay;
+    notificationDayBefore.soundName = UILocalNotificationDefaultSoundName;
+    notificationDayBefore.applicationIconBadgeNumber = 1;
+    
+    
+    // Set the day for the notification
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *componentsDayReminder = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:[NSDate date]];
+    
+    [componentsDayReminder setDay:22];
+    [componentsDayReminder setMonth:5];
+    [componentsDayReminder setYear:2015];
+    [componentsDayReminder setHour:8];
+    [componentsDayReminder setMinute:58];
+    
+    NSDate *dayReminder = [gregorian dateFromComponents:componentsDayReminder];
+    
+    
+    // Set the day before for the notification
+    NSDateComponents *componentsDayBeforeReminder = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth |  NSCalendarUnitDay fromDate:[NSDate date]];
+    
+    [componentsDayBeforeReminder setDay:21];
+    [componentsDayBeforeReminder setMonth:5];
+    [componentsDayBeforeReminder setYear:2015];
+    [componentsDayBeforeReminder setHour:12];
+    [componentsDayBeforeReminder setMinute:58];
+    
+    NSDate *dayBeforeReminder = [gregorian dateFromComponents:componentsDayBeforeReminder];
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"dayReminder"]) {
+        [notificationDay setAlertBody:@"Don´t forget to vote!"];
+        [notificationDay setFireDate:dayReminder];
+        [notificationDay setTimeZone:[NSTimeZone defaultTimeZone]];
+        [application setScheduledLocalNotifications:[NSArray arrayWithObject:notificationDay]];
+        [application scheduleLocalNotification:notificationDay];
+    }
+    
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"dayBeforeReminder"]){
+        [notificationDayBefore setAlertBody:@"Remind your friends to vote YES!"];
+        [notificationDayBefore setFireDate:dayBeforeReminder];
+        [notificationDayBefore setTimeZone:[NSTimeZone  defaultTimeZone]];
+        [application scheduleLocalNotification:notificationDayBefore];
     }
 
 }

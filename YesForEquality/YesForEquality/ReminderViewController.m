@@ -21,38 +21,12 @@
     // Do any additional setup after loading the view.
     
     //Set switch status according to NSUserDefaults
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"dayReminder"]) {
-        [self.dayReminderSwitch setOn:NO animated:NO];
-        
-    }
-    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"dayBeforeReminder"]) {
-        [self.dayBeforeReminderSwitch setOn:NO animated:NO];
-        
-    }
-
-}
-
-- (void)viewWillAppear:(BOOL)animated {
+    BOOL dayReminder = [[NSUserDefaults standardUserDefaults] boolForKey:@"dayReminder"];
+    BOOL dayBeforeReminder = [[NSUserDefaults standardUserDefaults] boolForKey:@"dayBeforeReminder"];
     
-    [super viewWillAppear:animated];
-    if ([self isRegisteredForLocalNotifications] == NO) {
-        [self.dayReminderSwitch setOn:NO animated:NO];
-        [self.dayBeforeReminderSwitch setOn:NO animated:NO];
-    }
-    
-    //Set NSUserDefaults for Notifications
-    if ([self.dayReminderSwitch isOn]) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
+    [self.dayReminderSwitch setOn:dayReminder animated:NO];
+    [self.dayBeforeReminderSwitch setOn:dayBeforeReminder animated:NO];
 
-    }
-
-    if ([self.dayBeforeReminderSwitch isOn]) {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
-
-    }
-    
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,37 +35,30 @@
 }
 
 - (IBAction)goToSettings{
-
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
         [[UIApplication sharedApplication] openURL:[NSURL  URLWithString:UIApplicationOpenSettingsURLString]];
     }
 }
 
 - (IBAction)dayReminder:(id)sender {
-    
     if ([self isRegisteredForLocalNotifications] == NO) {
         [self goToSettings];
     }
     
-    if (![sender isOn]) {
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"dayReminder"];
-    } else {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
-    }
+    BOOL dayReminder = [sender isOn];
+    [[NSUserDefaults standardUserDefaults] setBool:dayReminder forKey:@"dayReminder"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     
 }
 
 - (IBAction)dayBeforeReminder:(id)sender {
-    
     if ([self isRegisteredForLocalNotifications] == NO) {
         [self goToSettings];
     }
     
-    if (![sender isOn]) {
-        [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"dayBeforeReminder"];
-    } else {
-        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
-    }
+    BOOL dayBeforeReminder = [sender isOn];
+    [[NSUserDefaults standardUserDefaults] setBool:dayBeforeReminder forKey:@"dayBeforeReminder"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 
 }
 
@@ -103,7 +70,7 @@
             UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
             
             if (grantedSettings.types == UIUserNotificationTypeNone) {
-                NSLog(@"No permiossion granted");
+                NSLog(@"No permission granted");
                 return NO;
             }
             return YES;
