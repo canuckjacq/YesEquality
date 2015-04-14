@@ -81,6 +81,7 @@
                      }];
 
     //bounce animation
+    self.transform = CGAffineTransformIdentity;
     [UIView animateWithDuration:animationDuration
                      animations:^{
         self.transform = CGAffineTransformMakeScale(0.1, 0.1);
