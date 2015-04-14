@@ -22,21 +22,27 @@
                         <constraint firstAttribute="width" constant="200" id="bCY-9O-KzJ"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-07-BK5">
-                    <rect key="frame" x="40" y="240" width="520" height="340"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7o-07-BK5">
+                    <rect key="frame" x="42" y="240" width="517" height="340"/>
                     <string key="text">On May 22nd 2015 the people of Ireland will all be asked to vote in the referendum on Civil Marriage equality. Marriage is about two people who love each other and want to commit to each other. In a republic based on equal citizenship, civil marriage should be open to all, including lesbians and gay men.</string>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TurnPageIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Cmf-2d-6jc">
+                    <rect key="frame" x="567" y="270" width="20" height="61"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="S7o-07-BK5" secondAttribute="centerX" id="GXd-Oq-nPT"/>
                 <constraint firstAttribute="centerX" secondItem="mCH-HE-Wew" secondAttribute="centerX" id="Rh6-jL-CPn"/>
+                <constraint firstAttribute="trailing" secondItem="Cmf-2d-6jc" secondAttribute="trailing" constant="13" id="U8h-Av-Qdw"/>
                 <constraint firstItem="S7o-07-BK5" firstAttribute="top" secondItem="mCH-HE-Wew" secondAttribute="bottom" constant="20" id="UIH-Cn-ojD"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S7o-07-BK5" secondAttribute="trailing" constant="40" id="Va5-Mn-Fsy"/>
                 <constraint firstAttribute="bottom" secondItem="S7o-07-BK5" secondAttribute="bottom" constant="20" id="Vr2-Td-vqL"/>
+                <constraint firstItem="Cmf-2d-6jc" firstAttribute="leading" secondItem="S7o-07-BK5" secondAttribute="trailing" constant="8" id="XWc-PB-Bbr"/>
+                <constraint firstAttribute="centerY" secondItem="Cmf-2d-6jc" secondAttribute="centerY" id="hmO-6b-aJA"/>
                 <constraint firstItem="S7o-07-BK5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="iho-V0-EOb"/>
                 <constraint firstItem="mCH-HE-Wew" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="t8G-Wr-NSX"/>
             </constraints>
@@ -52,5 +58,6 @@
     </objects>
     <resources>
         <image name="Logo" width="400" height="400"/>
+        <image name="TurnPageIndicator" width="22" height="61"/>
     </resources>
 </document>

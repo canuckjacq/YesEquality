@@ -11,6 +11,7 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v) ([[[UIDevice currentDevice] systemVersion] compare:(v) options:NSNumericSearch] != NSOrderedAscending)
 
 @interface ReminderViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *doneButton;
 
 @end
 
@@ -26,7 +27,6 @@
     
     [self.dayReminderSwitch setOn:dayReminder animated:NO];
     [self.dayBeforeReminderSwitch setOn:dayBeforeReminder animated:NO];
-
 }
 
 - (void)didReceiveMemoryWarning {

@@ -54,6 +54,7 @@
     
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
     [button setImage:[UIImage imageNamed:@"X"] forState:UIControlStateNormal];
+    [button setTintColor:[UIColor whiteColor]];
     button.frame = CGRectMake(0.0, 20.0, 60.0, 40.0);
     
     [button addTarget:self.parentViewController action:@selector(didTouchUpInsideBackButton) forControlEvents:UIControlEventTouchUpInside];

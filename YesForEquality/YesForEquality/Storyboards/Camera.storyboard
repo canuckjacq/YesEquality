@@ -47,19 +47,26 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
-                                <rect key="frame" x="20" y="28" width="24" height="24"/>
+                                <rect key="frame" x="20" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="3yQ-hm-G0v"/>
+                                    <constraint firstAttribute="height" constant="44" id="Zs0-VG-vI1"/>
+                                </constraints>
                                 <color key="tintColor" red="0.15686274509803921" green="0.6705882352941176" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="infobutton">
+                                <state key="normal" image="Info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="transitionToInfoView:" destination="4Zb-jf-eIt" eventType="touchUpInside" id="t3D-rk-dGd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz">
-                                <rect key="frame" x="499" y="28" width="81" height="32"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <state key="normal" title="Reminders">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-Ap-RHz">
+                                <rect key="frame" x="536" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="15q-Br-aDC"/>
+                                    <constraint firstAttribute="width" constant="44" id="Q3P-qN-yJx"/>
+                                </constraints>
+                                <state key="normal" image="Reminders">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -233,9 +240,10 @@
     <resources>
         <image name="CameraButton" width="70" height="70"/>
         <image name="FlipButton" width="44" height="44"/>
+        <image name="Info" width="64" height="64"/>
+        <image name="Reminders" width="64" height="64"/>
         <image name="ShareButton" width="44" height="44"/>
         <image name="X" width="31" height="31"/>
         <image name="YES_white" width="439" height="171"/>
-        <image name="infobutton" width="24" height="24"/>
     </resources>
 </document>
