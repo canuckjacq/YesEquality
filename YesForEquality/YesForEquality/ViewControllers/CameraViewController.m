@@ -368,11 +368,10 @@ typedef enum {
     kPanDropPosition panDropPosition = [self dropPositionAtPoint:point];
     [self positionPublisherViewAtPosition:panDropPosition animated:animated];
 }
-
 - (void)positionPublisherViewAtPosition:(kPanDropPosition)panDropPosition animated:(BOOL)animated{
     lastPanDropPosition = panDropPosition;
     
-    CGFloat margin = 0.0;
+    CGFloat margin = 10.0;
     NSArray *constraints = @[];
     UIView *mainView = self.cameraView;
     UIView *childView = self.logoView;

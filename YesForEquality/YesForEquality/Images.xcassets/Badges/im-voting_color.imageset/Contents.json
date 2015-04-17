@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "yes_white.png"
+      "filename" : "im-voting_color.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "yes_white@2x.png"
+      "filename" : "im-voting_color@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "yes_white@3x.png"
+      "filename" : "im-voting_color@3x.png"
     }
   ],
   "info" : {

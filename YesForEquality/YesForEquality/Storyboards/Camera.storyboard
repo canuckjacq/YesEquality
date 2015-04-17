@@ -23,8 +23,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZK0-nl-sbj" userLabel="Video Preview">
                                 <rect key="frame" x="-4" y="-4" width="608" height="608"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="100" verticalCompressionResistancePriority="100" image="YES_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V" customClass="LogoImageView">
-                                        <rect key="frame" x="0.0" y="304" width="304" height="304"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="999" verticalHuggingPriority="999" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="im-voting_white" translatesAutoresizingMaskIntoConstraints="NO" id="U2c-U9-u0V" customClass="LogoImageView">
+                                        <rect key="frame" x="10" y="323" width="304" height="275"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="129" id="BvF-1Y-ILQ"/>
                                             <constraint firstAttribute="width" constant="187" id="Hm3-0n-JuU"/>
@@ -34,6 +34,7 @@
                                             <mask key="constraints">
                                                 <exclude reference="BvF-1Y-ILQ"/>
                                                 <exclude reference="Hm3-0n-JuU"/>
+                                                <exclude reference="y6V-Vf-EKU"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -41,9 +42,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="U2c-U9-u0V" secondAttribute="width" multiplier="2" id="DQ6-Ms-AQO"/>
-                                    <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" id="gAE-HL-EFo"/>
+                                    <constraint firstAttribute="bottom" secondItem="U2c-U9-u0V" secondAttribute="bottom" constant="10" id="gAE-HL-EFo"/>
                                     <constraint firstAttribute="width" secondItem="ZK0-nl-sbj" secondAttribute="height" multiplier="1:1" id="pFu-N4-j5A"/>
-                                    <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" id="vB9-kq-ELO"/>
+                                    <constraint firstItem="U2c-U9-u0V" firstAttribute="leading" secondItem="ZK0-nl-sbj" secondAttribute="leading" constant="10" id="vB9-kq-ELO"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-d9-dTb">
@@ -244,6 +245,6 @@
         <image name="Reminders" width="44" height="44"/>
         <image name="ShareButton" width="44" height="44"/>
         <image name="X" width="31" height="31"/>
-        <image name="YES_white" width="439" height="171"/>
+        <image name="im-voting_white" width="320" height="275"/>
     </resources>
 </document>
