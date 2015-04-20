@@ -18,6 +18,7 @@
 }
 
 @property (nonatomic, strong) NSMutableArray *infoViewControllers;
+@property (nonatomic, strong) UIButton *closeButton;
 
 @end
 
@@ -34,7 +35,7 @@
     
     self.infoViewControllers = [NSMutableArray array];
     
-    [self.infoViewControllers addObject:[[InfoPageCoverViewController alloc] init]];
+    //[self.infoViewControllers addObject:[[InfoPageCoverViewController alloc] init]];
     
     for (NSDictionary *info in [self childPageInfo]) {
         InfoPageChildViewController *child = [[InfoPageChildViewController alloc] initWithTopText:info[@"title"]
@@ -58,8 +59,9 @@
     button.frame = CGRectMake(0.0, 20.0, 60.0, 40.0);
     
     [button addTarget:self.parentViewController action:@selector(didTouchUpInsideBackButton) forControlEvents:UIControlEventTouchUpInside];
+    self.closeButton = button;
     
-    [self.view addSubview:button];
+    [self.view addSubview:self.closeButton];
 }
 
 - (NSArray *)childPageInfo {
@@ -67,9 +69,9 @@
              @{@"title":@"To vote on May 22nd you must be:", @"image":[UIImage imageNamed:@"1"], @"bottomText":@"Aged over 18", @"backgroundColor":[UIColor colorWithRed:0.5 green:0.27 blue:0.59 alpha:1],@"textColor":[UIColor whiteColor]},
              @{@"title":@"To vote on May 22nd you must be:", @"image":[UIImage imageNamed:@"2"], @"bottomText":@"Irish Citizen", @"backgroundColor":[UIColor colorWithRed:0.14 green:0.47 blue:0.73 alpha:1],@"textColor":[UIColor whiteColor]},
              @{@"title":@"To vote on May 22nd you must be:", @"image":[UIImage imageNamed:@"3"], @"bottomText":@"Resident in the republic", @"backgroundColor":[UIColor colorWithRed:0.19 green:0.22 blue:0.55 alpha:1],@"textColor":[UIColor whiteColor]},
-             @{@"title":@"To vote on May 22nd you must be:", @"image":[UIImage imageNamed:@"4"], @"bottomText":@"Registered To Vote", @"backgroundColor":[UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1],@"textColor":[UIColor whiteColor]},
+             @{@"title":@"To vote on May 22nd you must be:", @"image":[UIImage imageNamed:@"4"], @"bottomText":@"Registered To vote", @"backgroundColor":[UIColor colorWithRed:0.62 green:0.15 blue:0.39 alpha:1],@"textColor":[UIColor whiteColor]},
              @{@"title":@"Check to see if you are registered", @"image":[UIImage imageNamed:@"5"], @"bottomText":@"checktheregister.ie", @"backgroundColor":[UIColor colorWithRed:0.16 green:0.16 blue:0.38 alpha:1],@"textColor":[UIColor whiteColor], @"url":[NSURL URLWithString:@"http://www.checktheregister.ie"],@"linkTitle":@"Open link in Safari?"},
-             @{@"title":@"Registering is easy", @"image":[UIImage imageNamed:@"6"], @"bottomText":@"Download the Form", @"backgroundColor":[UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1],@"textColor":[UIColor whiteColor], @"url":[NSURL URLWithString:@"https://www.yesequality.ie/?attachment_id=1283"],@"linkTitle":@"Download the form?"},
+             @{@"title":@"Registering is easy", @"image":[UIImage imageNamed:@"6"], @"bottomText":@"Download the form", @"backgroundColor":[UIColor colorWithRed:0.09 green:0.58 blue:0.3 alpha:1],@"textColor":[UIColor whiteColor], @"url":[NSURL URLWithString:@"https://www.yesequality.ie/?attachment_id=1283"],@"linkTitle":@"Download the form?"},
              @{@"title":@"Registering is easy", @"image":[UIImage imageNamed:@"7"], @"bottomText":@"Get it signed & stamped by a Garda", @"backgroundColor":[UIColor colorWithRed:0.56 green:0.18 blue:0.55 alpha:1],@"textColor":[UIColor whiteColor]},
              @{@"title":@"Registering is easy", @"image":[UIImage imageNamed:@"8"], @"bottomText":@"Return it to your local authority office", @"backgroundColor":[UIColor colorWithRed:0.74 green:0.14 blue:0.2 alpha:1],@"textColor":[UIColor whiteColor]},
              @{@"title":@"Student?", @"image":[UIImage imageNamed:@"9"], @"bottomText":@"You can vote by post", @"backgroundColor":[UIColor colorWithRed:0.49 green:0.75 blue:0.3 alpha:1],@"textColor":[UIColor whiteColor]},
@@ -142,11 +144,17 @@
     currentIndex = currentIndex % self.infoViewControllers.count;
 
     UIViewController *controller = [self customiseViewControllerAtIndex:currentIndex];
+
     return controller;
 }
 
 - (UIViewController*)customiseViewControllerAtIndex:(NSUInteger)index{
     UIViewController *controller = [self.infoViewControllers objectAtIndex:index];
+
+    UIColor *textColor = [self textColorForPageAtIndex:currentIndex];
+    if (textColor){
+        [self.closeButton setTintColor:textColor];
+    }
     
     if (currentIndex==kPageDownloadForm){
         InfoPageChildViewController *childController = (InfoPageChildViewController*)controller;
@@ -167,5 +175,17 @@
 {
     return 0;
 }
+
+- (UIColor*)textColorForPageAtIndex:(NSUInteger)index{
+    if (currentIndex < [[self childPageInfo] count]){
+        NSDictionary *pageInfo = [self childPageInfo][currentIndex];
+        if (pageInfo && pageInfo[@"textColor"]){
+            UIColor *textColor = pageInfo[@"textColor"];
+            return textColor;
+        }
+    }
+    return nil;
+}
+
 
 @end

@@ -29,8 +29,8 @@
                                     <action selector="dayBeforeReminder:" destination="tko-v3-k2U" eventType="valueChanged" id="Iap-Fp-LcI"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me on the day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTW-e3-Uun">
-                                <rect key="frame" x="16" y="93" width="209" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me on the day" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTW-e3-Uun">
+                                <rect key="frame" x="16" y="93" width="511" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="J4w-XE-u7B"/>
                                     <constraint firstAttribute="width" constant="174" id="fLA-Na-bN5"/>
@@ -45,8 +45,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me the day before" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-Zc-mKt">
-                                <rect key="frame" x="16" y="191" width="246" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remind me the day before" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-Zc-mKt">
+                                <rect key="frame" x="16" y="191" width="511" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="D8B-0W-yT5"/>
                                     <constraint firstAttribute="width" constant="203" id="ccX-wj-aiW"/>
@@ -61,8 +61,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don´t forget to vote YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-M2-lbD">
-                                <rect key="frame" x="16" y="129" width="175" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don´t forget to vote YES" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4H-M2-lbD">
+                                <rect key="frame" x="16" y="129" width="511" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="186" id="H88-3m-eHu"/>
                                     <constraint firstAttribute="height" constant="23" id="pPI-Kx-VbC"/>
@@ -77,8 +77,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-yh-jqp">
-                                <rect key="frame" x="16" y="227" width="228" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAo-yh-jqp">
+                                <rect key="frame" x="16" y="227" width="511" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="ELc-23-E73"/>
                                     <constraint firstAttribute="width" constant="203" id="SuE-my-cC6"/>
@@ -114,8 +114,8 @@ to vote YES tomorrow!</string>
                                     <action selector="dismiss" destination="tko-v3-k2U" eventType="touchUpInside" id="Qps-0Y-dj9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Don't Forget!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDj-tc-aef">
-                                <rect key="frame" x="215" y="28" width="172" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Forget!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDj-tc-aef">
+                                <rect key="frame" x="214" y="28" width="172" height="39"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -135,6 +135,8 @@ to vote YES tomorrow!</string>
                         <color key="backgroundColor" red="0.231372565" green="0.35686275360000003" blue="0.60000002379999995" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="MXC-pX-UCs" secondAttribute="trailing" constant="16" id="2tn-vQ-YUX"/>
+                            <constraint firstItem="rAo-yh-jqp" firstAttribute="width" secondItem="Ym3-Zc-mKt" secondAttribute="width" id="4Ih-AD-Epg"/>
+                            <constraint firstItem="NGb-eE-GPv" firstAttribute="leading" secondItem="rTW-e3-Uun" secondAttribute="trailing" constant="8" id="4pT-C9-zy9"/>
                             <constraint firstItem="rTW-e3-Uun" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="6dL-Uo-Asv"/>
                             <constraint firstItem="Ym3-Zc-mKt" firstAttribute="centerX" secondItem="MXC-pX-UCs" secondAttribute="centerX" id="949-dD-uST"/>
                             <constraint firstItem="rTW-e3-Uun" firstAttribute="top" secondItem="jDj-tc-aef" secondAttribute="bottom" constant="26" id="CfJ-pL-VCZ"/>
@@ -147,7 +149,9 @@ to vote YES tomorrow!</string>
                             <constraint firstAttribute="centerX" secondItem="jDj-tc-aef" secondAttribute="centerX" id="W19-Me-kea"/>
                             <constraint firstItem="Ym3-Zc-mKt" firstAttribute="top" secondItem="b4H-M2-lbD" secondAttribute="bottom" constant="20" id="dNt-Qi-WMe"/>
                             <constraint firstItem="rAo-yh-jqp" firstAttribute="leading" secondItem="Qdq-bn-8xz" secondAttribute="leading" constant="16" id="dod-Sl-caR"/>
+                            <constraint firstItem="MXC-pX-UCs" firstAttribute="leading" secondItem="Ym3-Zc-mKt" secondAttribute="trailing" constant="8" id="e9c-WO-HeZ"/>
                             <constraint firstItem="rAo-yh-jqp" firstAttribute="top" secondItem="Ym3-Zc-mKt" secondAttribute="bottom" constant="8" id="jCj-fD-1jG"/>
+                            <constraint firstItem="rTW-e3-Uun" firstAttribute="width" secondItem="b4H-M2-lbD" secondAttribute="width" id="kV2-Pf-XYO"/>
                             <constraint firstItem="rAo-yh-jqp" firstAttribute="top" secondItem="b4H-M2-lbD" secondAttribute="bottom" constant="68" id="kgL-wJ-i1r"/>
                             <constraint firstItem="NGb-eE-GPv" firstAttribute="trailing" secondItem="Qdq-bn-8xz" secondAttribute="trailingMargin" id="mXS-Fo-D0I"/>
                             <constraint firstItem="Ym3-Zc-mKt" firstAttribute="centerY" secondItem="MXC-pX-UCs" secondAttribute="centerY" id="nYP-M3-gAs"/>
