@@ -296,11 +296,11 @@
 				TargetAttributes = {
 					0A965B281AC6C25B00254BE2 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = ERF2T2UNH6;
+						DevelopmentTeam = 56JSDAEVMS;
 					};
 					0A965B411AC6C25B00254BE2 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = ERF2T2UNH6;
+						DevelopmentTeam = 56JSDAEVMS;
 						TestTargetID = 0A965B281AC6C25B00254BE2;
 					};
 				};
@@ -528,6 +528,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9f5830d-c480-4a91-9b09-1b181051f345";
 			};
 			name = Debug;
 		};
@@ -542,6 +543,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e9f5830d-c480-4a91-9b09-1b181051f345";
 			};
 			name = Release;
 		};
@@ -549,6 +551,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -560,6 +564,7 @@
 				INFOPLIST_FILE = YesForEqualityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YesForEquality.app/YesForEquality";
 			};
 			name = Debug;
@@ -568,6 +573,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -575,6 +582,7 @@
 				INFOPLIST_FILE = YesForEqualityTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YesForEquality.app/YesForEquality";
 			};
 			name = Release;
