@@ -140,7 +140,7 @@ typedef enum {
 
     [self.logoView layoutIfNeeded];
     CGRect frame = self.logoView.frame;
-    frame.origin.x = 10.0;
+    frame.origin.x = 15.0;
     frame.origin.y = self.cameraView.frame.size.height - self.logoView.frame.size.height - 10.0;
     self.logoView.frame = frame;
     [self.view layoutSubviews];
@@ -371,7 +371,7 @@ typedef enum {
 - (void)positionPublisherViewAtPosition:(kPanDropPosition)panDropPosition animated:(BOOL)animated{
     lastPanDropPosition = panDropPosition;
     
-    CGFloat margin = 10.0;
+    CGFloat margin = 15.0;
     NSArray *constraints = @[];
     UIView *mainView = self.cameraView;
     UIView *childView = self.logoView;
