@@ -31,9 +31,9 @@
                @"were-voting_color.png",
                @"voteforme_color.png",
                @"voteforme_white.png",
-               @"yes_white.png",
+               @"YES_white.png",
                @"yes_color.png",
-               @"ta_white.png",
+               @"TA_white.png",
                @"ta_color.png",
                
                ];

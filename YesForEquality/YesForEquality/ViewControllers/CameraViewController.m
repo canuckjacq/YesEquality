@@ -148,7 +148,7 @@ typedef enum {
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self shouldShowShareButton:NO animated:NO];
+    [self shouldShowShareButton:self.isDisplayingStillImage animated:NO];
     [self.cameraController startRunning];
 }
 - (BOOL)prefersStatusBarHidden{
