@@ -24,11 +24,13 @@
     YESHKConfigurator *configurator = [[YESHKConfigurator alloc] init];
     UIPageControl.appearance.currentPageIndicatorTintColor = UIColor.redColor;
     
-    // Ask for Notification permissions
-    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
-        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
-        [SHKConfiguration sharedInstanceWithConfigurator:configurator];
-    }
+    // Ask for Notification permissions (after short delay, because, come on)
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+            [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+            [SHKConfiguration sharedInstanceWithConfigurator:configurator];
+        }
+    });
 
     //only set the defaults to YES if it hasn't already been set
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"dayBeforeReminder"]==nil && [[NSUserDefaults standardUserDefaults] objectForKey:@"dayReminder"]==nil){
@@ -47,7 +49,9 @@
         }
         
     }
-    
+
+    [self saveReminders];
+
     return YES;
 }
 
@@ -57,16 +61,16 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application{
-    [self saveReminders];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [self saveReminders];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-
     application.applicationIconBadgeNumber = 0;
+    [self saveReminders];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
