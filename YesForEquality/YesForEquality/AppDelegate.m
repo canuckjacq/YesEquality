@@ -32,24 +32,6 @@
         }
     });
 
-    //only set the defaults to YES if it hasn't already been set
-    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"dayBeforeReminder"]==nil && [[NSUserDefaults standardUserDefaults] objectForKey:@"dayReminder"]==nil){
-        
-        if( [[NSUserDefaults standardUserDefaults] objectForKey:@"dayReminder"] == nil){
-            if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-                UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
-                if (grantedSettings.types == UIUserNotificationTypeNone) {
-                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
-                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
-                }
-            } else {
-                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
-                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
-            }
-        }
-        
-    }
-
     [self saveReminders];
 
     return YES;
@@ -173,5 +155,32 @@
         }
     }];
 }
+
+
+
+- (void)application:(UIApplication *)application didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings{
+
+    //only set the defaults to YES if it hasn't already been set
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"dayBeforeReminder"]==nil && [[NSUserDefaults standardUserDefaults] objectForKey:@"dayReminder"]==nil){
+        
+        if( [[NSUserDefaults standardUserDefaults] objectForKey:@"dayReminder"] == nil){
+            if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
+                UIUserNotificationSettings *grantedSettings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+                if (grantedSettings.types == UIUserNotificationTypeNone) {
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
+                    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
+                }
+            } else {
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayBeforeReminder"];
+                [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"dayReminder"];
+            }
+        }
+        
+    }
+    
+    [self saveReminders];
+
+}
+
 
 @end
