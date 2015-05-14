@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface InfoPageViewController : UIPageViewController <UIPageViewControllerDelegate, UIPageViewControllerDataSource,UIAlertViewDelegate>
 
 @end

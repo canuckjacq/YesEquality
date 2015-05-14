@@ -55,9 +55,26 @@
 
   NSDate *pollingDate = [NSDate dateWithTimeIntervalSince1970:1432249260];
   NSDate *yesterday = [NSDate dateWithTimeIntervalSinceNow:-100];
-  if ([yesterday timeIntervalSinceNow] <= 0) {
-    [images addObject:@"voteforme_color.png"];
-    [titles addObject:@"I voted! Have you?"];
+  if ([pollingDate timeIntervalSinceNow] <= 0) {
+    [images addObject:@"itsAYes_colour.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+    [images addObject:@"itsAYes_white.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+    [images addObject:@"iVotedYes_colour.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+    [images addObject:@"iVotedYes_white.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+    [images addObject:@"yesThankYou_colour.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+    [images addObject:@"yesThankYou_white.png"];
+    [titles addObject:@"I voted! Have you? #MarRef"];
+
+
     indexOfCurrentImage = 10;
   }
 

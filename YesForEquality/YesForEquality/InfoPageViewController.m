@@ -8,6 +8,10 @@
 
 #import "InfoPageViewController.h"
 
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+#import <GoogleAnalytics-iOS-SDK/GAIFields.h>
+#import <GoogleAnalytics-iOS-SDK/GAIDictionaryBuilder.h>
+
 #include "InfoPageCoverViewController.h"
 #include "InfoPageChildViewController.h"
 
@@ -62,6 +66,22 @@
     self.closeButton = button;
     
     [self.view addSubview:self.closeButton];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  // May return nil if a tracker has not already been initialized with a
+  // property ID.
+  id tracker = [[GAI sharedInstance] defaultTracker];
+
+  // This screen name value will remain set on the tracker and sent with
+  // hits until it is set to a new value or to nil.
+  [tracker set:kGAIScreenName
+         value:@"InfoPageViewController"];
+
+  // New SDK versions
+  [tracker send:[[GAIDictionaryBuilder createScreenView] build]];
+
 }
 
 - (NSArray *)childPageInfo {

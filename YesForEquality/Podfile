@@ -6,6 +6,7 @@ target 'YesForEquality' do
     pod 'ShareKit/Core', '~> 4.0.4'
     pod 'ShareKit/Facebook', '~> 4.0.4'
     pod 'ShareKit/Twitter', '~> 4.0.4'
+    pod 'GoogleAnalytics-iOS-SDK', '~>3.11'
 end
 
 target 'YesForEqualityTests' do

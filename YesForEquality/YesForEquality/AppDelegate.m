@@ -12,6 +12,7 @@
 #import <ShareKit/ShareKit.h>
 #import <ShareKit/SHKFacebook.h>
 #import <ShareKit/SHKConfiguration.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
 @interface AppDelegate ()
 
@@ -33,6 +34,12 @@
     });
 
     [self saveReminders];
+
+  [[GAI sharedInstance] setDryRun:NO];
+  [GAI sharedInstance].trackUncaughtExceptions = NO;
+  [GAI sharedInstance].dispatchInterval = 5;
+  [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+  [[GAI sharedInstance] trackerWithTrackingId:@"UA-62911343-1"];
 
     return YES;
 }

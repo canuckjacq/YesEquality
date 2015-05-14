@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface YESInformationViewController : UIViewController
+@interface YESInformationViewController : GAITrackedViewController
 
 @end

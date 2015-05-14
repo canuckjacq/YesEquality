@@ -23,6 +23,12 @@ typedef enum {
 #import "InfoPageViewController.h"
 #import "LogoImageView.h"
 
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+#import <GoogleAnalytics-iOS-SDK/GAIFields.h>
+#import <GoogleAnalytics-iOS-SDK/GAIDictionaryBuilder.h>
+
+
+
 @interface OSLabel : UILabel
 //@property (nonatomic, assign) UIEdgeInsets edgeInsets;
 @property (nonatomic, assign) CGFloat padding;
@@ -87,7 +93,7 @@ typedef enum {
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.screenName = @"CameraViewController";
     self.cameraController = [[CameraController alloc] initWithDelegate:self];
     AVCaptureVideoPreviewLayer *previewLayer = self.cameraController.previewLayer;
     self.cameraView.contentMode = UIViewContentModeScaleAspectFill;
@@ -200,7 +206,15 @@ typedef enum {
     if (IOS8){
         NSArray *activityItems = @[self.renderedImage];
         UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
-        [self presentViewController:controller animated:YES completion:nil];
+      [self presentViewController:controller animated:YES completion:^{
+        id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+
+        [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"share"     // Event category (required)
+                                                              action:@"tapped"  // Event action (required)
+                                                               label:@"hurrah?"          // Event label
+                                                               value:nil] build]];    // Event value
+
+      }];
     } else {
         [self presentiOS7ShareOptions];
     }
@@ -468,8 +482,15 @@ typedef enum {
     NSString *initialText = [self.logoView titleForCurrentImage];
     [tweet setInitialText:initialText]; //The default text in the tweet
     [tweet addImage:image]; //Add an image
-    [tweet addURL:[NSURL URLWithString:@"http://www.marriagequality.ie"]]; //A url which takes you into safari if tapped on
+    [tweet addURL:[NSURL URLWithString:@"http://www.yesequality.ie"]]; //A url which takes you into safari if tapped on
     [self presentViewController:tweet animated:YES completion: ^{
+      id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+
+      [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"image_share"     // Event category (required)
+                                                            action:@"twitter"  // Event action (required)
+                                                             label:initialText          // Event label
+                                                             value:nil] build]];    // Event value
+
     }];
 }
 - (void)shareImageOnFacebook:(UIImage*)image{
@@ -487,8 +508,16 @@ typedef enum {
     NSString *initialText = [self.logoView titleForCurrentImage];
     [facebookPost setInitialText:initialText]; //The default text in the tweet
     [facebookPost addImage:image]; //Add an image
-    [facebookPost addURL:[NSURL URLWithString:@"http://www.marriagequality.ie"]]; //A url which takes you into safari if tapped on
+    [facebookPost addURL:[NSURL URLWithString:@"http://www.yesequality.ie"]]; //A url which takes you into safari if tapped on
     [self presentViewController:facebookPost animated:YES  completion:^{
+      // May return nil if a tracker has not already been initialized with a property
+      // ID.
+      id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+
+      [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"image_share"     // Event category (required)
+                                                            action:@"facebook"  // Event action (required)
+                                                             label:initialText          // Event label
+                                                             value:nil] build]];    // Event value
     }];
 }
 

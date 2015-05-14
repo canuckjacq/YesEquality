@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface InfoPageChildViewController : UIViewController
+@interface InfoPageChildViewController : GAITrackedViewController
 
 @property (nonatomic, strong) IBOutlet UILabel *topLabel;
 @property (nonatomic, strong) IBOutlet UIImageView *imageView;

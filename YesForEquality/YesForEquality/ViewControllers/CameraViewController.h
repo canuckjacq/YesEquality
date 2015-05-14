@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import <Social/Social.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+
 #import "CameraController.h"
 
-@interface CameraViewController : UIViewController <CameraControllerDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate,UIActionSheetDelegate>
+@interface CameraViewController : GAITrackedViewController <CameraControllerDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate,UIActionSheetDelegate>
 
 @end

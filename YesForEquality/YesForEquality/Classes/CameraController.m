@@ -8,6 +8,11 @@
 
 #import "CameraController.h"
 
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
+#import <GoogleAnalytics-iOS-SDK/GAIFields.h>
+#import <GoogleAnalytics-iOS-SDK/GAIDictionaryBuilder.h>
+
+
 @interface CameraController ()
 @end
 
@@ -216,7 +221,14 @@
         AVCaptureConnection *connection = [self.stillCameraOutput connectionWithMediaType:AVMediaTypeVideo];
         UIDeviceOrientation deviceOrientation = [[UIDevice currentDevice] orientation];
         connection.videoOrientation = (AVCaptureVideoOrientation)deviceOrientation;
-        
+
+      id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+
+      [tracker send:[[GAIDictionaryBuilder createEventWithCategory:@"selfie"     // Event category (required)
+                                                            action:@"taken"  // Event action (required)
+                                                             label:@"hurrah!"          // Event label
+                                                             value:nil] build]];    // Event value
+
         [self logSession];
         
         NSLog(@"\n\n\t\tCONNECTION = %@\n\n",connection);
@@ -263,21 +275,21 @@
 }
 
 - (void)logSession{
-    NSLog(@"######################################");
-    NSLog(@"AVSESSION:");
-    NSLog(@"  session                       = %@",self.session);
-    NSLog(@"  session.inputs                = %@",self.session.inputs);
-    NSLog(@"  session.outputs               = %@",self.session.outputs);
-    NSLog(@"  stillCameraOutput             = %@",self.stillCameraOutput);
-    NSLog(@"  stillCameraOutput.connections = %@",self.stillCameraOutput.connections);
-    NSLog(@"  videoOutput                   = %@",self.videoOutput);
-    NSLog(@"  videoOutput.connections       = %@",self.videoOutput.connections);
-    NSLog(@"  currentCameraDevice           = %@",self.currentCameraDevice);
-    AVCaptureDeviceInput *cameraInput = [AVCaptureDeviceInput deviceInputWithDevice:self.currentCameraDevice error:nil];
-    if (cameraInput){
-        NSLog(@"  cameraInput                   = %@",cameraInput);
-    }
-    NSLog(@"######################################");
+//    NSLog(@"######################################");
+//    NSLog(@"AVSESSION:");
+//    NSLog(@"  session                       = %@",self.session);
+//    NSLog(@"  session.inputs                = %@",self.session.inputs);
+//    NSLog(@"  session.outputs               = %@",self.session.outputs);
+//    NSLog(@"  stillCameraOutput             = %@",self.stillCameraOutput);
+//    NSLog(@"  stillCameraOutput.connections = %@",self.stillCameraOutput.connections);
+//    NSLog(@"  videoOutput                   = %@",self.videoOutput);
+//    NSLog(@"  videoOutput.connections       = %@",self.videoOutput.connections);
+//    NSLog(@"  currentCameraDevice           = %@",self.currentCameraDevice);
+//    AVCaptureDeviceInput *cameraInput = [AVCaptureDeviceInput deviceInputWithDevice:self.currentCameraDevice error:nil];
+//    if (cameraInput){
+//        NSLog(@"  cameraInput                   = %@",cameraInput);
+//    }
+//    NSLog(@"######################################");
 }
 
 @end

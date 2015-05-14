@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface HomeViewController : UIViewController
+@interface HomeViewController : GAITrackedViewController
 
 -(IBAction)infoButtonPressed:(id)sender;
 

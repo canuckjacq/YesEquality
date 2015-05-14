@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface ReminderViewController : UIViewController
+@interface ReminderViewController : GAITrackedViewController
 
 @property (weak, nonatomic) IBOutlet UISwitch *dayReminderSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *dayBeforeReminderSwitch;

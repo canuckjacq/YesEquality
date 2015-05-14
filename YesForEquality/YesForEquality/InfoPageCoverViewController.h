@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface InfoPageCoverViewController : UIViewController
+@interface InfoPageCoverViewController : GAITrackedViewController
 
 - (instancetype)init;
 

@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  self.screenName = @"HomeViewController";
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  self.screenName = @"ReminderViewController";
     // Do any additional setup after loading the view.
     
     //Set switch status according to NSUserDefaults

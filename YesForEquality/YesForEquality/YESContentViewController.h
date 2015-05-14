@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleAnalytics-iOS-SDK/GAI.h>
 
-@interface YESContentViewController : UIViewController
+
+@interface YESContentViewController : GAITrackedViewController
 
 @property NSString *descriptionText;
 @property NSInteger pageIndex;

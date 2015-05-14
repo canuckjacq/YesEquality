@@ -21,6 +21,7 @@
     // Do any additional setup after loading the view.
     
     self.descriptionLabel.text = self.descriptionText;
+  self.screenName = @"YESContentViewController";
 }
 
 - (void)didReceiveMemoryWarning {

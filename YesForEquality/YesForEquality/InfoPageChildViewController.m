@@ -46,6 +46,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+  self.screenName = @"InfoPageChildViewController";
     
     self.topLabel.text = self.topText;
     self.imageView.image = self.image;

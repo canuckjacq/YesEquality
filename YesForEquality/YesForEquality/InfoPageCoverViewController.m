@@ -22,4 +22,10 @@
     return self;
 }
 
+- (void)viewDidLoad
+{
+  [super viewDidLoad];
+  self.screenName = @"InfoPageCoverViewController";
+
+}
 @end
