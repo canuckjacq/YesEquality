@@ -41,6 +41,7 @@
   [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
   [[GAI sharedInstance] trackerWithTrackingId:@"UA-62911343-1"];
 
+  [application cancelAllLocalNotifications];
     return YES;
 }
 
@@ -116,7 +117,7 @@
         [notification setAlertBody:alertBody];
         [notification setFireDate:dayReminder];
         [notification setTimeZone:[NSTimeZone defaultTimeZone]];
-        [app scheduleLocalNotification:notification];
+        //[app scheduleLocalNotification:notification];
     } else {
         [self deleteLocalNotificationForUUID:dayReminderUUID];
     }
@@ -144,7 +145,7 @@
         [notification setAlertBody:alertBody];
         [notification setFireDate:dayBeforeReminder];
         [notification setTimeZone:[NSTimeZone  defaultTimeZone]];
-        [app scheduleLocalNotification:notification];
+        //[app scheduleLocalNotification:notification];
     } else {
         [self deleteLocalNotificationForUUID:dayBeforeReminderUUID];
         
