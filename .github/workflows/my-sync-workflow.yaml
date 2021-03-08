@@ -1,12 +1,10 @@
-- name: Fork Sync With Upstream
-- uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
+on: push
 
-  on: push
-  workflow_dispatch:
+  workflow_dispatch:  # click the button on Github repo!
 
----
+
 jobs:
-sync_with_upstream:
+  sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync main with upstream latest
 
@@ -25,8 +23,7 @@ sync_with_upstream:
       with:
         upstream_repository: canuckjacq/yesequality
         upstream_branch: master
-        target_branch: master
-     #   git_pull_args: --ff-only                    # optional arg use, defaults to simple 'pull'
+        target_branch: fork-sync
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
     - name: Check for new commits
