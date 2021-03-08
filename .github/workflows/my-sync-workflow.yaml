@@ -1,7 +1,7 @@
 - name: Fork Sync With Upstream
   uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
-
-on: push
+ 
+  on: push
 
   workflow_dispatch:  # click the button on Github repo!
 
