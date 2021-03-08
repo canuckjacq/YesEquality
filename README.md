@@ -1,2 +1,2 @@
-# YesEquality
+### YesEquality
 YesEquality iOS app
