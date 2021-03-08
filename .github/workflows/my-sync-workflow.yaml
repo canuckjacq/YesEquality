@@ -21,7 +21,7 @@ jobs:
         upstream_repository: canuckjacq/yesequality
         upstream_branch: master
         target_branch: master
-        git_pull_args: --ff-only 
+        git_push_args: --force 
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
     - name: Check for new commits
