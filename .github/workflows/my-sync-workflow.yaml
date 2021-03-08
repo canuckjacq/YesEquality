@@ -1,11 +1,12 @@
-name: Fork Sync With Upstream
-uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
-on: push
+- name: Fork Sync With Upstream
+- uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
 
-workflow_dispatch:
+  on: push
+  workflow_dispatch:
+
 ---
 jobs:
-  sync_with_upstream:
+sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync main with upstream latest
 
