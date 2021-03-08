@@ -16,11 +16,11 @@ jobs:
     # Step 2: run this sync action - specify the upstream repo, upstream branch to sync with, and target sync branch
     - name: Pull (Fast-Forward) upstream changes
       id: sync
-      uses: aormsby/Fork-Sync-With-Upstream-action@v2.1
+      uses: aormsby/Fork-Sync-With-Upstream-action@v2.3
       with:
         upstream_repository: canuckjacq/yesequality
         upstream_branch: master
-        target_branch: fork-sync
+        target_branch: master
 
     # Step 3: Display a message if 'sync' step had new commits (simple test)
     - name: Check for new commits
