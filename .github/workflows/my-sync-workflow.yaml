@@ -4,9 +4,8 @@
   on: push
 
   workflow_dispatch:  # click the button on Github repo!
-
-
-jobs:
+  
+jobs: 
   sync_with_upstream:
     runs-on: ubuntu-latest
     name: Sync main with upstream latest
